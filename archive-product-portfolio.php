@@ -651,6 +651,61 @@
 	</div>	
 </section>		
 <!-- /About section -->
+
+<!-- /ABOUT SECTION GALLERY -->
+<div  id="aboutSectionGalleryWrapper">
+	<div id="aboutSectionGallery"  class="carousel slide" data-bs-ride="false" data-bs-interval="false"  style="display: none;  position: fixed;  top: 0;  height: 100%;  width: 100%;">
+		<div class="carousel-indicators">
+			<button id="indAboutSectionGallery-1" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="0" aria-label="Slide 1"></button>
+			<button id="indAboutSectionGallery-2" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button id="indAboutSectionGallery-3" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			<button id="indAboutSectionGallery-4" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="3" aria-label="Slide 4"></button>
+		</div>
+		<div class="carousel-inner h-100">
+			<div id="imgAboutSectionGallery-1" class="carousel-item h-100">
+				<div class="row align-items-center h-100">
+					<div class="col text-center">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-1.webp"  class="img-fluid lazyload"  loading="lazy" style="max-width: 90vw; max-height: 90vh"  alt="..."/>
+					</div>
+				</div>
+			</div>
+			<div id="imgAboutSectionGallery-2" class="carousel-item h-100">
+				<div class="row align-items-center h-100">
+					<div class="col text-center">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-2.webp"  class="img-fluid lazyload"  loading="lazy"  style="max-width: 90vw; max-height: 90vh"  alt="..."/>
+					</div>
+				</div>
+			</div>
+			<div id="imgAboutSectionGallery-3" class="carousel-item h-100">
+				<div class="row align-items-center h-100">
+					<div class="col text-center">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-3.webp" class="img-fluid lazyload" loading="lazy"  style="max-width: 90vw; max-height: 90vh"  alt="..."/>
+					</div>
+				</div>
+			</div>
+			<div id="imgAboutSectionGallery-4" class="carousel-item h-100">
+				<div class="row align-items-center h-100">
+					<div class="col text-center">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-4.webp" class="img-fluid lazyload" loading="lazy"  style="max-width: 90vw; max-height: 90vh"  alt="..."/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button  class="carousel-control-prev"  type="button"  data-bs-target="#aboutSectionGallery"  data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next"  type="button" data-bs-target="#aboutSectionGallery" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+
+	<!-- Кнопка закрытия галереи -->
+	<button  type="button"  onClick="aboutSectionGalleryClose();" class="btn-close btn-close-white" style="position: fixed; top: 25px; right: 25px; z-index: 99999" aria-label="Close"></button>
+</div>
+<!-- /ABOUT SECTION GALLERY -->
+ 
 <!-- /ABOUT SECTION GALLERY SCRIPT -->
 <script>
   /* Gallery opening function */
