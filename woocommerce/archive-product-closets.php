@@ -607,7 +607,7 @@
 
 				<div class="row justify-content-md-end">
 					<div class="col">
-						<ul class="nav justify-content-md-end">
+						<ul class="nav justify-content-md-end mt-4">
 							<li class="nav-item">
 								<a class="nav-link ico-button px-2" href="https://wa.me/79511014610?web=1&amp;app_absent=1">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
@@ -615,7 +615,7 @@
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link ico-button px-3" href="https://t.me/+79511014610">
+								<a class="nav-link ico-button px-2" href="https://t.me/+79511014610">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
 							</li>
@@ -1053,7 +1053,7 @@
 
 				<div class="row justify-content-md-end">
 					<div class="col">
-						<ul class="nav justify-content-md-end">
+						<ul class="nav justify-content-md-end mt-4">
 							<li class="nav-item">
 								<a class="nav-link ico-button px-2" href="https://wa.me/79511014610?web=1&amp;app_absent=1">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
@@ -1061,7 +1061,7 @@
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link ico-button px-3" href="https://t.me/+79511014610">
+								<a class="nav-link ico-button px-2" href="https://t.me/+79511014610">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
 							</li>
