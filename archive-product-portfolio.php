@@ -545,6 +545,36 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 				<br>
 				<a href="#" type="button" class="btn btn-lg btn-corporate-color-1" data-bs-toggle="modal" data-bs-target="#calculatePriceWithDownloadModal">Рассчитать стоимость</a>
+
+				<div class="row justify-content-md-end">
+					<div class="col">
+						<ul class="nav justify-content-md-end">
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://wa.me/79511014610?web=1&amp;app_absent=1">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-3" href="https://t.me/+79511014610">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/instagram-ico.svg">
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://vk.com/mozaika.kitchen62">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/vk-ico.svg">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-7"></div>
 		</div>
@@ -556,17 +586,66 @@
 <!-- About section -->
 <section class="about-section bg-light py-5">
 	<div class="container">	
+		<div class="row">
+			<div class="col text-md-center">
+				<h2>О нас</h2>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
+			</div>
+		</div>
+
 		<div class="row justify-content-between">		
 			<div class="col-12 col-lg-6 order-2 order-lg-first text-center">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/single-prod-img.jpg" class="img-fluid">
+				<div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner rounded">
+						<div class="carousel-item active">
+							<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-1');">
+								<div class="single-product-img approximation">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-1.webp" class="d-block w-100" loading="lazy" alt="...">
+									<div class="magnifier"></div>
+								</div>
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-2');">
+								<div class="single-product-img approximation">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-2.webp" class="d-block w-100" loading="lazy" alt="...">
+									<div class="magnifier"></div>
+								</div>
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-3');">
+								<div class="single-product-img approximation">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-3.webp" class="d-block w-100" loading="lazy" alt="...">
+									<div class="magnifier"></div>
+								</div>
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-4');">
+								<div class="single-product-img approximation">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-4.webp" class="d-block w-100" loading="lazy" alt="...">
+									<div class="magnifier"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- Кнопки навигации -->
+					<button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Предыдущий</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Следующий</span>
+					</button>
+				</div>
 			</div>
 			<div class="col-12 col-lg-5 offset-lg-1 order-1 order-lg-last mb-5 mb-lg-0 ps-lg-5">
-				<h2 class="mb-3">О нас</h2>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 				<p class="text-start">Студия кухни «Мозаика» поможет каждому клиенту при выборе мебели по индивидуальным размерам, бесплатный дизайн-проект любой сложности, большой выбор мебели по цветовой гамме и ценовой категории.</p>
 				<p class="text-start">Обширный ассортимент фасадного материала такие как: Fundermax, Альтернатив, AGT, Feelwood, TSS. Для каждого клиента подбираем по его желаниям и возможностям европейскую фурнитуру, таких фирм как: Blum, Boyard, Hettich, VIBO и др. А также у нас можно укомплектоать мебель кухонной техникой известных фирм: Эликор, Midea, Куперсберг и др.</p>
 				<p class="text-start mb-5">Нашими партнерами являются крупные фабрики «Ульяновск», «CUCINA», г. Пенза «Лев Мебель», «Мебель стиль».						</p>
-				<a href="#" type="button" class="btn btn-lg btn-corporate-color-1">Узнать больше</a>
+				<!-- <a href="#" type="button" class="btn btn-lg btn-corporate-color-1">Узнать больше</a> -->
 			</div>
 		</div>
 	</div>	
@@ -826,6 +905,36 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 				<br>
 				<a href="#" type="button" class="btn btn-lg btn-corporate-color-1" data-bs-toggle="modal" data-bs-target="#calculatePriceWithDownloadModal">Рассчитать стоимость</a>
+
+				<div class="row justify-content-md-end">
+					<div class="col">
+						<ul class="nav justify-content-md-end">
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://wa.me/79511014610?web=1&amp;app_absent=1">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-3" href="https://t.me/+79511014610">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/instagram-ico.svg">
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://vk.com/mozaika.kitchen62">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/vk-ico.svg">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-7"></div>
 		</div>

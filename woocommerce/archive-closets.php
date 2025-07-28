@@ -388,6 +388,36 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 				<br>
 				<a href="#" type="button" class="btn btn-lg btn-corporate-color-1" data-bs-toggle="modal" data-bs-target="#calculatePriceWithDownloadModal">Рассчитать стоимость</a>
+
+				<div class="row justify-content-md-end">
+					<div class="col">
+						<ul class="nav justify-content-md-end">
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://wa.me/79511014610?web=1&amp;app_absent=1">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-3" href="https://t.me/+79511014610">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/instagram-ico.svg">
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://vk.com/mozaika.kitchen62">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/vk-ico.svg">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-7"></div>
 		</div>
@@ -826,6 +856,36 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 				<br>
 				<a href="#" type="button" class="btn btn-lg btn-corporate-color-1" data-bs-toggle="modal" data-bs-target="#calculatePriceWithDownloadModal">Рассчитать стоимость</a>
+
+				<div class="row justify-content-md-end">
+					<div class="col">
+						<ul class="nav justify-content-md-end">
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://wa.me/79511014610?web=1&amp;app_absent=1">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-3" href="https://t.me/+79511014610">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/instagram-ico.svg">
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://vk.com/mozaika.kitchen62">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/vk-ico.svg">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-7"></div>
 		</div>
