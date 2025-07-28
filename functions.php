@@ -389,9 +389,6 @@
 		return $post_id;
 	}
 	
-?>
-
-<?php
 	
 	// Подключение стилей родительской темы
 	add_action('wp_enqueue_scripts', 'enqueue_parent_styles', 0);
