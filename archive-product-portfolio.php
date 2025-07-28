@@ -651,7 +651,60 @@
 	</div>	
 </section>		
 <!-- /About section -->
+<!-- /ABOUT SECTION GALLERY SCRIPT -->
+<script>
+  /* Gallery opening function */
+  function aboutSectionGalleryOn(gal, img) {
+		var gallery = gal; // Получаем ID галереи
+		var image = img; // Получаем ID картинки
+	
+		// Открываем обертку галереи
+		document.getElementById( "aboutSectionGalleryWrapper" ).style.display = "block";
 
+		// Открываем галерею
+		if ( gallery == "aboutSectionGallery" ) { document.getElementById( "aboutSectionGallery" ).style.display = "block"; }
+	
+		/* Открываем изображения и индикаторы галереи */
+		if ( image == "imgAboutSectionGallery-1" ) {
+			document.getElementById("imgAboutSectionGallery-1").classList.add("active");
+			document.getElementById("indAboutSectionGallery-1").classList.add("active");
+		}
+		if ( image == "imgAboutSectionGallery-2" ) {
+			document.getElementById("imgAboutSectionGallery-2").classList.add("active");
+			document.getElementById("indAboutSectionGallery-2").classList.add("active");
+		}
+		if ( image == "imgAboutSectionGallery-3" ) {
+			document.getElementById("imgAboutSectionGallery-3").classList.add("active");
+			document.getElementById("indAboutSectionGallery-3").classList.add("active");
+		}
+		if ( image == "imgAboutSectionGallery-4" ) {
+			document.getElementById("imgAboutSectionGallery-4").classList.add("active");
+			document.getElementById("indAboutSectionGallery-4").classList.add("active");
+		}
+
+	} /* Ending gallery opening function */
+
+
+	// Кнопка закрытия галереи
+	function aboutSectionGalleryClose() {
+		// Закрываем обертку галереи
+		document.getElementById("aboutSectionGalleryWrapper").style.display = "none";
+		
+		// Закрываем галерею
+		document.getElementById("aboutSectionGallery").style.display = "none";
+		
+		/* Закрываем тзображения и индикаторы галереи */
+		document.getElementById("imgAboutSectionGallery-1").classList.remove("active");
+		document.getElementById("indAboutSectionGallery-1").classList.remove("active");
+		document.getElementById("imgAboutSectionGallery-2").classList.remove("active");
+		document.getElementById("indAboutSectionGallery-2").classList.remove("active");
+		document.getElementById("imgAboutSectionGallery-3").classList.remove("active");
+		document.getElementById("indAboutSectionGallery-3").classList.remove("active");
+		document.getElementById("imgAboutSectionGallery-4").classList.remove("active");
+		document.getElementById("indAboutSectionGallery-4").classList.remove("active");
+	}
+</script>
+<!-- /ABOUT SECTION GALLERY SCRIPT -->
 
 
 <!-- Advantage section -->
