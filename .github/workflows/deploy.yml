@@ -15,6 +15,5 @@ jobs:
           username: ${{ secrets.REGRU_USER }}
           key: ${{ secrets.REGRU_KEY }}
           script: |
-            cd /var/www/u1538455/data/www/мозаика62.рф/wp-content/themes
-            rm -rf new
-            git clone https://github.com/site100ru/mozaika62-rf.git new
+            cd /var/www/u1538455/data/www/мозаика62.рф/wp-content/themes/new
+            git pull
