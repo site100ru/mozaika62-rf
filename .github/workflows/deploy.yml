@@ -15,5 +15,13 @@ jobs:
           username: ${{ secrets.REGRU_USER }}
           key: ${{ secrets.REGRU_KEY }}
           script: |
+            # ========== ДЛЯ ПЕРВОЙ ИНИЦИАЛИЗАЦИИ ==========
+            # cd /var/www/u1538455/data/www/мозаика62.рф/wp-content/themes
+            # git clone https://github.com/site100ru/mozaika62-rf.git new
+
             cd /var/www/u1538455/data/www/мозаика62.рф/wp-content/themes/new
             git pull
+
+            # ========== ЧТО МЕНЯТЬ ДЛЯ ДРУГИХ ПРОЕКТОВ ==========
+            # мозаика62.рф - доменное имя сайта
+            # new - название папки темы в /themes/
