@@ -85,7 +85,7 @@
 							</a>
 						</li>
 						<li class="nav-item me-1 me-xxl-4">
-							<a class="top-menu-tel nav-link" href="tel:89511014610">
+							<a class="top-menu-tel nav-link" href="tel:+74912777098">
 								<div style="display: flex;">
 									<div class="nav-li-float-left">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/mobile-phone-ico.svg">
@@ -111,7 +111,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link ico-button" href="https://t.me/vasilyevr">
+							<a class="nav-link ico-button" href="https://t.me/+79511014610">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 							</a>
 						</li>
@@ -401,18 +401,6 @@
 							<li class="nav-item">
 								<a class="nav-link ico-button px-2" href="https://t.me/+79511014610">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
-								</a>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/instagram-ico.svg">
-								</a>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link ico-button px-2" href="https://vk.com/mozaika.kitchen62">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/vk-ico.svg">
 								</a>
 							</li>
 						</ul>
@@ -869,18 +857,6 @@
 							<li class="nav-item">
 								<a class="nav-link ico-button px-2" href="https://t.me/+79511014610">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
-								</a>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/instagram-ico.svg">
-								</a>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link ico-button px-2" href="https://vk.com/mozaika.kitchen62">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/vk-ico.svg">
 								</a>
 							</li>
 						</ul>

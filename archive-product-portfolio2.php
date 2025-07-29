@@ -102,7 +102,7 @@
 									</a>
 								</li>
 								<li class="nav-item me-1 me-xxl-4">
-									<a class="top-menu-tel nav-link" href="tel:89511014610">
+									<a class="top-menu-tel nav-link" href="tel:+74912777098s">
 										<div style="display: flex;">
 											<div class="nav-li-float-left">
 												<img src="<?php echo get_template_directory_uri(); ?>/img/ico/mobile-phone-ico.svg">
@@ -128,7 +128,7 @@
 									</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link ico-button" href="https://t.me/vasilyevr">
+									<a class="nav-link ico-button" href="https://t.me/+79511014610">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 									</a>
 								</li>
@@ -605,18 +605,6 @@
 											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
 										</a>
 									</li>
-
-									<li class="nav-item">
-										<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62">
-											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/instagram-ico.svg">
-										</a>
-									</li>
-
-									<li class="nav-item">
-										<a class="nav-link ico-button px-2" href="https://vk.com/mozaika.kitchen62">
-											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/vk-ico.svg">
-										</a>
-									</li>
 								</ul>
 							</div>
 						</div>
@@ -641,7 +629,7 @@
 						<p class="text-start">Студия кухни «Мозаика» поможет каждому клиенту при выборе мебели по индивидуальным размерам, бесплатный дизайн-проект любой сложности, большой выбор мебели по цветовой гамме и ценовой категории.</p>
 						<p class="text-start">Обширный ассортимент фасадного материала такие как: Fundermax, Альтернатив, AGT, Feelwood, TSS. Для каждого клиента подбираем по его желаниям и возможностям европейскую фурнитуру, таких фирм как: Blum, Boyard, Hettich, VIBO и др. А также у нас можно укомплектоать мебель кухонной техникой известных фирм: Эликор, Midea, Куперсберг и др.</p>
 						<p class="text-start mb-5">Нашими партнерами являются крупные фабрики «Ульяновск», «CUCINA», г. Пенза «Лев Мебель», «Мебель стиль».						</p>
-						<a href="#" type="button" class="btn btn-lg btn-corporate-color-1">Узнать больше</a>
+						<!-- <a href="#" type="button" class="btn btn-lg btn-corporate-color-1">Узнать больше</a> -->
 					</div>
 				</div>
 			</div>	
@@ -910,18 +898,6 @@
 									<li class="nav-item">
 										<a class="nav-link ico-button px-2" href="https://t.me/+79511014610">
 											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
-										</a>
-									</li>
-
-									<li class="nav-item">
-										<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62">
-											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/instagram-ico.svg">
-										</a>
-									</li>
-
-									<li class="nav-item">
-										<a class="nav-link ico-button px-2" href="https://vk.com/mozaika.kitchen62">
-											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/vk-ico.svg">
 										</a>
 									</li>
 								</ul>
@@ -1615,7 +1591,7 @@
 								</a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link ps-0 pt-2">
+								<a href="#" class="nav-link ps-0 pt-2" data-bs-toggle="modal" data-bs-target="#callbackModal">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/callback-ico.svg" >
@@ -1778,7 +1754,7 @@
 							</div>
 							<div class="mb-3">
 								<div class="input-group custom-file-button">
-									<label class="input-group-text" for="inputGroupFile" style="border-radius: 5px;">Прикрепить</label>
+									<label class="btn btn-lg btn-corporate-color-1 input-group-text" for="inputGroupFile">Прикрепить</label>
 									<input type="file" name="file[]" class="form-control" id="inputGroupFile" accept=".jpg,.jpeg,.png,.pdf,.heic" multiple>
 								</div>
 							</div>

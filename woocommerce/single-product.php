@@ -110,7 +110,7 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link ico-button" href="https://t.me/vasilyevr">
+						<a class="nav-link ico-button" href="https://t.me/+79511014610">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 						</a>
 					</li>

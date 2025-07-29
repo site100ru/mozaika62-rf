@@ -75,7 +75,7 @@
 								</a>
 							</li>
 							<li class="nav-item me-1 me-xxl-4">
-								<a class="top-menu-tel nav-link" href="tel:89511014610">
+								<a class="top-menu-tel nav-link" href="tel:+74912777098">
 									<div style="display: flex;">
 										<div class="nav-li-float-left">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/mobile-phone-ico.svg">
@@ -101,7 +101,7 @@
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link ico-button" href="https://t.me/vasilyevr">
+								<a class="nav-link ico-button" href="https://t.me/+79511014610">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
 							</li>
@@ -283,7 +283,7 @@
 								</div>
 							</div>
 							<div class="col-md-3 contact-info">
-								<div style="display: flex; padding-bottom: 15px;" class="align-items-center">
+								<a href="https://t.me/+79511014610" style="display: flex; padding-bottom: 15px;" class="align-items-center text-dark text-decoration-none">
 									<div class="nav-li-float-left">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/mobile-phone-ico.svg">
 									</div>
@@ -291,8 +291,9 @@
 										<span>8 (951) 101-46-10</span>
 									</div>
 									<div style="clear: both;"></div>
-								</div>
-								<div style="display: flex;" class="align-items-center">
+								</a>
+								
+								<button data-bs-toggle="modal" data-bs-target="#callbackModal" style="display: flex;" class="btn p-0 align-items-center">
 									<div class="nav-li-float-left">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/callback-ico.svg">
 									</div>
@@ -300,10 +301,10 @@
 										<span>Обратный звонок</span>
 									</div>
 									<div style="clear: both;"></div>
-								</div>
+								</button>
 							</div>
 							<div class="col-md-3 contact-info">
-								<div style="display: flex; padding-bottom: 15px;" class="align-items-center">
+								<a  href="tel:+74912527890" style="display: flex; padding-bottom: 15px;" class="align-items-center text-dark">
 									<div class="nav-li-float-left">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telephone-ico-blue.svg">
 									</div>
@@ -311,8 +312,8 @@
 										<span>8 (4912) 52-78-90</span>
 									</div>
 									<div style="clear: both;"></div>
-								</div>
-								<div style="display: flex;" class="align-items-center">
+								</a>
+								<a  href="tel:+74912777098"  style="display: flex;" class="align-items-center text-dark">
 									<div class="nav-li-float-left">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telephone-ico-blue.svg">
 									</div>
@@ -320,10 +321,10 @@
 										<span>8 (4912) 77-70-98</span>
 									</div>
 									<div style="clear: both;"></div>
-								</div>
+								</a>
 							</div>
 							<div class="col-md-3 contact-info">
-								<div style="display: flex; padding-bottom: 15px;" class="align-items-center">
+								<a href="mailto:mebel-dsever@yandex.ru" class="text-dark text-decoration-none" style="display: flex; padding-bottom: 15px;" class="align-items-center">
 									<div class="nav-li-float-left">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/email-ico.svg">
 									</div>
@@ -331,7 +332,7 @@
 										<span>mozaika62@bk.ru</span>
 									</div>
 									<div style="clear: both;"></div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>

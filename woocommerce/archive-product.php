@@ -2121,7 +2121,7 @@ do_action( 'woocommerce_before_main_content' );
 								</div>
 								<div class="col-8 mb-3">
 									<div class="input-group custom-file-button">
-										<label class="input-group-text" for="inputGroupFile">Прикрепить</label>
+										<label class="btn btn-lg btn-corporate-color-1 input-group-text" for="inputGroupFile">Прикрепить</label>
 										<input type="file" name="mail_file" accept=".jpg,.jpeg,.png,.pdf,.heic" class="form-control" id="inputGroupFile">
 									</div>
 								</div>

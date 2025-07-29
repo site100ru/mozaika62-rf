@@ -73,7 +73,7 @@
 								</a>
 							</li>
 							<li class="nav-item me-1 me-xxl-4">
-								<a class="top-menu-tel nav-link" href="tel:89511014610">
+								<a class="top-menu-tel nav-link" href="tel:+74912777098">
 									<div style="display: flex;">
 										<div class="nav-li-float-left">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/mobile-phone-ico.svg">
