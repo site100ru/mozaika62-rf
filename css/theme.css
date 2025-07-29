@@ -2499,6 +2499,10 @@ footer {
 	background-position: 50% 100%;
 }
 
+.parallax-home-section.parallax-home-section-portfolio {
+	background: url(../img/home-portfolio.webp) no-repeat;
+}
+
 
 /*** CALLBACK BUTTON ***/
 .callback-button-wrapper {

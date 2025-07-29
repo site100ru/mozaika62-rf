@@ -13,7 +13,7 @@
 <!-- Home section -->
 <div id="sp-home" class="scroll-points"></div>
 <section class="main-home-section">
-	<div class="parallax-home-section" style="min-height: 640px;"></div>
+	<div class="parallax-home-section parallax-home-section-portfolio" style="min-height: 640px;"></div>
 	<header class="d-none d-lg-block">
 		<!-- Header nav top -->
 		<nav class="header-nav-top navbar navbar-expand-lg navbar-light d-none d-lg-block py-0">
