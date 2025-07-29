@@ -433,13 +433,13 @@
 						<input type="text" name="name" class="form-control" placeholder="Ваше имя">
 					</div>
 					<div class="col-md-6">
-						<input type="text" name="phone" class="form-control telMask" placeholder="Ваш телефон*" inputmode="text">
+						<input type="text" name="phone" class="form-control telMask" placeholder="Ваш телефон*" inputmode="text" required>
 					</div>
 				</div>
 			</div>
 
 			<div class="modal-footer">
-				<input type="hidden" id="'g-recaptcha-response-order" name="g-recaptcha-response">
+				<input type="hidden" id="g-recaptcha-response-order" name="g-recaptcha-response">
 				<button type="submit" class="btn btn-corporate-color-1 mx-auto">Жду звонка</button>
 			</div>
 		</form>
