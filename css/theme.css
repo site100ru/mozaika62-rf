@@ -2521,3 +2521,8 @@ footer {
 	z-index: 999;
 }
 /*** END CALLBACK BUTTON ***/
+
+#menu-item-307,
+#menu-item-305 {
+	padding-right: 0;
+}
