@@ -20,14 +20,14 @@
         <div class="row">
             <div class="col text-center pb-4">
               <div class="col text-md-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">	
+                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/yandex-logo.svg" class="mb-5">	
                 <div class="review-rating mb-3 d-flex align-items-center justify-content-center gap-4">
                     <div>
-                      <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                      <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                      <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                      <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                      <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
+                      <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                      <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                      <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                      <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                      <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
                     </div>
                     <p class="mb-0">4,9 из 5</p>
                 </div>
@@ -55,11 +55,11 @@
                     
                     <!-- Звездочки -->
                     <div class="review-rating mb-3">
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
                     </div>
                     
                     <!-- Текст отзыва -->
@@ -89,11 +89,11 @@
                     
                     <!-- Звездочки -->
                     <div class="review-rating mb-3">
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
                     </div>
                     
                     <!-- Текст отзыва -->
@@ -123,11 +123,11 @@
                     
                     <!-- Звездочки -->
                     <div class="review-rating mb-3">
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
-                        <i class="star-filled"><img src="img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
                     </div>
                     
                     <!-- Текст отзыва -->
