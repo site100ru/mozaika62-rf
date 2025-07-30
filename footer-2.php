@@ -467,7 +467,7 @@
 					</div>
 					<div class="mb-3">
 						<div class="input-group custom-file-button">
-							<label class="btn btn-lg btn-corporate-color-1 input-group-text" style="border-radius: 5px;" for="inputGroupFile">Прикрепить</label>
+							<label class="btn btn-lg btn-corporate-color-1 input-group-text" style="border-radius: 8px;" for="inputGroupFile">Прикрепить</label>
 							<input type="file" name="file[]" class="form-control" id="inputGroupFile" accept=".jpg,.jpeg,.png,.pdf,.heic" multiple>
 						</div>
 					</div>
