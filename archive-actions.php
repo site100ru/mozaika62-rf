@@ -251,7 +251,7 @@
 		<div class="row">
 			<div class="col">
 				<nav class="breadcrumbs pt-4">
-					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/breadcrumbs-icon.svg"></a> / 
+					<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/breadcrumbs-icon.svg"></a> / 
 					<a href="/акции" style="text-decoration: none;">Акции</a>
 				</nav>
 			</div>
