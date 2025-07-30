@@ -496,6 +496,7 @@ strong {
     font-family: Gilroy-Medium;
     font-size: 14px;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 .archive-portfolio-section-2 .nav-item a.active {
