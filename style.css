@@ -493,11 +493,20 @@ strong {
     color: #000000;
     opacity: .75;
     transition: .25s;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 .archive-portfolio-section-2 .nav-item a.active {
     color: #00A3D3;
 }
+
+.archive-portfolio-section-2 .nav-item:hover a,
+.archive-portfolio-section-2 .nav-item:focus a {
+    color: #00A3D3;
+}
+
 
 .card-portfolio {
     position: absolute;
