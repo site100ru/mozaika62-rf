@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col text-center pb-4">
               <div class="col text-md-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/yandex-logo.svg" class="mb-5">	
+                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/yandex-logo.svg" class="mb-3">	
                 <div class="review-rating mb-3 d-flex align-items-center justify-content-center gap-4">
                     <div>
                       <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
@@ -37,7 +37,7 @@
         <div class="row">
             <!-- Отзыв 1 -->
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="review-card rounded p-4 h-100">
+                <div class="review-card rounded h-100">
                     <!-- Фото и информация о клиенте -->
                     <div class="review-header d-flex align-items-center mb-3">
                         <div class="review-photo me-3">
@@ -71,7 +71,7 @@
             
             <!-- Отзыв 2 -->
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="review-card rounded p-4 h-100">
+                <div class="review-card rounded h-100">
                     <!-- Фото и информация о клиенте -->
                     <div class="review-header d-flex align-items-center mb-3">
                         <div class="review-photo me-3">
@@ -105,7 +105,7 @@
             
             <!-- Отзыв 3 -->
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="review-card rounded p-4 h-100">
+                <div class="review-card rounded h-100">
                     <!-- Фото и информация о клиенте -->
                     <div class="review-header d-flex align-items-center mb-3">
                         <div class="review-photo me-3">
@@ -132,7 +132,7 @@
                     
                     <!-- Текст отзыва -->
                     <div class="review-text">
-                        <p class="review-description">Очень довольны покупкой новой кухни! Она получилась не только красивой но и удобной. Всё элементы были качественно собраны дополнительно установили встроенную технику и теперь</p>
+                        <p class="review-description">Очень довольны покупкой новой кухни! Она получилась не только красивой но и удобной. Всё элементы были качественно собраны дополнительно установили встроенную технику и теперь ... <a href="https://yandex.ru/profile/89191942001" style="text-decoration: none; color: #323232; font-weight: 600;">читать еще</a></p>
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
         <!-- Кнопка "Показать все отзывы" -->
         <div class="row text-center mt-4">
             <div class="col">
-                <a href="/отзывы" class="btn btn-lg btn-corporate-color-1">Все отзывы</a>
+                <a href="https://yandex.ru/profile/89191942001" class="btn btn-lg btn-corporate-color-1 px-4 mx-3">Все отзывы</a>
             </div>
         </div>
     </div>
