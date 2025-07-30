@@ -29,7 +29,7 @@
                       <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
                       <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
                     </div>
-                    <p class="mb-0" style="font-size: 18px">4,9 из 5</p>
+                    <p class="mb-0" style="font-size: 18px;     line-height: 1;">4,9 из 5</p>
                 </div>
             </div>
         </div>
