@@ -1713,7 +1713,7 @@
 					<div class="modal-body">
 						<div class="row">
 							<div class="col">
-								<p><small>Мы свяжемся с Вами в теченее 10 минут и ответим на все вопросы! Для звонка введите Ваше имя и телефон.</small></p>
+								<p><small>Мы свяжемся с Вами в течение 10 минут и ответим на все вопросы! Для звонка введите Ваше имя и телефон.</small></p>
 							</div>
 						</div>
 						<div class="row">
@@ -1755,7 +1755,7 @@
 							</div>
 							<div class="mb-3">
 								<div class="input-group custom-file-button">
-									<label class="btn btn-lg btn-corporate-color-1 input-group-text" for="inputGroupFile">Прикрепить</label>
+									<label class="btn btn-lg btn-corporate-color-1 input-group-text" style="border-radius: 8px;" for="inputGroupFile">Прикрепить</label>
 									<input type="file" name="file[]" class="form-control" id="inputGroupFile" accept=".jpg,.jpeg,.png,.pdf,.heic" multiple>
 								</div>
 							</div>
