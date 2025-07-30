@@ -10,30 +10,27 @@
 <section class="reviews-section py-5 bg-light">
     <div class="container">
         <div class="row">
-            <div class="col text-center pb-5">
-              <div class="col text-md-center">
+            <div class="col text-md-center pb-5">
                 <h2>Отзывы о нас в независимых источниках</h2>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg">	
             </div>
         </div>
 
         <div class="row">
-            <div class="col text-center pb-4">
-              <div class="col text-md-center">
+            <div class="col text-md-center pb-4">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/ico/yandex-logo.svg" class="mb-3">	
                 <div class="review-rating mb-3 d-flex align-items-end justify-content-center gap-4">
                     <div>
-                      <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
-                      <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
-                      <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
-                      <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
-                      <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
                     </div>
                     <p class="mb-0" style="font-size: 18px;     line-height: 1;">4,9 из 5</p>
                 </div>
             </div>
         </div>
-        
         <div class="row">
             <!-- Отзыв 1 -->
             <div class="col-lg-4 col-md-6 mb-4">
