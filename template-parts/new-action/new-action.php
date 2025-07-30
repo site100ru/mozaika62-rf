@@ -2,7 +2,7 @@
 <?php
 /**
  * Template: Секция "Акции от нашего салона"
- * Файл: sections/new-action/new-action.php
+ * Файл: template-parts/new-action/new-action.php
  * Описание: Отдельная секция для отображения акций салона
  */
 ?>
