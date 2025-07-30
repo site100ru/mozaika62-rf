@@ -132,7 +132,7 @@
                     
                     <!-- Текст отзыва -->
                     <div class="review-text">
-                        <p class="review-description">Очень довольны покупкой новой кухни! Она получилась не только красивой но и удобной. Всё элементы были качественно собраны дополнительно установили встроенную технику и теперь ... <a href="https://yandex.ru/profile/89191942001" style="text-decoration: none; color: #323232; font-weight: 500; font-family: 'Gilroy-Medium';">читать еще</a></p>
+                        <p class="review-description">Очень довольны покупкой новой кухни! Она получилась не только красивой но и удобной. Всё элементы были качественно собраны дополнительно установили встроенную технику ... <a href="https://yandex.ru/profile/89191942001" style="text-decoration: none; color: #323232; font-weight: 500; font-family: 'Gilroy-Medium';">читать еще</a></p>
                     </div>
                 </div>
             </div>
