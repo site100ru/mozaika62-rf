@@ -22,6 +22,9 @@
 	<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 	<meta property="og:title" content="<?php echo wp_get_document_title(); ?>" />
 	
+	<!-- Yandex verification -->
+	<meta name="yandex-verification" content="d94779ff420ec623" />
+	
 	<!-- Quiz CSS -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/quiz.css">
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/ico/favicon.jpg" type="image/x-icon" />
