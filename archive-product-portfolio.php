@@ -246,9 +246,8 @@
 </section>
 <!-- /Home section -->
 
-
 <!-- Archive portfolio section -->
-<section class="archive-portfolio-section-2 pt-4 bg-white" style="margin-bottom: 60px;">
+<section class="archive-portfolio-section-2 py-5 bg-white">
 	<div class="container">
 		<div class="row">
 			<div class="col">
@@ -285,11 +284,16 @@
 
 		<div class="row text-md-center">
 			<div class="col">
-				<a href="/акции" class="btn btn-lg btn-corporate-color-1 mb-5">Смотреть все акции</a>
+				<a href="/акции" class="btn btn-lg btn-corporate-color-1">Смотреть все акции</a>
 			</div>
 		</div>
+	</div>
+</section>				
 
-		
+
+<!-- Archive portfolio section -->
+<section class="archive-portfolio-section-2 py-5" style="background-color: #F5F5F5;">
+	<div class="container">
 		<div class="row">
 			<div class="col text-md-center">
 				<h2>Наши работы</h2>
