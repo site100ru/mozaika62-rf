@@ -13,7 +13,7 @@
             <div class="col text-center pb-5">
               <div class="col text-md-center">
                 <h2>Отзывы о нас в независимых источниках</h2>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">	
+                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg">	
             </div>
         </div>
 
@@ -48,7 +48,7 @@
                                  height="50">
                         </div>
                         <div class="review-info">
-                            <p class="mb-0">Ульяна Нехорошкова</p>
+                            <p class="review-title mb-0">Ульяна Нехорошкова</p>
                             <p class="review-date text-muted small mb-0">18 июля 2025</p>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                                  height="50">
                         </div>
                         <div class="review-info">
-                            <p class="mb-0">Егор</p>
+                            <p class="review-title mb-0">Егор</p>
                             <p class="review-date text-muted small mb-0">14 июля 2025</p>
                         </div>
                     </div>
@@ -116,7 +116,7 @@
                                  height="50">
                         </div>
                         <div class="review-info">
-                            <p class="mb-0">Лена Шагдурова</p>
+                            <p class="review-title mb-0">Лена Шагдурова</p>
                             <p class="review-date text-muted small mb-0">26 апреля 2025</p>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                     
                     <!-- Текст отзыва -->
                     <div class="review-text">
-                        <p class="review-description">Очень довольны покупкой новой кухни! Она получилась не только красивой но и удобной. Всё элементы были качественно собраны дополнительно установили встроенную технику и теперь ... <a href="https://yandex.ru/profile/89191942001" style="text-decoration: none; color: #323232; font-weight: 600;">читать еще</a></p>
+                        <p class="review-description">Очень довольны покупкой новой кухни! Она получилась не только красивой но и удобной. Всё элементы были качественно собраны дополнительно установили встроенную технику и теперь ... <a href="https://yandex.ru/profile/89191942001" style="text-decoration: none; color: #323232; font-weight: 500; font-family: 'Gilroy-Medium';">читать еще</a></p>
                     </div>
                 </div>
             </div>

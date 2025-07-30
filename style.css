@@ -647,3 +647,11 @@ strong {
 	color: #fff;
 }
 /*** OTHER STYLES ***/
+
+.review-info .review-title {
+    font-size: 18px;
+}
+
+.review-info .review-date {
+    font-size: 16px;
+}
