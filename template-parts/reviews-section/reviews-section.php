@@ -7,7 +7,7 @@
 ?>
 
 <!-- Reviews section -->
-<section class="reviews-section py-5">
+<section class="reviews-section py-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col text-center pb-5">
