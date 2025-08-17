@@ -5,10 +5,12 @@
  * Файл: template-parts/new-action/new-action.php
  * Описание: Отдельная секция для отображения акций салона
  */
+
+$bg_color = $args['bg_color'] ?? 'bg-white';
 ?>
 
 <!-- Archive portfolio section -->
-<section class="archive-portfolio-section-2 py-5 bg-white">
+<section class="archive-portfolio-section-2 py-5 <?php echo esc_attr($bg_color); ?>">
 	<div class="container">
 		<div class="row">
 			<div class="col text-md-center">

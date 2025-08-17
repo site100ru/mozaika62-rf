@@ -371,7 +371,9 @@
 </section>
 <!-- /ARCHIVE PRODUCT SECTION -->
 
-
+<?php get_template_part('template-parts/new-action/new-action', null, array(
+    'bg_color' => 'bg-light', 
+)); ?>
 
 <!-- Gradient order section -->
 <section class="gradient-order-section bg-light" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.jpg);">
@@ -652,7 +654,7 @@
 </section>
 <!-- /Advantage section -->
 
-
+<?php get_template_part('template-parts/reviews-section/reviews-section'); ?>
 
 <!-- Process -->
 <section class="advantages bg-light py-5">

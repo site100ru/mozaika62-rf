@@ -2526,3 +2526,20 @@ footer {
 #menu-item-305 .nav-link {
 	padding-right: 0 !important;
 }
+
+.pagination .page-link {
+	border: 1px solid #ebebeb;
+	color: var(--corporate-color-1);
+}
+
+.pagination .page-link:hover {
+	border: 1px solid #ebebeb;
+	background: rgba(0, 163, 211, 0.13);
+	color: var(--corporate-color-1);
+}
+
+.pagination .page-link.current {
+		border: 1px solid #ebebeb;
+	background: rgba(0, 163, 211, 0.13);
+	color: var(--corporate-color-1);
+}
