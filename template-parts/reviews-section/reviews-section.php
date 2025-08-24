@@ -157,7 +157,7 @@ $bg_color = $args['bg_color'] ?? 'bg-light';
         <!-- Кнопка "Показать все отзывы" -->
         <div class="row text-center mt-4">
             <div class="col">
-                <a href="https://yandex.ru/profile/89191942001" class="btn btn-lg btn-corporate-color-1 px-4 mx-3">Все
+                <a href="https://yandex.ru/profile/89191942001" target="_blank" class="btn btn-lg btn-corporate-color-1 px-4 mx-3">Все
                     отзывы</a>
             </div>
         </div>
