@@ -654,10 +654,12 @@
 </section>
 <!-- /Advantage section -->
 
-<?php get_template_part('template-parts/reviews-section/reviews-section'); ?>
+<?php get_template_part('template-parts/reviews-section/reviews-section', null, array(
+    'bg_color' => 'bg-light', 
+)); ?>
 
 <!-- Process -->
-<section class="advantages py-5">
+<section class="advantages bg-white py-5">
 	<div class="container">
 		<div class="row">
 			<div class="col text-md-center">
