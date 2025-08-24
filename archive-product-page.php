@@ -792,7 +792,7 @@
 								<div class="carousel-item active">
 									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-1');">
 										<div class="single-product-img approximation">
-											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-1.webp" class="d-block w-100" loading="lazy" alt="...">
+											<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/1.webp" class="d-block w-100" loading="lazy" alt="...">
 											<div class="magnifier"></div>
 										</div>
 									</a>
@@ -800,7 +800,7 @@
 								<div class="carousel-item">
 									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-2');">
 										<div class="single-product-img approximation">
-											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-2.webp" class="d-block w-100" loading="lazy" alt="...">
+											<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/2.webp" class="d-block w-100" loading="lazy" alt="...">
 											<div class="magnifier"></div>
 										</div>
 									</a>
@@ -808,7 +808,7 @@
 								<div class="carousel-item">
 									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-3');">
 										<div class="single-product-img approximation">
-											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-3.webp" class="d-block w-100" loading="lazy" alt="...">
+											<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/3.webp" class="d-block w-100" loading="lazy" alt="...">
 											<div class="magnifier"></div>
 										</div>
 									</a>
@@ -816,12 +816,44 @@
 								<div class="carousel-item">
 									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-4');">
 										<div class="single-product-img approximation">
-											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-4.webp" class="d-block w-100" loading="lazy" alt="...">
+											<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/4.webp" class="d-block w-100" loading="lazy" alt="...">
 											<div class="magnifier"></div>
 										</div>
 									</a>
 								</div>
-							</div>	
+								<div class="carousel-item">
+									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-5');">
+										<div class="single-product-img approximation">
+											<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/5.webp" class="d-block w-100" loading="lazy" alt="...">
+											<div class="magnifier"></div>
+										</div>
+									</a>
+								</div>
+								<div class="carousel-item">
+									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-6');">
+										<div class="single-product-img approximation">
+											<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/6.webp" class="d-block w-100" loading="lazy" alt="...">
+											<div class="magnifier"></div>
+										</div>
+									</a>
+								</div>
+								<div class="carousel-item">
+									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-7');">
+										<div class="single-product-img approximation">
+											<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/7.webp" class="d-block w-100" loading="lazy" alt="...">
+											<div class="magnifier"></div>
+										</div>
+									</a>
+								</div>
+								<div class="carousel-item">
+									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-8');">
+										<div class="single-product-img approximation">
+											<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/8.webp" class="d-block w-100" loading="lazy" alt="...">
+											<div class="magnifier"></div>
+										</div>
+									</a>
+								</div>
+							</div>
 							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators532"  data-bs-slide="prev">
 								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 								<span class="visually-hidden">Previous</span>
