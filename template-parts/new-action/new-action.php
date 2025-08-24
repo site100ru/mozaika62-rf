@@ -38,7 +38,7 @@ $bg_color = $args['bg_color'] ?? 'bg-white';
 
 		<div class="row text-md-center">
 			<div class="col">
-				<a href="/акции" class="btn btn-lg btn-corporate-color-1">Смотреть все акции</a>
+				<a href="/акции" target="_blank" class="btn btn-lg btn-corporate-color-1">Смотреть все акции</a>
 			</div>
 		</div>
 	</div>
