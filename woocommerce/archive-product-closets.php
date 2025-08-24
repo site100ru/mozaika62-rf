@@ -649,7 +649,7 @@
 						<div class="carousel-item active">
 							<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-1');">
 								<div class="single-product-img approximation">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-1.jpg" class="d-block w-100" loading="lazy" alt="...">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-1.webp" class="d-block w-100" loading="lazy" alt="...">
 									<div class="magnifier"></div>
 								</div>
 							</a>
@@ -657,7 +657,7 @@
 						<div class="carousel-item">
 							<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-2');">
 								<div class="single-product-img approximation">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-2.jpeg" class="d-block w-100" loading="lazy" alt="...">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-2.webp" class="d-block w-100" loading="lazy" alt="...">
 									<div class="magnifier"></div>
 								</div>
 							</a>
@@ -665,7 +665,15 @@
 						<div class="carousel-item">
 							<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-3');">
 								<div class="single-product-img approximation">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-3.jpeg" class="d-block w-100" loading="lazy" alt="...">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-3.webp" class="d-block w-100" loading="lazy" alt="...">
+									<div class="magnifier"></div>
+								</div>
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-4');">
+								<div class="single-product-img approximation">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-4.webp" class="d-block w-100" loading="lazy" alt="...">
 									<div class="magnifier"></div>
 								</div>
 							</a>

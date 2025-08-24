@@ -788,88 +788,40 @@
 				<div class="row justify-content-between about_box">
 					<div class="col-12 col-lg-6 order-2 order-lg-first text-center">
 						<div id="carouselExampleIndicators532" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="999999999">
-							<div class="carousel-inner modal_box_paint" style="border-radius: 10px;">
-								<div class="carousel-item active works_magnifying_img" data-bs-interval="999999999">
-									<a onClick="galleryOn('gallery-2', 'img-1-0');">	
-										<div>
-											<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-1.jpg" style="width: 636px;" class="shadow rounded" alt="..." loading="lazy">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа" class="magnifying-glass">
+							<div class="carousel-inner rounded">
+								<div class="carousel-item active">
+									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-1');">
+										<div class="single-product-img approximation">
+											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-1.webp" class="d-block w-100" loading="lazy" alt="...">
+											<div class="magnifier"></div>
 										</div>
 									</a>
 								</div>
-								<div class="carousel-item" data-bs-interval="999999999">
-									<a onClick="galleryOn('gallery-2');">	
-										<div>
-											<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-2.jpeg" style="width: 636px;" class="shadow rounded" alt="..." loading="lazy">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа" class="magnifying-glass">
+								<div class="carousel-item">
+									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-2');">
+										<div class="single-product-img approximation">
+											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-2.webp" class="d-block w-100" loading="lazy" alt="...">
+											<div class="magnifier"></div>
 										</div>
 									</a>
 								</div>
-								<div class="carousel-item" data-bs-interval="999999999">
-									<a onClick="galleryOn('gallery-2');">	
-										<div>
-											<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-3.jpeg" style="width: 636px;" class="shadow rounded" alt="..." loading="lazy">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа" class="magnifying-glass">
+								<div class="carousel-item">
+									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-3');">
+										<div class="single-product-img approximation">
+											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-3.webp" class="d-block w-100" loading="lazy" alt="...">
+											<div class="magnifier"></div>
 										</div>
 									</a>
 								</div>
-								<div class="carousel-item" data-bs-interval="999999999">
-									<a onClick="galleryOn('gallery-2');">	
-										<div>
-											<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-4.jpeg" style="width: 636px;" class="shadow rounded" alt="..." loading="lazy">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа" class="magnifying-glass">
+								<div class="carousel-item">
+									<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-4');">
+										<div class="single-product-img approximation">
+											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-4.webp" class="d-block w-100" loading="lazy" alt="...">
+											<div class="magnifier"></div>
 										</div>
 									</a>
 								</div>
-								<div class="carousel-item" data-bs-interval="999999999">
-									<a onClick="galleryOn('gallery-2');">	
-										<div>
-											<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-5.jpg" style="width: 636px;" class="shadow rounded" alt="..." loading="lazy">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа" class="magnifying-glass">
-										</div>
-									</a>
-								</div>
-								<div class="carousel-item" data-bs-interval="999999999">
-									<a onClick="galleryOn('gallery-2');">	
-										<div>
-											<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-6.jpeg" style="width: 636px;" class="shadow rounded" alt="..." loading="lazy">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа" class="magnifying-glass">
-										</div>
-									</a>
-								</div>
-								<div class="carousel-item" data-bs-interval="999999999">
-									<a onClick="galleryOn('gallery-2');">	
-										<div>
-											<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-7.jpeg" style="width: 636px;" class="shadow rounded" alt="..." loading="lazy">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа" class="magnifying-glass">
-										</div>
-									</a>
-								</div>
-								<div class="carousel-item" data-bs-interval="999999999">
-									<a onClick="galleryOn('gallery-2');">	
-										<div>
-											<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-8.jpeg" style="width: 636px;" class="shadow rounded" alt="..." loading="lazy">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа" class="magnifying-glass">
-										</div>
-									</a>
-								</div>
-								<div class="carousel-item" data-bs-interval="999999999">
-									<a onClick="galleryOn('gallery-2');">	
-										<div>
-											<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-9.jpeg" style="width: 636px;" class="shadow rounded" alt="..." loading="lazy">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа" class="magnifying-glass">
-										</div>
-									</a>
-								</div>
-								<div class="carousel-item" data-bs-interval="999999999">
-									<a onClick="galleryOn('gallery-2');">	
-										<div>
-											<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-10.jpeg" style="width: 636px;" class="shadow rounded" alt="..." loading="lazy">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/magnifying-glass.svg" alt="Лупа" class="magnifying-glass">
-										</div>
-									</a>
-								</div>
-							</div>
+							</div>	
 							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators532"  data-bs-slide="prev">
 								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 								<span class="visually-hidden">Previous</span>
