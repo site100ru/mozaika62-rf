@@ -525,6 +525,10 @@
 			<button id="indAboutSectionGallery-2" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
 			<button id="indAboutSectionGallery-3" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			<button id="indAboutSectionGallery-4" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="3" aria-label="Slide 4"></button>
+			<button id="indAboutSectionGallery-5" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="4" aria-label="Slide 5"></button>
+			<button id="indAboutSectionGallery-6" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="5" aria-label="Slide 6"></button>
+			<button id="indAboutSectionGallery-7" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="6" aria-label="Slide 7"></button>
+			<button id="indAboutSectionGallery-8" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="7" aria-label="Slide 8"></button>
 		</div>
 		<div class="carousel-inner h-100">
 			<div id="imgAboutSectionGallery-1" class="carousel-item h-100">
