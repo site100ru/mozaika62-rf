@@ -688,33 +688,66 @@
 			<button id="indAboutSectionGallery-2" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
 			<button id="indAboutSectionGallery-3" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			<button id="indAboutSectionGallery-4" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="3" aria-label="Slide 4"></button>
+			<button id="indAboutSectionGallery-5" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="4" aria-label="Slide 5"></button>
+			<button id="indAboutSectionGallery-6" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="5" aria-label="Slide 6"></button>
+			<button id="indAboutSectionGallery-7" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="6" aria-label="Slide 7"></button>
+			<button id="indAboutSectionGallery-8" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="7" aria-label="Slide 8"></button>
+	
 		</div>
 		<div class="carousel-inner h-100">
 			<div id="imgAboutSectionGallery-1" class="carousel-item h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-1.webp"  class="img-fluid lazyload"  loading="lazy" style="max-width: 90vw; max-height: 90vh"  alt="..."/>
+						<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/1.webp" class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh"  alt="..."/>
 					</div>
 				</div>
 			</div>
 			<div id="imgAboutSectionGallery-2" class="carousel-item h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-2.webp"  class="img-fluid lazyload"  loading="lazy"  style="max-width: 90vw; max-height: 90vh"  alt="..."/>
+						<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/2.webp" class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh"  alt="..."/>
 					</div>
 				</div>
 			</div>
 			<div id="imgAboutSectionGallery-3" class="carousel-item h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-3.webp" class="img-fluid lazyload" loading="lazy"  style="max-width: 90vw; max-height: 90vh"  alt="..."/>
+						<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/3.webp" class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh"  alt="..."/>
 					</div>
 				</div>
 			</div>
 			<div id="imgAboutSectionGallery-4" class="carousel-item h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-section-slide-4.webp" class="img-fluid lazyload" loading="lazy"  style="max-width: 90vw; max-height: 90vh"  alt="..."/>
+						<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/4.webp" class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh"  alt="..."/>
+					</div>
+				</div>
+			</div>
+			<div id="imgAboutSectionGallery-5" class="carousel-item h-100">
+				<div class="row align-items-center h-100">
+					<div class="col text-center">
+						<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/5.webp" class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh"  alt="..."/>
+					</div>
+				</div>
+			</div>
+			<div id="imgAboutSectionGallery-6" class="carousel-item h-100">
+				<div class="row align-items-center h-100">
+					<div class="col text-center">
+						<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/6.webp" class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh"  alt="..."/>
+					</div>
+				</div>
+			</div>
+			<div id="imgAboutSectionGallery-7" class="carousel-item h-100">
+				<div class="row align-items-center h-100">
+					<div class="col text-center">
+						<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/7.webp" class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh"  alt="..."/>
+					</div>
+				</div>
+			</div>
+			<div id="imgAboutSectionGallery-8" class="carousel-item h-100">
+				<div class="row align-items-center h-100">
+					<div class="col text-center">
+						<img src="https://xn--62-6kca7ahoms.xn--p1ai/wp-content/uploads/2025/08/8.webp" class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh"  alt="..."/>
 					</div>
 				</div>
 			</div>
@@ -764,6 +797,22 @@
 			document.getElementById("imgAboutSectionGallery-4").classList.add("active");
 			document.getElementById("indAboutSectionGallery-4").classList.add("active");
 		}
+		if ( image == "imgAboutSectionGallery-5" ) {
+			document.getElementById("imgAboutSectionGallery-5").classList.add("active");
+			document.getElementById("indAboutSectionGallery-5").classList.add("active");
+		}
+		if ( image == "imgAboutSectionGallery-6" ) {
+			document.getElementById("imgAboutSectionGallery-6").classList.add("active");
+			document.getElementById("indAboutSectionGallery-6").classList.add("active");
+		}
+		if ( image == "imgAboutSectionGallery-7" ) {
+			document.getElementById("imgAboutSectionGallery-7").classList.add("active");
+			document.getElementById("indAboutSectionGallery-7").classList.add("active");
+		}
+		if ( image == "imgAboutSectionGallery-8" ) {
+			document.getElementById("imgAboutSectionGallery-8").classList.add("active");
+			document.getElementById("indAboutSectionGallery-8").classList.add("active");
+		}
 
 	} /* Ending gallery opening function */
 
@@ -785,6 +834,14 @@
 		document.getElementById("indAboutSectionGallery-3").classList.remove("active");
 		document.getElementById("imgAboutSectionGallery-4").classList.remove("active");
 		document.getElementById("indAboutSectionGallery-4").classList.remove("active");
+		document.getElementById("imgAboutSectionGallery-5").classList.remove("active");
+		document.getElementById("indAboutSectionGallery-5").classList.remove("active");
+		document.getElementById("imgAboutSectionGallery-6").classList.remove("active");
+		document.getElementById("indAboutSectionGallery-6").classList.remove("active");
+		document.getElementById("imgAboutSectionGallery-7").classList.remove("active");
+		document.getElementById("indAboutSectionGallery-7").classList.remove("active");
+		document.getElementById("imgAboutSectionGallery-8").classList.remove("active");
+		document.getElementById("indAboutSectionGallery-8").classList.remove("active");
 	}
 </script>
 <!-- /ABOUT SECTION GALLERY SCRIPT -->
