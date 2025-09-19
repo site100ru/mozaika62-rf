@@ -246,58 +246,17 @@
 
 
 <!-- Portfolio -->
-<section class="archive-portfolio-section archive-portfolio bg-white pb-5">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<nav class="breadcrumbs pt-4">
-					<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/breadcrumbs-icon.svg"></a> / 
-					<a href="/акции" style="text-decoration: none;">Акции</a>
-				</nav>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col text-md-center">
-				<h2>Наши акции</h2>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">	
-			</div>
-		</div>
-		<div class="row text-start">
-			<div class="col-md-4">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/actions/action-img-1.jpg" class="img-fluid rounded mb-3" alt="">
-				<p class="mb-5">При заказе кухни от 150 000 рублей в подарок мойка из искусственного камня  фирмы Granfest.</p>
-			</div>
-			<div class="col-md-4">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/actions/action-img-2.jpg" class="img-fluid rounded mb-3" alt="">
-				<p class="mb-5">При заказе кухни от 100 000 в подарок столешница из пластика 26 мм.</p>
-			</div>
-			<div class="col-md-4">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/actions/action-img-3.jpg" class="img-fluid rounded mb-3" alt="">
-				<p class="mb-5">Скидка 10% на повторный заказ из корпусной мебели.</p>
-			</div>
-			<!--div class="col-md-4 mb-5">
-				<a href="single-portfolio-product-page.html">
-					<div class="approximation rounded action-box">
-						<div class="blue_circle">
-							<h4>Бесплатная<br>доставка</h4>
-						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/img/action.jpg" class="img-fluid" alt="">
-					</div>
-				</a>
-			</div>
-			<div class="col-md-4 mb-5">
-				<a href="single-portfolio-product-page.html">
-					<div class="approximation rounded action-box">
-						<div class="blue_circle">
-							<h4>Бесплатная<br>доставка</h4>
-						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/img/action.jpg" class="img-fluid" alt="">
-					</div>
-				</a>
-			</div-->
-		</div>	
-	</div>
-</section>
+<?php
+get_template_part('template-parts/action/action', '', [
+    'show_button' => 'false',
+    'show_breadcrumbs' => 'true', 
+    'actions_count' => 'all',
+    'bg_color' => 'bg-white',
+    'section_title' => 'Наши акции',
+    'card_type' => 'simple',
+    'additional_classes' => 'justify-content-lg-center'
+]);
+?>
 <!-- /Portfolio -->
 		
 		

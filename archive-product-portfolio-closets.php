@@ -1,30 +1,19 @@
 <?php
 	
 	/**
-	 * Template Name: Страница архива кухонь
-	 * Template Post Type: page, product_cat
-	 **/
-
-	defined( 'ABSPATH' ) || exit;
-
-	get_header();
-
-	/**
-	 * Hook: woocommerce_before_main_content.
-	 *
-	 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-	 * @hooked woocommerce_breadcrumb - 20
-	 * @hooked WC_Structured_Data::generate_website_data() - 30
-	 */
-	do_action( 'woocommerce_before_main_content' );
-
+	 * Template Name: Шкафы на заказ
+	 * Template Post Type: page
+	**/
+	
+	include 'header.php';
+	
 ?>
 
-
+		
 <!-- Home section -->
 <div id="sp-home" class="scroll-points"></div>
 <section class="main-home-section">
-	<div class="parallax-home-section" style="min-height: 640px;"></div>
+	<div class="parallax-home-section parallax-home-section-portfolio" style="min-height: 640px;"></div>
 	<header class="d-none d-lg-block">
 		<!-- Header nav top -->
 		<nav class="header-nav-top navbar navbar-expand-lg navbar-light d-none d-lg-block py-0">
@@ -240,6 +229,7 @@
 						));
 					?>
 				</div>
+
 			</div>
 		</nav>
 		<!-- /Header nav bottom -->
@@ -247,8 +237,8 @@
 	<div class="container">
 		<div class="row align-items-center home-section-height">
 			<div class="col-xl-10 col-xxl-9">
-				<h1 class="home-title mb-3">Каталог кухонь по индивидуальным размерам на заказ от производителя</h1>
-				<p class="home-subtitle mb-4">Изготовим качественную кухню с учетом Ваших пожеланий и особенностей помещения. Рассчитаем стоимость за 15 минут.</p>
+				<h1 class="home-title mb-3">Шкафы по индивидуальным размерам на&#160;заказ от&#160;производителя</h1>
+				<p class="home-subtitle mb-4">Изготовим качественный шкаф по разумной цене, с учетом Ваших пожеланий и особенностей помещения. Рассчитаем стоимость за 15 минут.</p>
 				<a href="#" type="button" class="btn btn-lg btn-corporate-color-1" data-bs-toggle="modal" data-bs-target="#calculatePriceWithDownloadModal">Рассчитать стоимость</a>
 			</div>	
 		</div>
@@ -256,134 +246,299 @@
 </section>
 <!-- /Home section -->
 
-
-		
-<!-- ARCHIVE PRODUCT SECTION -->
-<section class="archive-product-section pb-5 bg-white">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<div class="breadcrumbs py-4">
-					<nav class="woocommerce-breadcrumb" itemprop="breadcrumb"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/breadcrumbs-icon.svg"></a> / Католог / Кухни</nav>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col header-text mb-5">
-				<h2>Каталог проектов для заказа кухни по Вашим размерам</h2>
-				<p style="font-family: 'HelveticaNeueCyr-Light';">Выбирайте из нашего каталога или присылайте Ваш проект</p>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
-				<div class="row text-start">
-					<div class="col-md-2 mb-5 mb-md-0" style="text-transform: uppercase; font-size: 14px;">
-						<?php dynamic_sidebar( 'wsidebar-1' ); ?>
-					</div>
-					<div class="col-md-10">
-						<div class="row">
-							<?php
-								if ( woocommerce_product_loop() ) {
-
-									/**
-									 * Hook: woocommerce_before_shop_loop.
-									 *
-									 * @hooked woocommerce_output_all_notices - 10
-									 * @hooked woocommerce_result_count - 20
-									 * @hooked woocommerce_catalog_ordering - 30
-									 */
-									//do_action( 'woocommerce_before_shop_loop' );
-									
-									// Нижее выводятся карточки категорий и подкатегорий
-									woocommerce_product_loop_start();
-								
-									
-									if ( wc_get_loop_prop( 'total' ) ) {
-										
-										
-										/* Выводим все товары кроме тех, у которых есть тег Портфолио */
-										/* С таким условием вывода неправильно работает пагинация
-										global $query_string;
-										// добавляем базовые параметры в массив $args
-										parse_str( $query_string, $args );
-										// добавляем/заменяем параметр post_type в массиве
-										$args['tax_query'] = array(           
-											array(
-												'taxonomy' => 'product_tag',
-												'field' => 'slug',
-												'terms' => 'portfolio',
-												'operator' => 'NOT IN'
-											)
-										);
-										query_posts( $args ); */
-										/* End Выводим все товары кроме тех, у которых есть тег Портфолио */
-										
-										
-										while ( have_posts() ) {
-											
-											the_post();
-											
-											/**
-											 * Hook: woocommerce_shop_loop.
-											 */
-											
-											do_action( 'woocommerce_shop_loop' );
-											
-											wc_get_template_part( 'content', 'kitchen' );
-											
-										}
-									}
-
-									woocommerce_product_loop_end();
-
-									/**
-									 * Hook: woocommerce_after_shop_loop.
-									 *
-									 * @hooked woocommerce_pagination - 10
-									 */
-									do_action( 'woocommerce_after_shop_loop' );
-								} else {
-									/**
-									 * Hook: woocommerce_no_products_found.
-									 *
-									 * @hooked wc_no_products_found - 10
-									 */
-									do_action( 'woocommerce_no_products_found' );
-								}
-
-								/**
-								 * Hook: woocommerce_after_main_content.
-								 *
-								 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-								 */
-								do_action( 'woocommerce_after_main_content' );
-
-								/**
-								 * Hook: woocommerce_sidebar.
-								 *
-								 * @hooked woocommerce_get_sidebar - 10
-								 */
-								//do_action( 'woocommerce_sidebar' );
-							?>	
-						</div><!-- row -->
-					</div><!-- col-md-9 -->
-				</div><!-- row -->
-			</div>
-		</div>
-	</div>
-</section>
-<!-- /ARCHIVE PRODUCT SECTION -->
-
-
 <?php
 get_template_part('template-parts/action/action', '', [
     'show_button' => 'true',
-    'show_breadcrumbs' => 'false', 
-    'actions_count' => '3',
-    'bg_color' => 'bg-light',
+    'show_breadcrumbs' => 'true', 
+    'actions_count' => '2',
+    'bg_color' => 'bg-white',
     'section_title' => 'Наши акции',
     'card_type' => 'modal',
-    'filter_category' => 'home'
+    'filter_category' => 'closets',
+    'breadcrumbs_title' => 'Шкафы на заказ'
 ]);
 ?>
 
+<!-- Archive portfolio section -->
+<section class="archive-portfolio-section-2 py-5" style="background-color: #F5F5F5;">
+	<div class="container">
+		<div class="row">
+			<div class="col text-md-center">
+				<h2>Наши работы</h2>
+				<p class="section-description archive-portfolio mb-3">Представляем с гордостью!</p>
+				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">	
+			</div>
+		</div>
+		<div class="row">
+			<?php	
+				$args = [
+					'post_type'      => 'portfolio',
+					'numberposts' 	 => 10,
+					'posts_per_page' => 10,
+					'portfolio-cat'  => '03-шкафы'
+				];
+				
+				$query = new WP_Query( $args );
+				$count = 1;
+				while( $query->have_posts() ) : $query->the_post(); ?>
+					<div class="col-md-6">
+						<div id="carouselExampleIndicators<?php echo $post->ID; ?>" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="999999999">
+							<div class="carousel-indicators" style="bottom: 5%;">
+								<?php
+									$count2 = 0;
+									for ( $i=1; $i<=9; $i++ ) {
+										if ( get_post_meta($post->ID, '_img-'.$i ) ) { ?>
+											<button type="button" data-bs-target="#carouselExampleIndicators<?php echo $post->ID; ?>" data-bs-slide-to="<?php echo $i-1; ?>" <?php if ( $i == 1 ) echo ' class="active"'; ?> aria-current="true" aria-label="Slide <?php echo $i; ?>"></button>
+										<?php $count2 = $count2 + 1; }
+									}
+								?>
+							</div>
+							<div class="carousel-inner rounded">
+								<?php
+									$count2 = 0;
+									for ( $i=1; $i<=9; $i++ ) {
+										if ( get_post_meta($post->ID, '_img-'.$i ) ) { ?>
+											<div class="carousel-item <?php if ( $i == 1 ) echo ' active'; ?>" data-bs-interval="999999999">
+												<a onClick="galleryOn('gallery-<?php echo $post->ID; ?>','img-<?php echo $post->ID; ?>-<?php echo $count2; ?>');">	
+													<div class="single-product-img approximation">
+														<img src="<?php echo get_post_meta($post->ID, '_img-'.$i )[0]; ?>" class="shadow rounded" alt="..." loading="lazy">
+														<div class="magnifier"></div>
+													</div>
+												</a>
+											</div>
+										<?php $count2 = $count2 + 1; }
+									}
+								?>	
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators<?php echo $post->ID; ?>"  data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators<?php echo $post->ID; ?>"  data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				
+				<?php $count = $count + 1; endwhile;
+
+				wp_reset_postdata();
+			?>
+			
+		</div>	
+		<div class="row text-md-center">
+			<div class="col">
+				<a href="https://мозаика62.рф/portfolio-cat/03-шкафы/" type="button" class="btn btn-lg btn-corporate-color-1">Показать еще</a>
+			</div>
+		</div>
+	</div>
+</section>				
+<!-- /Archive-portfolio section -->
+
+<!-- Gallery wrapper-->
+<div id="galleryWrapper" style="background: rgba(0,0,0,0.85); display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 9999;">
+	<?php
+		// параметры по умолчанию
+		$posts = get_posts( array(
+			'numberposts' => 999,
+			'orderby'     => 'date',
+			'order'       => 'DESC',
+			'post_type'   => 'portfolio',
+		) );
+		
+		foreach( $posts as $post ) { setup_postdata($post); ?>
+
+			<div id="gallery-<?php echo $post->ID; ?>" class="carousel slide" data-bs-ride="carousel" style="display: none; position: fixed; top: 0; height: 100%; width: 100%;">
+				<div class="carousel-indicators">
+					<?php
+						
+						/*
+						$images = get_post_gallery_images();
+						$count2 = 0;
+						foreach ( $images as $image ) {
+							
+							
+							if ( $count2 == 0 ) { ?>
+								
+								<button id="ind-<?php echo $post->ID; ?>-<?php echo $count2; ?>" type="button" data-bs-target="#gallery-<?php echo $post->ID; ?>" data-bs-slide-to="<?php echo $count2; ?>" aria-label="Slide 3"></button>
+								
+							<?php $count2 = $count2 + 1; } else { ?>
+								
+								<button id="ind-<?php echo $post->ID; ?>-<?php echo $count2; ?>" type="button" data-bs-target="#gallery-<?php echo $post->ID; ?>" data-bs-slide-to="<?php echo $count2; ?>" aria-label="Slide 3"></button>
+								
+							<?php $count2 = $count2 + 1; }
+						}*/
+						
+						
+						
+						
+						
+						
+						
+						$count2 = 0;
+						for ( $i=1; $i<=9; $i++ ) {
+							if ( get_post_meta($post->ID, '_img-'.$i ) ) {
+								if ( $count2 == 0 ) { ?>
+									
+									<button id="ind-<?php echo $post->ID; ?>-<?php echo $count2; ?>" type="button" data-bs-target="#gallery-<?php echo $post->ID; ?>" data-bs-slide-to="<?php echo $count2; ?>" aria-label="Slide 3"></button>
+									
+								<?php $count2 = $count2 + 1; } else { ?>
+									
+									<button id="ind-<?php echo $post->ID; ?>-<?php echo $count2; ?>" type="button" data-bs-target="#gallery-<?php echo $post->ID; ?>" data-bs-slide-to="<?php echo $count2; ?>" aria-label="Slide 3"></button>
+									
+								<?php $count2 = $count2 + 1; }
+							}
+						}
+					?>
+	
+				</div>
+				<div class="carousel-inner h-100">
+					<?php
+						
+						/*
+						$images = get_post_gallery_images();
+						$count2 = 0;
+						foreach ( $images as $image ) { ?>
+							<div id="img-<?php echo $post->ID; ?>-<?php echo $count2; ?>" class="carousel-item h-100">
+								<div class="row align-items-center h-100">
+									<div class="col text-center">
+										<img src="<?php echo $image; ?>" class="img-fluid" style="max-width: 75vw; max-height: 75vh;" alt="...">
+									</div>
+								</div>
+							</div>
+							
+						<?php  $count2 = $count2 + 1; } */
+						
+						
+						$count2 = 0;
+						for ( $i=1; $i<=9; $i++ ) {
+							if ( get_post_meta($post->ID, '_img-'.$i ) ) { ?>
+								<div id="img-<?php echo $post->ID; ?>-<?php echo $count2; ?>" class="carousel-item h-100 <?php // if ( $i == 1 ) echo ' active'; ?>" data-bs-interval="999999999">
+									<div class="row align-items-center h-100">
+										<div class="col text-center">
+											<img src="<?php echo get_post_meta($post->ID, '_img-'.$i )[0]; ?>" class="img-fluid" style="max-width: 90vw; max-height: 90vh;" alt="...">
+										</div>
+									</div>
+								</div>
+							<?php $count2 = $count2 + 1; }
+						}
+				
+					?>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#gallery-<?php echo $post->ID; ?>" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#gallery-<?php echo $post->ID; ?>" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		<?php } wp_reset_postdata();
+	?>
+
+	<!-- Кнопка закрытия галереи -->
+	<button type="button" onClick="closeGallery();" class="btn-close btn-close-white" style="position: fixed; top: 25px; right: 25px; z-index: 99999;" aria-label="Close"></button>
+</div>
+
+
+<script>
+	/* Функция открытия галереи */
+	function galleryOn(gal, img) {
+		var gallery = gal; // Получаем ID галереи
+		var image = img; // Получаем ID картинки
+		// Открываем обертку галереи
+		document.getElementById('galleryWrapper').style.display = 'block';
+		
+		// Проверяем какие данные передаются для открытия галереи и картинки
+		//alert(gallery+' '+image); 
+		
+		
+		<?php // Открываем галерею
+			$posts = get_posts( array(
+				'numberposts' => 999,
+				'orderby'     => 'date',
+				'order'       => 'DESC',
+				'post_type'   => 'portfolio',
+				//'post__not_in' => array( 42 ) // Выводим все категории портфолио кроме Разное
+			) );
+			
+			foreach( $posts as $post ) { setup_postdata($post);
+				
+				echo 'if ( gallery == "gallery-'.$post->ID.'" ) { document.getElementById("gallery-'.$post->ID.'").style.display = "block"; }';
+
+			} wp_reset_postdata();
+		?>
+		
+		
+		<?php // Открываем изображения
+			$posts = get_posts( array(
+				'numberposts' => 999,
+				'orderby'     => 'date',
+				'order'       => 'DESC',
+				'post_type'   => 'portfolio',
+				//'post__not_in' => array( 42 ) // Выводим все категории портфолио кроме Разное
+			) );
+			
+			foreach( $posts as $post ) {
+				setup_postdata( $post );
+				$count2 = 0;
+				for ( $i=1; $i<=9; $i++ ) {
+					echo 'if ( image == "img-'.$post->ID.'-'.$count2.'" ) { document.getElementById("img-'.$post->ID.'-'.$count2.'").classList.add("active"); document.getElementById("ind-'.$post->ID.'-'.$count2.'").classList.add("active"); } ';
+					$count2 = $count2 + 1;
+				}
+			} wp_reset_postdata();
+		?>
+	}
+	
+
+	// Кнопка закрытия галереи
+	function closeGallery() {
+		// Закрываем обертку галереи
+		document.getElementById('galleryWrapper').style.display = 'none';
+		
+		<?php // Открываем галерею
+			$posts = get_posts( array(
+				'numberposts' => 999,
+				'orderby'     => 'date',
+				'order'       => 'DESC',
+				'post_type'   => 'portfolio',
+				//'post__not_in' => array( 42 ) // Выводим все категории портфолио кроме Разное
+			) );
+			
+			foreach( $posts as $post ) { setup_postdata($post);
+				
+				echo 'document.getElementById("gallery-'.$post->ID.'").style.display = "none";';
+
+			} wp_reset_postdata();
+		?>
+		
+		<?php
+			// Закрываем изображения
+			$posts = get_posts( array(
+				'numberposts' => 999,
+				'orderby'     => 'date',
+				'order'       => 'DESC',
+				'post_type'   => 'portfolio',
+			) );
+			
+			foreach( $posts as $post ) {
+				setup_postdata( $post );
+				$count2 = 0;
+				for ( $i=1; $i<=9; $i++ ) {
+					echo 'document.getElementById("img-'.$post->ID.'-'.$count2.'").classList.remove("active"); document.getElementById("ind-'.$post->ID.'-'.$count2.'").classList.remove("active");';
+					
+					$count2 = $count2 + 1;
+				}
+			}
+			wp_reset_postdata();
+		?>
+	}
+</script>
+
+
+123
 
 <!-- Gradient order section -->
 <section class="gradient-order-section bg-light" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.jpg);">
@@ -391,7 +546,7 @@ get_template_part('template-parts/action/action', '', [
 		<div class="row justify-content-center">
 			<div class="col-md-5 text-md-end">
 				<h2 class="text-light">Рассчитаем стоимость за 15 минут</h2>
-				<p class="section-description archive-portfolio text-light mb-3">Хотите узнать стоимость качественной кухни с учетом всех Ваших пожеланий и особенностей помещения? Это бесплатно и ни к чему Вас не обязывает!</p>
+				<p class="section-description archive-portfolio text-light mb-3">Хотите узнать стоимость качественного шкафа с учетом всех Ваших пожеланий и особенностей помещения? Это бесплатно и ни к чему Вас не обязывает!</p>
 				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 				<br>
 				<a href="#" type="button" class="btn btn-lg btn-corporate-color-1" data-bs-toggle="modal" data-bs-target="#calculatePriceWithDownloadModal">Рассчитать стоимость</a>
@@ -421,20 +576,18 @@ get_template_part('template-parts/action/action', '', [
 <!-- End gradient order section -->
 
 
-
-<!-- ABOUT SECTION -->
+<!-- About section -->
 <section class="about-section bg-light py-5">
-	<div class="container">
+	<div class="container">	
 		<div class="row">
 			<div class="col text-md-center">
 				<h2>О нас</h2>
 				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 			</div>
 		</div>
-		<!-- Слайдер Bootstrap -->
-		<div class="row justify-content-between about_box">
+
+		<div class="row justify-content-between">		
 			<div class="col-12 col-lg-6 order-2 order-lg-first text-center">
-				
 				<div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner rounded">
 						<div class="carousel-item active">
@@ -513,16 +666,16 @@ get_template_part('template-parts/action/action', '', [
 					</button>
 				</div>
 			</div>
-			<!-- Описание -->
-			<div class="col-12 col-lg-5 offset-lg-1 order-1 order-lg-last mb-lg-0 description_about">
-				<p class="text-start">Студия кухни «Мозаика» поможет каждому клиенту при выборе мебели по индивидуальным размерам, бесплатный дизайн-проект любой сложности, большой выбор мебели по цветовой гамме и ценовой категории.</p>
-				<p class="text-start">Обширный ассортимент фасадного материала такие как: Fundermax, Альтернатив, AGT, Feelwood, TSS. Для каждого клиента подбираем по его желаниям и возможностям европейскую фурнитуру, таких фирм как: Blum, Boyard, Hettich, VIBO и др. А также у нас можно укомплектовать мебель кухонной техникой известных фирм: Эликор, Midea, Куперсберг и др.</p>
-				<p class="text-start">Нашими партнерами являются крупные фабрики «Ульяновск», «CUCINA», г. Пенза «Лев Мебель», «Мебель стиль».</p>
+			<div class="col-12 col-lg-5 offset-lg-1 order-1 order-lg-last mb-5 mb-lg-0 ps-lg-5">
+				<p class="text-start">Студия шкафа «Мозаика» поможет каждому клиенту при выборе мебели по индивидуальным размерам, бесплатный дизайн-проект любой сложности, большой выбор мебели по цветовой гамме и ценовой категории.</p>
+				<p class="text-start">Обширный ассортимент фасадного материала такие как: Fundermax, Альтернатив, AGT, Feelwood, TSS. Для каждого клиента подбираем по его желаниям и возможностям европейскую фурнитуру, таких фирм как: Blum, Boyard, Hettich, VIBO и др. А также у нас можно укомплектоать мебель кухонной техникой известных фирм: Эликор, Midea, Куперсберг и др.</p>
+				<p class="text-start mb-5">Нашими партнерами являются крупные фабрики «Ульяновск», «CUCINA», г. Пенза «Лев Мебель», «Мебель стиль».						</p>
+				<!-- <a href="#" type="button" class="btn btn-lg btn-corporate-color-1">Узнать больше</a> -->
 			</div>
 		</div>
-	</div>
-</section>
-<!-- /ABOUT SECTION -->
+	</div>	
+</section>		
+<!-- /About section -->
 
 <!-- /ABOUT SECTION GALLERY -->
 <div  id="aboutSectionGalleryWrapper">
@@ -536,6 +689,7 @@ get_template_part('template-parts/action/action', '', [
 			<button id="indAboutSectionGallery-6" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="5" aria-label="Slide 6"></button>
 			<button id="indAboutSectionGallery-7" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="6" aria-label="Slide 7"></button>
 			<button id="indAboutSectionGallery-8" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="7" aria-label="Slide 8"></button>
+	
 		</div>
 		<div class="carousel-inner h-100">
 			<div id="imgAboutSectionGallery-1" class="carousel-item h-100">
@@ -609,7 +763,7 @@ get_template_part('template-parts/action/action', '', [
 	<button  type="button"  onClick="aboutSectionGalleryClose();" class="btn-close btn-close-white" style="position: fixed; top: 25px; right: 25px; z-index: 99999" aria-label="Close"></button>
 </div>
 <!-- /ABOUT SECTION GALLERY -->
-
+ 
 <!-- /ABOUT SECTION GALLERY SCRIPT -->
 <script>
   /* Gallery opening function */
@@ -690,7 +844,6 @@ get_template_part('template-parts/action/action', '', [
 <!-- /ABOUT SECTION GALLERY SCRIPT -->
 
 
-
 <!-- Advantage section -->
 <section class="advantage bg-white py-5">
 	<div class="container">
@@ -741,7 +894,7 @@ get_template_part('template-parts/action/action', '', [
 							</div>
 							<div class="col-9 col-md-10">
 								<h3 class="advantage-title text-start">Скидка +10% при повторном обращении</h3>
-								<p class="text-start">Мы изготавливаем любую корпусную мебель, а значит Вы можете заказать у нас кухню, шкаф, прихожую или другую мебель в квартиру в едином стиле по выгодной цене.</p>
+								<p class="text-start">Мы изготавливаем любую корпусную мебель, а значит Вы можете заказать у нас шкаф, кухню, прихожую или другую мебель в квартиру в едином стиле по выгодной цене.</p>
 							</div>	
 						</div>
 					</div>
@@ -810,7 +963,7 @@ get_template_part('template-parts/action/action', '', [
 						<div class="row pt-3">
 							<div class="col text-start">
 								<h3>Заключение договора</h3>
-								<p class="mb-0">Если Вас все устраивает, мы приезжаем к Вам на замер, утверждаем сроки, материалы, заключаем договор. Вы вносите предоплату и кухня поступает в производство.</p>
+								<p class="mb-0">Если Вас все устраивает, мы приезжаем к Вам на замер, утверждаем сроки, материалы, заключаем договор. Вы вносите предоплату и шкаф поступает в производство.</p>
 							</div>
 						</div>
 					</div>
@@ -826,7 +979,7 @@ get_template_part('template-parts/action/action', '', [
 						<div class="row pt-3">
 							<div class="col text-start">
 								<h3>Доставка и установка</h3>
-								<p class="mb-0">После окончания производства доставляем и устанавливаем кухню в заранее оговоренные дату и время. После установки производим окончательные расчеты.</p>
+								<p class="mb-0">После окончания производства доставляем и устанавливаем шкаф в заранее оговоренные дату и время. После установки производим окончательные расчеты.</p>
 							</div>
 						</div>
 					</div>
@@ -836,7 +989,7 @@ get_template_part('template-parts/action/action', '', [
 	</div>
 </section>
 <!-- /Process -->
-
+		
 
 
 <!-- Frequent questions -->
@@ -850,7 +1003,7 @@ get_template_part('template-parts/action/action', '', [
 					<div class="accordion-item mb-3">
 						<h3 class="accordion-header" id="heading-1">
 							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-								Сколько времени изготавливается кухня?
+								Сколько времени изготавливается шкаф?
 							</button>
 						</h3>
 						<div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#accordionExample">
@@ -891,13 +1044,13 @@ get_template_part('template-parts/action/action', '', [
 					<div class="accordion-item mb-3">
 						<h3 class="accordion-header" id="heading-4">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-								Если эскиз кухни уже есть, можно ли по нему получить расчет?
+								Если эскиз шкафа уже есть, можно ли по нему получить расчет?
 							</button>
 						</h3>
 						<div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								<p>Конечно!</p>
-								<p class="mb-0">Направьте эскиз с Вашей кухней (или другой корпусной мебелью) на нашу электронную почту: <a style="text-decoration: none;" target="_blank" href="mailto:mozaika62@bk.ru" itemprop="email"><b>mozaika62@bk.ru</b></a>, дополнительно указав в письме материал фасадов, комплектацию, габариты мебели и мы предоставим расчет в ответном письме.</p>
+								<p class="mb-0">Направьте эскиз с Вашего шкафа (или другой корпусной мебелью) на нашу электронную почту: <a style="text-decoration: none;" target="_blank" href="mailto:mozaika62@bk.ru" itemprop="email"><b>mozaika62@bk.ru</b></a>, дополнительно указав в письме материал фасадов, комплектацию, габариты мебели и мы предоставим расчет в ответном письме.</p>
 							</div>
 						</div>
 					</div>
@@ -916,12 +1069,12 @@ get_template_part('template-parts/action/action', '', [
 					<div class="accordion-item mb-3">
 						<h3 class="accordion-header" id="heading-6">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
-								Какая модель кухни самая популярная?
+								Какая модель шкафа самая популярная?
 							</button>
 						</h3>
 						<div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="heading-6" data-bs-parent="#accordionExample">
 							<div class="accordion-body pb-2">
-								<p class="mb-0">Предпочтения наших клиентов настолько разнообразны, что выделить какую-либо модель достаточно сложно. При разработке проекта мы учитываем все Ваши пожелания, а благодаря широчайшей коллекции фасадов и столешниц, могут быть сотни разных вариаций. В одном можем уверить Вас точно: какая бы ни была кухня от нашей фабрики по стилю или конфигурации, она идеально впишется в ваш интерьер и прослужит долгие годы.</p>
+								<p class="mb-0">Предпочтения наших клиентов настолько разнообразны, что выделить какую-либо модель достаточно сложно. При разработке проекта мы учитываем все Ваши пожелания, а благодаря широчайшей коллекции фасадов и столешниц, могут быть сотни разных вариаций. В одном можем уверить Вас точно: какой бы ни был шкаф от нашей фабрики по стилю или конфигурации, она идеально впишется в ваш интерьер и прослужит долгие годы.</p>
 							</div>
 						</div>
 					</div>
@@ -933,13 +1086,14 @@ get_template_part('template-parts/action/action', '', [
 <!-- /Frequent questions -->
 
 
+		
 <!-- Gradient order section -->
 <section class="gradient-order-section bg-white" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/sec-bg2.jpg);">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-5 text-md-end">
 				<h2>Рассчитаем стоимость за 15 минут</h2>
-				<p class="section-description archive-portfolio mb-3">Хотите узнать стоимость качественной кухни с учетом всех Ваших пожеланий и особенностей помещения? Это бесплатно и ни к чему Вас не обязывает!</p>
+				<p class="section-description archive-portfolio mb-3">Хотите узнать стоимость качественного шкафа с учетом всех Ваших пожеланий и особенностей помещения? Это бесплатно и ни к чему Вас не обязывает!</p>
 				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">
 				<br>
 				<a href="#" type="button" class="btn btn-lg btn-corporate-color-1" data-bs-toggle="modal" data-bs-target="#calculatePriceWithDownloadModal">Рассчитать стоимость</a>
@@ -968,6 +1122,5 @@ get_template_part('template-parts/action/action', '', [
 </section>
 <!-- End gradient order section -->
 
-
-
-<?php get_footer( '1' ); ?>
+		
+<?php include 'footer-1.php'; ?>

@@ -247,21 +247,17 @@
 <!-- /Home section -->
 
 <!-- Archive portfolio section -->
-<section class="archive-portfolio-section-2 pt-5 bg-white">
-	<div class="container">
-		<div class="row">
-				<div class="col">
-						<nav class="breadcrumbs pb-0">
-								<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/breadcrumbs-icon.svg"></a> / 
-								Услуги / 
-								Кухни на заказ
-						</nav>
-				</div>
-		</div>
-	</div>
-</section>
-
-<?php get_template_part('template-parts/new-action/new-action'); ?>
+<?php
+get_template_part('template-parts/action/action', '', [
+    'show_button' => 'true',
+    'show_breadcrumbs' => 'false', 
+    'actions_count' => '3',
+    'bg_color' => 'bg-light',
+    'section_title' => 'Наши акции',
+    'card_type' => 'modal',
+    'filter_category' => 'home'
+]);
+?>
 
 
 <!-- Archive portfolio section -->

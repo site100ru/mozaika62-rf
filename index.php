@@ -303,6 +303,17 @@
 <!-- /Action -->
 
 
+<?php
+get_template_part('template-parts/action/action', '', [
+    'show_button' => 'true',
+    'show_breadcrumbs' => 'false', 
+    'actions_count' => '3',
+    'bg_color' => 'bg-light',
+    'section_title' => 'Наши акции',
+    'card_type' => 'modal',
+    'filter_category' => 'home'
+]);
+?>
 
 <!-- ABOUT SECTION -->
 <section class="about-section bg-light py-5">

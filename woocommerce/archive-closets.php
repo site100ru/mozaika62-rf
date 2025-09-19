@@ -377,6 +377,18 @@
 <!-- /ARCHIVE PRODUCT SECTION -->
 
 
+<?php
+get_template_part('template-parts/action/action', '', [
+    'show_button' => 'true',
+    'show_breadcrumbs' => 'true', 
+    'actions_count' => 'all',
+    'bg_color' => 'bg-white',
+    'section_title' => 'Наши акции',
+    'card_type' => 'simple',
+    'additional_classes' => 'justify-content-lg-center'
+]);
+?>
+
 
 <!-- Gradient order section -->
 <section class="gradient-order-section bg-light" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.jpg);">
