@@ -243,7 +243,7 @@ function needs_tablet_row_break($total, $index)
         <?php if ($show_button === 'true'): ?>
             <div class="row">
                 <div class="col text-md-center">
-                    <a href="/furniture/akcii/" class="btn btn-lg btn-corporate-color-1 mt-4">Показать все акции</a>
+                    <a href="/наши-работы/" class="btn btn-lg btn-corporate-color-1 mt-4">Показать все акции</a>
                 </div>
             </div>
         <?php endif; ?>
