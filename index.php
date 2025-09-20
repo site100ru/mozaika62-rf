@@ -585,7 +585,7 @@ get_template_part('template-parts/action/action', '', [
 
 
 <!-- Advantage section -->
-<section class="advantage bg-white py-5">
+<section class="advantage bg-light py-5">
 	<div class="container">
 		<div class="row">
 			<div class="col align-items-center text-md-center">
