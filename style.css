@@ -15,7 +15,7 @@ Version: 1.0
 
 /*** ARCHIVE PRODUCT SECTION ***/
 .woocommerce-widget-layered-nav-list__item.wc-layered-nav-term a {
-	font-family: HelveticaNeueCyr-Medium;
+	font-family: HelveticaNeueCyr-Light;
 	font-size: 14px;
 	width: auto;
 	color: var(--dark-color);
