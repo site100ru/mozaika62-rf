@@ -380,12 +380,13 @@
 <?php
 get_template_part('template-parts/action/action', '', [
     'show_button' => 'true',
-    'show_breadcrumbs' => 'true', 
-    'actions_count' => 'all',
+    'show_breadcrumbs' => 'false', 
+    'actions_count' => '2',
     'bg_color' => 'bg-white',
     'section_title' => 'Наши акции',
     'card_type' => 'modal',
-    'additional_classes' => 'justify-content-lg-center'
+    'filter_category' => 'closets',
+    'breadcrumbs_title' => 'Шкафы на заказ'
 ]);
 ?>
 

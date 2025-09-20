@@ -249,7 +249,7 @@
 <?php
 get_template_part('template-parts/action/action', '', [
     'show_button' => 'true',
-    'show_breadcrumbs' => 'true', 
+    'show_breadcrumbs' => 'false', 
     'actions_count' => '2',
     'bg_color' => 'bg-white',
     'section_title' => 'Наши акции',
