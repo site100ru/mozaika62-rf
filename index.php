@@ -316,7 +316,7 @@ get_template_part('template-parts/action/action', '', [
 ?>
 
 <!-- ABOUT SECTION -->
-<section class="about-section bg-light py-5">
+<section class="about-section bg-white py-5">
 	<div class="container">
 		<div class="row">
 			<div class="col text-md-center">
@@ -418,7 +418,7 @@ get_template_part('template-parts/action/action', '', [
 <!-- /ABOUT SECTION -->
 
 <!-- /ABOUT SECTION GALLERY -->
-<div  id="aboutSectionGalleryWrapper">
+<div  id="aboutSectionGalleryWrapper" class="bg-light">
 	<div id="aboutSectionGallery"  class="carousel slide" data-bs-ride="false" data-bs-interval="false"  style="display: none;  position: fixed;  top: 0;  height: 100%;  width: 100%;">
 		<div class="carousel-indicators">
 			<button id="indAboutSectionGallery-1" type="button" data-bs-target="#aboutSectionGallery" data-bs-slide-to="0" aria-label="Slide 1"></button>
