@@ -113,7 +113,7 @@ h6,
 }
 
 .cat-item a {
-	font-family: HelveticaNeueCyr-Medium;
+	font-family: HelveticaNeueCyr-Light;
 	color: var(--dark-color);
 	text-decoration: none;
 }
