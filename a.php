@@ -14,7 +14,7 @@
 
 // ===== ДЛЯ ГЛАВНОЙ СТРАНИЦЫ =====
 // Один блок акций - оптимальный вариант
-get_template_part('template-parts/actions-section', '', [
+get_template_part('template-parts/action/action', '', [
     'show_button' => 'true',
     'show_breadcrumbs' => 'false', 
     'actions_count' => '3',
@@ -25,7 +25,7 @@ get_template_part('template-parts/actions-section', '', [
 ]);
 
 // // ===== ДЛЯ СТРАНИЦЫ КАТЕГОРИИ (например, кухни) =====
-// get_template_part('template-parts/actions-section', '', [
+// get_template_part('template-parts/action/action', '', [
 //     'show_button' => 'true',
 //     'show_breadcrumbs' => 'false',
 //     'actions_count' => '4',
@@ -36,7 +36,7 @@ get_template_part('template-parts/actions-section', '', [
 // ]);
 
 // // ===== ДЛЯ СТРАНИЦЫ АКЦИЙ =====
-// get_template_part('template-parts/actions-section', '', [
+// get_template_part('template-parts/action/action', '', [
 //     'show_button' => 'false',
 //     'show_breadcrumbs' => 'true',
 //     'actions_count' => 'all',
@@ -48,7 +48,7 @@ get_template_part('template-parts/actions-section', '', [
 
 // // ===== ЕСЛИ НУЖНЫ ДВА БЛОКА С МОДАЛЬНЫМИ ОКНАМИ =====
 // // Блок 1 - основные акции
-// get_template_part('template-parts/actions-section', '', [
+// get_template_part('template-parts/action/action', '', [
 //     'show_button' => 'true',
 //     'show_breadcrumbs' => 'false',
 //     'actions_count' => '3',
@@ -58,7 +58,7 @@ get_template_part('template-parts/actions-section', '', [
 // ]);
 
 // // Блок 2 - акции для кухонь  
-// get_template_part('template-parts/actions-section', '', [
+// get_template_part('template-parts/action/action', '', [
 //     'show_button' => 'false',
 //     'show_breadcrumbs' => 'false',
 //     'actions_count' => '2',
@@ -69,7 +69,7 @@ get_template_part('template-parts/actions-section', '', [
 // ]);
 
 // // ===== В САЙДБАРЕ =====
-// get_template_part('template-parts/actions-section', '', [
+// get_template_part('template-parts/action/action', '', [
 //     'show_button' => 'true',
 //     'show_breadcrumbs' => 'false',
 //     'actions_count' => '2',
@@ -82,7 +82,7 @@ get_template_part('template-parts/actions-section', '', [
 // // ===== ВАРИАНТЫ ФИЛЬТРАЦИИ =====
 
 // // Только для спален
-// get_template_part('template-parts/actions-section', '', [
+// get_template_part('template-parts/action/action', '', [
 //     'actions_count' => '3',
 //     'card_type' => 'simple',
 //     'section_title' => 'Акции для спальни',
@@ -90,7 +90,7 @@ get_template_part('template-parts/actions-section', '', [
 // ]);
 
 // // Для нескольких категорий
-// get_template_part('template-parts/actions-section', '', [
+// get_template_part('template-parts/action/action', '', [
 //     'actions_count' => '4',
 //     'card_type' => 'simple',
 //     'section_title' => 'Мебель для дома',
