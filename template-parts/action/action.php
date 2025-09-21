@@ -1,4 +1,20 @@
 <?php
+/**
+ * Вызывается как get_template_part 'template-parts/action/action' с передачей параметров 
+ * Примеры в файле a.php
+ * 
+ * ПАРАМЕТРЫ :
+ * - show_button: показать/скрыть кнопку "Показать все акции" ('true'/'false')
+ * - show_breadcrumbs: показать/скрыть хлебные крошки ('true'/'false')  
+ * - breadcrumbs_title: текст для хлебных крошек
+ * - actions_count: количество выводимых акций (число или 'all')
+ * - bg_color: CSS класс фона секции ('bg-white', 'bg-light' и т.д.)
+ * - section_title: заголовок секции
+ * - card_type: 'modal' (с модальными окнами) или 'simple' (простые с описанием)
+ * - filter_category: фильтр по категориям ('kitchen', 'closets', 'kitchen,closets')
+ * 
+ * АДАПТИВНОСТЬ в функции get_column_classes
+ */
 // Массив с данными акций
 $actions_data = [
     [
@@ -87,7 +103,11 @@ $modal_id = isset($args['modal_id'])
 // Определение количества и набора акций для вывода
 $filtered_actions = $actions_data;
 
-// Фильтрация по категориям если указана
+/**
+ * БЛОК ФИЛЬТРАЦИИ ПО КАТЕГОРИЯМ
+ * Если указан параметр filter_category, фильтрует массив акций
+ * оставляя только те, которые относятся к указанным категориям
+ */
 if (!empty($filter_category)) {
     $filter_categories = array_map('trim', explode(',', $filter_category)); // Разбиваем на массив и убираем пробелы
 
@@ -99,16 +119,38 @@ if (!empty($filter_category)) {
     });
 }
 
+/**
+ * ОПРЕДЕЛЕНИЕ КОЛИЧЕСТВА ОТОБРАЖАЕМЫХ АКЦИЙ
+ * Если actions_count = 'all' - показываем все отфильтованные акции
+ * Если число - берем первые N акций из отфильтрованного массива
+ */
 if ($actions_count === 'all') {
     $displayed_actions = $filtered_actions;
 } else {
     $count = intval($actions_count);
-    $displayed_actions = array_slice($filtered_actions, 0, $count); // Последние N акций
+    $displayed_actions = array_slice($filtered_actions, 0, $count); // первые N акций
 }
 
 $total_actions = count($displayed_actions);
 
-// Функция для определения классов колонок в зависимости от количества
+
+/**
+ * ФУНКЦИЯ ОПРЕДЕЛЕНИЯ КЛАССОВ BOOTSTRAP КОЛОНОК
+ * 
+ * Логика работы:
+ * - 1 карточка: центрируется в контейнере (6 колонок + offset)
+ * - 2 карточки: по 6 колонок каждая (2 в ряд на десктопе)
+ * - 3 карточки: по 4 колонки каждая (3 в ряд на десктопе)
+ * - 4 карточки: по 6 колонок каждая (2 в ряд, всего 2 ряда)
+ * - 5 карточек: первые 2 по 6 колонок, остальные 3 по 4 колонки (макет 2+3)
+ * - 6 карточек: все по 4 колонки (2 ряда по 3 карточки)
+ * - 7 карточек: первые 4 по 6 колонок (2 ряда по 2), остальные 3 по 4 колонки
+ * - 8 карточек: первые 2 по 6 колонок, следующие 6 по 4 колонки
+ * - Больше 8: все по 4 колонки
+ * 
+ * На планшетах (md): все карточки по 6 колонок (2 в ряд)
+ * На мобильных: все карточки по 12 колонок (1 в ряд)
+ */
 function get_column_classes($total, $index)
 {
     switch ($total) {
@@ -122,9 +164,9 @@ function get_column_classes($total, $index)
             return 'col-lg-6 col-md-6 mb-3'; // 4 карточки - две строки по 6 колонок
         case 5:
             if ($index < 2) {
-                return 'col-lg-4 col-md-6 mb-3'; // Первые 3: десктоп по 4 колонки, планшет по 6 колонок
+                return 'col-lg-6 col-md-6 mb-3'; // Первые 2: по 6 колонок
             } else {
-                return 'col-lg-4 col-md-6 mb-3 '; // Остальные 2 по 6 колонок
+                return 'col-lg-4 col-md-6 mb-3'; // Остальные 3: по 4 колонки
             }
         case 6:
             return 'col-lg-4 col-md-6 mb-3'; // 6 карточек: десктоп 2 ряда по 3 карточки (4 колонки), планшет по 6 колонок
@@ -145,31 +187,6 @@ function get_column_classes($total, $index)
         default:
             return 'col-lg-4 col-md-6 mb-3'; // По умолчанию: десктоп по 4 колонки, планшет по 6 колонок
     }
-}
-
-// Функция для определения необходимости закрытия строки
-function needs_row_break($total, $index)
-{
-    switch ($total) {
-        case 4:
-            return ($index + 1) % 2 === 0 && $index + 1 !== $total; // После каждых 2 карточек, кроме последней пары
-        case 5:
-            return $index === 2; // После первых 3 карточек
-        case 7:
-            return $index === 3; // После первых 4 карточек (для десктопа)
-        case 8:
-            return $index === 1 || $index === 4; // После 2-й и 5-й карточек (для десктопа)
-        default:
-            return false;
-    }
-}
-
-// Функция для определения необходимости закрытия строки на планшетах
-function needs_tablet_row_break($total, $index)
-{
-    // На планшетах все карточки по 6 колонок (по 2 в строку)
-    // Нужен разрыв строки после каждой второй карточки
-    return ($index + 1) % 2 === 0 && $index + 1 !== $total;
 }
 ?>
 
@@ -200,7 +217,6 @@ function needs_tablet_row_break($total, $index)
         <div class="row text-start <?php echo esc_attr($additional_classes); ?>">
             <?php foreach ($displayed_actions as $index => $action): ?>
                 <div class="<?php echo get_column_classes($total_actions, $index); ?>">
-
                     <?php if ($card_type === 'modal'): ?>
                         <!-- Карточка с модальным окном -->
                         <a href="#" class="portfolio-item-link" data-bs-toggle="modal"
@@ -210,9 +226,7 @@ function needs_tablet_row_break($total, $index)
                                 alt="<?php echo esc_attr($action['alt_text']); ?>"
                                 data-category="<?php echo esc_attr($action['category']); ?>">
                         </a>
-
                         <p class="mb-5 d-none"><?php echo esc_html($action['description']); ?></p>
-
                     <?php else: ?>
                         <!-- Простая карточка с описанием -->
                         <img src="<?php echo esc_url($action['image_path']); ?>" class="img-fluid rounded mb-3 w-100"
@@ -220,23 +234,7 @@ function needs_tablet_row_break($total, $index)
                             data-category="<?php echo esc_attr($action['category']); ?>">
                         <p class="mb-5 d-none"><?php echo esc_html($action['description']); ?></p>
                     <?php endif; ?>
-
                 </div>
-
-                <?php
-                // Разрыв строки для десктопа
-                if (needs_row_break($total_actions, $index)): ?>
-                    <!-- Разрыв для десктопа -->
-                    <div class="w-100 d-none d-lg-block"></div>
-                <?php endif; ?>
-
-                <?php
-                // Разрыв строки для планшетов (каждые 2 карточки)
-                if (needs_tablet_row_break($total_actions, $index)): ?>
-                    <!-- Разрыв для планшетов -->
-                    <div class="w-100 d-lg-none d-md-block"></div>
-                <?php endif; ?>
-
             <?php endforeach; ?>
         </div>
 
