@@ -253,7 +253,7 @@ get_template_part('template-parts/action/action', '', [
     'actions_count' => 'all',
     'bg_color' => 'bg-white',
     'section_title' => 'Наши акции',
-    'card_type' => 'simple',
+    'card_type' => 'modal',
     'additional_classes' => 'justify-content-lg-center'
 ]);
 ?>
