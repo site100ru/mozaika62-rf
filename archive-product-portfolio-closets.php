@@ -533,7 +533,7 @@ get_template_part('template-parts/action/action', '', [
     'bg_color' => 'bg-light',
     'section_title' => 'Наши акции',
     'card_type' => 'modal',
-    'filter_category' => 'closets',
+    'filter_category' => 'home',
     'breadcrumbs_title' => 'Шкафы на заказ'
 ]);
 ?>
