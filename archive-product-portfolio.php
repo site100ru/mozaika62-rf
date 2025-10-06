@@ -248,7 +248,7 @@
 
 
 <!-- Archive portfolio section -->
-<section class="archive-portfolio-section-2 py-5" style="background-color: #F5F5F5;">
+<section class="archive-portfolio-section-2 py-5 bg-white">
 	<div class="container">
         <div class="row">
             <div class="col">
@@ -548,7 +548,7 @@ get_template_part('template-parts/action/action', '', [
 ?>
 
 <!-- Gradient order section -->
-<section class="gradient-order-section bg-light" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.jpg);">
+<section class="gradient-order-section bg-white" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.jpg);">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-5 text-md-end">
