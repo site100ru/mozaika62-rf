@@ -28,7 +28,7 @@
 				?>
 				<!--ul class="nav justify-content-center">
 					<li class="nav-item">
-						<a class="nav-link active" href="index.html" style="transition: .25s;">Главная</a>
+						<a class="nav-link active" href="/" style="transition: .25s;">Главная</a>
 					</li>
 					<li class="nav-item d-none d-lg-inline">
 						<span class="nav-link px-0">
@@ -38,17 +38,17 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle pe-0" aria-current="page" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Каталог</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="archive-product-page.html">Кухни</a></li>
+							<li><a class="dropdown-item" href="/кухни-на-заказ">Кухни</a></li>
 							<li><a class="dropdown-item" href="#">Шкафы</a></li>
 							<li><a class="dropdown-item" href="#">Прихожие</a></li>
 							<li><a class="dropdown-item" href="#">Обеденные группы</a></li>
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle pe-0" href="archive-product-portfolio.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
+						<a class="nav-link dropdown-toggle pe-0" href="/кухни-на-заказ" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
 						<ul class="dropdown-menu dropdown-menu-light ms-2 py-1" style="border-radius: 5px;" aria-labelledby="navbarDarkDropdownMenuLink">
-							<li><a class="dropdown-item nav-item" href="archive-product-portfolio.html">Кухни на заказ</a></li>
-							<li><a class="dropdown-item nav-item" href="archive-product-portfolio1.html">Шкафы на заказ</a></li>
+							<li><a class="dropdown-item nav-item" href="/кухни-на-заказ">Кухни на заказ</a></li>
+							<li><a class="dropdown-item nav-item" href="/шкафы-на-заказ">Шкафы на заказ</a></li>
 							<li><a class="dropdown-item nav-item" href="archive-product-portfolio2.html">Прихожие на заказ</a></li>
 						</ul>
 					</li>
@@ -315,8 +315,8 @@
 							<li class="nav-item dropdown">
 								<a class="nav-link ps-0 dropdown-toggle" aria-current="page" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Услуги</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="archive-product-portfolio.html">Кухни на заказ</a></li>
-									<li><a class="dropdown-item" href="archive-product-portfolio1.html">Шкафы на заказ</a></li>
+									<li><a class="dropdown-item" href="/кухни-на-заказ">Кухни на заказ</a></li>
+									<li><a class="dropdown-item" href="/шкафы-на-заказ">Шкафы на заказ</a></li>
 									<li><a class="dropdown-item" href="archive-product-portfolio2.html">Прихожие на заказ</a></li>
 								</ul>
 							</li>
@@ -330,7 +330,7 @@
 							<li class="nav-item dropdown">
 								<a class="nav-link ps-0 dropdown-toggle" aria-current="page" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Каталог</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="archive-product-page.html">Кухни</a></li>
+									<li><a class="dropdown-item" href="/кухни-на-заказ">Кухни</a></li>
 									<li><a class="dropdown-item" href="#">Шкафы</a></li>
 									<li><a class="dropdown-item" href="#">Прихожие</a></li>
 									<li><a class="dropdown-item" href="#">Обеденные группы</a></li>

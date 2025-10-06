@@ -17,11 +17,11 @@
 get_template_part('template-parts/action/action', '', [
     'show_button' => 'true',
     'show_breadcrumbs' => 'false', 
-    'actions_count' => '3',
+    'actions_count' => '5',
     'bg_color' => 'bg-light',
-    'section_title' => 'Актуальные акции',
+    'section_title' => 'Наши акции',
     'card_type' => 'modal',
-    'show_description' => 'false'
+    'filter_category' => 'home'
 ]);
 
 // // ===== ДЛЯ СТРАНИЦЫ КАТЕГОРИИ (например, кухни) =====

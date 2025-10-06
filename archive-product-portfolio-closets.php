@@ -246,19 +246,6 @@
 </section>
 <!-- /Home section -->
 
-<?php
-get_template_part('template-parts/action/action', '', [
-    'show_button' => 'true',
-    'show_breadcrumbs' => 'false', 
-    'actions_count' => '2',
-    'bg_color' => 'bg-white',
-    'section_title' => 'Наши акции',
-    'card_type' => 'modal',
-    'filter_category' => 'closets',
-    'breadcrumbs_title' => 'Шкафы на заказ'
-]);
-?>
-
 <!-- Archive portfolio section -->
 <section class="archive-portfolio-section-2 py-5" style="background-color: #F5F5F5;">
 	<div class="container">
@@ -538,7 +525,18 @@ get_template_part('template-parts/action/action', '', [
 </script>
 
 
-123
+<?php
+get_template_part('template-parts/action/action', '', [
+    'show_button' => 'true',
+    'show_breadcrumbs' => 'false', 
+    'actions_count' => '2',
+    'bg_color' => 'bg-white',
+    'section_title' => 'Наши акции',
+    'card_type' => 'modal',
+    'filter_category' => 'closets',
+    'breadcrumbs_title' => 'Шкафы на заказ'
+]);
+?>
 
 <!-- Gradient order section -->
 <section class="gradient-order-section bg-light" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.jpg);">

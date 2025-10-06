@@ -246,23 +246,20 @@
 </section>
 <!-- /Home section -->
 
-<!-- Archive portfolio section -->
-<?php
-get_template_part('template-parts/action/action', '', [
-    'show_button' => 'true',
-    'show_breadcrumbs' => 'false', 
-    'actions_count' => '3',
-    'bg_color' => 'bg-white',
-    'section_title' => 'Наши акции',
-    'card_type' => 'modal',
-    'filter_category' => 'home'
-]);
-?>
-
 
 <!-- Archive portfolio section -->
 <section class="archive-portfolio-section-2 py-5" style="background-color: #F5F5F5;">
 	<div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="breadcrumbs">
+                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/breadcrumbs-icon.svg"></a> / 
+                    <a href="/кухни-на-заказ" style="text-decoration: none;">Услуги</a> / 
+                    Шкафы на заказ
+                </nav>
+            </div>
+        </div>
+        
 		<div class="row">
 			<div class="col text-md-center">
 				<h2>Наши работы</h2>
@@ -538,6 +535,17 @@ get_template_part('template-parts/action/action', '', [
 	}
 </script>
 
+<?php
+get_template_part('template-parts/action/action', '', [
+    'show_button' => 'true',
+    'show_breadcrumbs' => 'false', 
+    'actions_count' => '5',
+    'bg_color' => 'bg-light',
+    'section_title' => 'Наши акции',
+    'card_type' => 'modal',
+    'filter_category' => 'home'
+]);
+?>
 
 <!-- Gradient order section -->
 <section class="gradient-order-section bg-light" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.jpg);">

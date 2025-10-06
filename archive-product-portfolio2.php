@@ -157,7 +157,7 @@
 						<div class="collapse navbar-collapse" id="mobail-header-collapse">
 							<ul class="navbar-nav align-items-center ms-auto mb-2 mb-lg-0 ">
 								<li class="nav-item">
-									<a class="nav-link" href="index.html" style="transition: .25s;">Главная</a>
+									<a class="nav-link" href="/" style="transition: .25s;">Главная</a>
 								</li>
 								<li class="nav-item d-none d-lg-inline">
 									<span class="nav-link">
@@ -169,17 +169,17 @@
 										Каталог
 									</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="archive-product-page.html">Кухни</a></li>
+										<li><a class="dropdown-item" href="/кухни-на-заказ">Кухни</a></li>
 										<li><a class="dropdown-item" href="#">Шкафы</a></li>
 										<li><a class="dropdown-item" href="#">Прихожие</a></li>
 										<li><a class="dropdown-item" href="#">Обеденные группы</a></li>
 									</ul>
 								</li>
 								<li class="nav-item dropdown">
-									<a class="nav-link active dropdown-toggle" href="archive-product-portfolio.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
+									<a class="nav-link active dropdown-toggle" href="/кухни-на-заказ" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
 									<ul class="dropdown-menu dropdown-menu-light ms-2 py-1" style="border-radius: 5px;" aria-labelledby="navbarDarkDropdownMenuLink">
-										<li><a class="dropdown-item nav-item" href="archive-product-portfolio.html">Кухни на заказ</a></li>
-										<li><a class="dropdown-item nav-item" href="archive-product-portfolio1.html">Шкафы на заказ</a></li>
+										<li><a class="dropdown-item nav-item" href="/кухни-на-заказ">Кухни на заказ</a></li>
+										<li><a class="dropdown-item nav-item" href="/шкафы-на-заказ">Шкафы на заказ</a></li>
 										<li><a class="dropdown-item nav-item active" href="archive-product-portfolio2.html">Прихожие на заказ</a></li>
 									</ul>
 								</li>
@@ -258,7 +258,7 @@
 						<div class="collapse navbar-collapse" id="sliding-header-collapse">
 							<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 								<li class="nav-item">
-									<a class="nav-link" href="index.html" style="transition: .25s;">Главная</a>
+									<a class="nav-link" href="/" style="transition: .25s;">Главная</a>
 								</li>
 								<li class="nav-item d-none d-lg-inline">
 									<span class="nav-link">
@@ -266,9 +266,9 @@
 									</span>
 								</li>
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="archive-product-portfolio.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Каталог</a>
+									<a class="nav-link dropdown-toggle" href="/кухни-на-заказ" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Каталог</a>
 									<ul class="dropdown-menu dropdown-menu-light ms-0 py-1" style="border-radius: 5px;" aria-labelledby="navbarDarkDropdownMenuLink">
-										<li><a class="dropdown-item nav-item" href="archive-product-page.html">Кухни</a></li>
+										<li><a class="dropdown-item nav-item" href="/кухни-на-заказ">Кухни</a></li>
 										<li><a class="dropdown-item nav-item" href="#">Шкафы</a></li>
 										<li><a class="dropdown-item nav-item" href="#">Прихожие</a></li>
 										<li><a class="dropdown-item nav-item" href="#">Обеденные группы</a></li>
@@ -280,10 +280,10 @@
 									</span>
 								</li>
 								<li class="nav-item dropdown">
-									<a class="nav-link active dropdown-toggle" href="archive-product-portfolio.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
+									<a class="nav-link active dropdown-toggle" href="/кухни-на-заказ" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
 									<ul class="dropdown-menu dropdown-menu-light ms-0 py-1" style="border-radius: 5px;" aria-labelledby="navbarDarkDropdownMenuLink">
-										<li><a class="dropdown-item nav-item" href="archive-product-portfolio.html">Кухни на заказ</a></li>
-										<li><a class="dropdown-item nav-item" href="archive-product-portfolio1.html">Шкафы на заказ</a></li>
+										<li><a class="dropdown-item nav-item" href="/кухни-на-заказ">Кухни на заказ</a></li>
+										<li><a class="dropdown-item nav-item" href="/шкафы-на-заказ">Шкафы на заказ</a></li>
 										<li><a class="dropdown-item nav-item active" href="archive-product-portfolio2.html">Прихожие на заказ</a></li>
 									</ul>
 								</li>
@@ -358,7 +358,7 @@
 					<div class="col">
 						<nav class="breadcrumbs">
 							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/breadcrumbs-icon.svg"></a> / 
-							<a href="archive-product-portfolio.html" style="text-decoration: none;">Услуги</a> / 
+							<a href="/кухни-на-заказ" style="text-decoration: none;">Услуги</a> / 
 							Прихожие на заказ
 						</nav>
 					</div>
@@ -947,7 +947,7 @@
 													</span>
 												</li>
 												<li  class="menu-item nav-item">
-													<a href="#" class="nav-link active dropdown-toggle" href="archive-product-portfolio.html" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
+													<a href="#" class="nav-link active dropdown-toggle" href="/кухни-на-заказ" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
 													<ul class="dropdown-menu dropdown-menu-light py-1" style="border-radius: 5px; transition: .25s;" aria-labelledby="navbarLightDropdownMenuLink">
 											            <li><a class="dropdown-item nav-item active" href="single-portfolio-product-page.html">Кухни по размерам</a></li>
 											            <li><a class="dropdown-item nav-item" href="#">Распил материалов</a></li>
@@ -1250,7 +1250,7 @@
 										</span>
 									</li>
 									<li  class="menu-item nav-item" style="position: relative;">	
-										<a href="#" class="nav-link active dropdown-toggle" href="archive-product-portfolio.html" id="navbarLightDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
+										<a href="#" class="nav-link active dropdown-toggle" href="/кухни-на-заказ" id="navbarLightDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
 										<ul class="dropdown-menu dropdown-menu-light py-1" style="border-radius: 5px;" aria-labelledby="navbarLightDropdownMenuLink1">
 								            <li><a class="dropdown-item nav-item active" href="single-portfolio-product-page.html">Кухни по размерам</a></li>
 								            <li><a class="dropdown-item nav-item" href="#">Распил материалов</a></li>
@@ -1310,7 +1310,7 @@
 										</span>
 									</li>
 									<li  class="menu-item nav-item">
-										<a href="#" class="nav-link active dropdown-toggle" href="archive-product-portfolio.html" id="navbarLightDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
+										<a href="#" class="nav-link active dropdown-toggle" href="/кухни-на-заказ" id="navbarLightDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
 										<ul class="dropdown-menu dropdown-menu-light py-1" style="border-radius: 5px; transition: .25s;" aria-labelledby="navbarLightDropdownMenuLink2">
 								            <li><a class="dropdown-item nav-item active" href="single-portfolio-product-page.html">Кухни по размерам</a></li>
 								            <li><a class="dropdown-item nav-item" href="#">Распил материалов</a></li>
@@ -1392,7 +1392,7 @@
 					<div class="col-xl-8">
 						<ul class="nav justify-content-center">
 							<li class="nav-item">
-								<a class="nav-link footer_item" href="index.html" style="transition: .25s;">Главная</a>
+								<a class="nav-link footer_item" href="/" style="transition: .25s;">Главная</a>
 							</li>
 							<li class="nav-item d-none d-lg-inline">
 								<span class="nav-link footer_item">
@@ -1402,17 +1402,17 @@
 							<li class="nav-item dropdown">
 								<a class="nav-link ps-0 dropdown-toggle" aria-current="page" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Каталог</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="archive-product-page.html">Кухни</a></li>
+									<li><a class="dropdown-item" href="/кухни-на-заказ">Кухни</a></li>
 									<li><a class="dropdown-item" href="#">Шкафы</a></li>
 									<li><a class="dropdown-item" href="#">Прихожие</a></li>
 									<li><a class="dropdown-item" href="#">Обеденные группы</a></li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link active dropdown-toggle footer_item" href="archive-product-portfolio.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
+								<a class="nav-link active dropdown-toggle footer_item" href="/кухни-на-заказ" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Услуги</a>
 								<ul class="dropdown-menu dropdown-menu-light ms-2 py-1" style="border-radius: 5px;" aria-labelledby="navbarDarkDropdownMenuLink">
-									<li><a class="dropdown-item nav-item" href="archive-product-portfolio.html">Кухни на заказ</a></li>
-									<li><a class="dropdown-item nav-item" href="archive-product-portfolio1.html">Шкафы на заказ</a></li>
+									<li><a class="dropdown-item nav-item" href="/кухни-на-заказ">Кухни на заказ</a></li>
+									<li><a class="dropdown-item nav-item" href="/шкафы-на-заказ">Шкафы на заказ</a></li>
 									<li><a class="dropdown-item nav-item active" href="archive-product-portfolio2.html">Прихожие на заказ</a></li>
 								</ul>
 							</li>
@@ -1646,8 +1646,8 @@
 									<li class="nav-item dropdown">
 										<a class="nav-link ps-0 active dropdown-toggle" aria-current="page" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Услуги</a>
 										<ul class="dropdown-menu">
-											<li><a class="dropdown-item" href="archive-product-portfolio.html">Кухни на заказ</a></li>
-											<li><a class="dropdown-item" href="archive-product-portfolio1.html">Шкафы на заказ</a></li>
+											<li><a class="dropdown-item" href="/кухни-на-заказ">Кухни на заказ</a></li>
+											<li><a class="dropdown-item" href="/шкафы-на-заказ">Шкафы на заказ</a></li>
 											<li><a class="dropdown-item active" href="archive-product-portfolio2.html">Прихожие на заказ</a></li>
 										</ul>
 									</li>
@@ -1661,7 +1661,7 @@
 									<li class="nav-item dropdown">
 										<a class="nav-link ps-0 dropdown-toggle" aria-current="page" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Каталог</a>
 										<ul class="dropdown-menu">
-											<li><a class="dropdown-item" href="archive-product-page.html">Кухни</a></li>
+											<li><a class="dropdown-item" href="/кухни-на-заказ">Кухни</a></li>
 											<li><a class="dropdown-item" href="#">Шкафы</a></li>
 											<li><a class="dropdown-item" href="#">Прихожие</a></li>
 											<li><a class="dropdown-item" href="#">Обеденные группы</a></li>

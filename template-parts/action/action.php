@@ -18,41 +18,57 @@
 // Массив с данными акций
 $actions_data = [
     [
-        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-1.jpg',
-        'alt_text' => 'Бесплатная доставка',
+        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-6.webp',
+        'alt_text' => 'Скидка 5% На все кухни CUCINA',
         'order' => 1,
+        'category' => 'kitchen, closets, home',
+        'modal_data' => 'discount-5',
+        'description' => 'Скидка 5% На все кухни CUCINA до 31 октября'
+    ],
+    [
+        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-7.webp',
+        'alt_text' => 'Скидка 10% На кухни с фасадами SMART',
+        'order' => 2,
+        'category' => 'kitchen, home',
+        'modal_data' => 'discount-10',
+        'description' => 'Скидка 10% На кухни с фасадами SMART'
+    ],
+    [
+        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-1.webp',
+        'alt_text' => 'Бесплатная доставка',
+        'order' => 3,
         'category' => 'kitchen, closets',
         'modal_data' => 'discount-25',
         'description' => 'Заказывайте со скидкой -25% до 31 октября'
     ],
     [
-        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-2.jpg',
+        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-2.webp',
         'alt_text' => 'Пластиковая столешница 26 мм В ПОДАРОК',
-        'order' => 2,
+        'order' => 4,
         'category' => 'kitchen, home',
         'modal_data' => 'gift-plastic-tabletop',
         'description' => 'При заказе кухни от 100 000 Пластиковая столешница 26 мм В ПОДАРОК'
     ],
     [
-        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-3.jpg',
+        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-3.webp',
         'alt_text' => 'Повторный заказ',
-        'order' => 3,
+        'order' => 5,
         'category' => 'kitchen, closets',
         'modal_data' => 'repeat-order',
         'description' => 'На повторный заказ дополнительная скидка 10%'
     ],
     [
-        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-4.jpg',
+        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-4.webp',
         'alt_text' => 'Комплект со скидкой',
-        'order' => 4,
+        'order' => 6,
         'category' => 'kitchen, home',
         'modal_data' => 'discount-12',
         'description' => 'Пока другие отдыхают, заказывайте со скидкой от 5 до 12%'
     ],
     [
-        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-5.jpg',
+        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-5.webp',
         'alt_text' => 'При заказе кухни от 150 000 мойка из искуственного камня В ПОДАРОК',
-        'order' => 5,
+        'order' => 7,
         'category' => 'kitchen, closets, home',
         'modal_data' => 'gift-artificial-stone',
         'description' => 'При заказе кухни от 150 000 мойка из искуственного камня В ПОДАРОК'
@@ -171,10 +187,10 @@ function get_column_classes($total, $index)
         case 6:
             return 'col-lg-4 col-md-6 mb-3'; // 6 карточек: десктоп 2 ряда по 3 карточки (4 колонки), планшет по 6 колонок
         case 7:
-            if ($index < 4) {
-                return 'col-lg-6 col-md-6 mb-3'; // Первые 4 по 6 колонок (2 строки)
+            if ($index < 2) {
+                return 'col-lg-6 col-md-6 mb-3'; // Первые 2 по 6 колонок (2 строки)
             } else {
-                return 'col-lg-4 col-md-6 mb-3'; // Остальные 3: десктоп по 4 колонки, планшет по 6 колонок
+                return 'col-lg-4 col-md-6 mb-3'; // Остальные : десктоп по 4 колонки, планшет по 6 колонок
             }
         case 8:
             if ($index < 2) {
@@ -200,7 +216,7 @@ function get_column_classes($total, $index)
                     <nav class="breadcrumbs pt-4">
                         <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/breadcrumbs-icon.svg"></a>
                         /
-                        <a href="archive-product-portfolio.html" style="text-decoration: none;">Услуги</a> /
+                        <a href="/кухни-на-заказ" style="text-decoration: none;">Услуги</a> /
                         <?php echo esc_html($breadcrumbs_title); ?>
                     </nav>
                 </div>
