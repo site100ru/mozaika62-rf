@@ -529,7 +529,7 @@
 get_template_part('template-parts/action/action', '', [
     'show_button' => 'true',
     'show_breadcrumbs' => 'false', 
-    'actions_count' => '2',
+    'actions_count' => '5',
     'bg_color' => 'bg-light',
     'section_title' => 'Наши акции',
     'card_type' => 'modal',
