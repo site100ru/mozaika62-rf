@@ -889,5 +889,16 @@
 	}
 </script>
 
+<?php
+get_template_part('template-parts/action/action', '', [
+    'show_button' => 'true',
+    'show_breadcrumbs' => 'false', 
+    'actions_count' => '2',
+    'bg_color' => 'bg-light',
+    'section_title' => 'Наши акции',
+    'card_type' => 'modal',
+    'filter_category' => 'cucina'
+]);
+?>
 
 <?php include 'footer-1.php'; ?>
