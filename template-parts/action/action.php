@@ -21,7 +21,7 @@ $actions_data = [
         'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-6.webp',
         'alt_text' => 'Скидка 5% На все кухни CUCINA',
         'order' => 1,
-        'category' => 'kitchen, closets, home, cucina',
+        'category' => 'kitchen, home, cucina',
         'modal_data' => 'discount-5',
         'description' => 'Скидка 5% На все кухни CUCINA до 31 октября'
     ],
