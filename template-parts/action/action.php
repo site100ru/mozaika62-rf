@@ -23,7 +23,7 @@ $actions_data = [
         'order' => 1,
         'category' => 'kitchen, home, cucina',
         'modal_data' => 'discount-5',
-        'description' => 'Скидка 5% На все кухни CUCINA до 31 октября'
+        'description' => 'Скидка 5% На все кухни CUCINA до 30 ноября'
     ],
     [
         'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-7.webp',
@@ -39,7 +39,7 @@ $actions_data = [
         'order' => 3,
         'category' => 'kitchen, closets',
         'modal_data' => 'discount-25',
-        'description' => 'Заказывайте со скидкой -25% до 31 октября'
+        'description' => 'Заказывайте со скидкой -25% до 30 ноября'
     ],
     [
         'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-2.webp',
