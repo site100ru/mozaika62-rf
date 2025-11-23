@@ -332,15 +332,26 @@
 	if ( function_exists( 'register_sidebar' ) ) {
 		register_sidebar(
 			array(
-				'name'          => 'Виджет в сайдбаре', //название виджета в админ-панели
+				'name'          => 'Виджет в сайдбаре Кухни', //название виджета в админ-панели
 				'id'            => 'wsidebar-1', //идентификатор виджета
-				'description'   => 'виден во всех разделах сайта', //описание виджета в админ-панели
+				'description'   => 'Показывается в категории Кухни', //описание виджета в админ-панели
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">', //открывающий тег виджета с динамичным идентификатором
 				'after_widget'  => '<div class="clear"></div></aside>', //закрывающий тег виджета с очищающим блоком
 				'before_title'  => '<span class="widget-title">', //открывающий тег заголовка виджета
 				'after_title'   => '</span>',//закрывающий тег заголовка виджета
 			)
 		);
+
+        // Виджет для шкафов
+        register_sidebar(array(
+            'name'          => 'Сайдбар Шкафы',
+            'id'            => 'wsidebar-2',
+            'description'   => 'Показывается в категории Шкафы',
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+            'after_widget'  => '<div class="clear"></div></aside>',
+            'before_title'  => '<span class="widget-title">',
+            'after_title'   => '</span>',
+        ));
 	}
 	
 	

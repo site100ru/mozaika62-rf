@@ -285,7 +285,7 @@
 				<div class="row text-start mobile-wrap">
 					<div style="width: 306px;">
 						<div class="col-md-3 mobile-none" style="text-transform: uppercase; font-size: 14px; width: auto;">
-							<?php dynamic_sidebar( 'wsidebar-1' ); ?>
+							<?php dynamic_sidebar( 'wsidebar-2' ); ?>
 							<!--h6 style="font-size: 14px;">Категории товаров</h6>
 							<a href="#" class="category active" aria-current="true">Кухни <span>(50)</span></a>
 							<a href="#" class="category">Шкафы <span>(50)</span></a>
