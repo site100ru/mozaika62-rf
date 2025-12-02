@@ -1,7 +1,7 @@
 <?php
 	
 	/**
-	 * Template Name: Шкафы на заказ
+	 * Template Name: Шкафы на заказ 
 	 * Template Post Type: page
 	**/
 	
@@ -249,6 +249,16 @@
 <!-- Archive portfolio section -->
 <section class="archive-portfolio-section-2 py-5 bg-white">
 	<div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="breadcrumbs">
+                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/breadcrumbs-icon.svg"></a> / 
+                    <a href="/кухни-на-заказ" style="text-decoration: none;">Услуги</a> / 
+                    Шкафы на заказ
+                </nav>
+            </div>
+        </div>
+
 		<div class="row">
 			<div class="col text-md-center">
 				<h2>Наши работы</h2>

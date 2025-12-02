@@ -255,7 +255,7 @@
                 <nav class="breadcrumbs">
                     <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/breadcrumbs-icon.svg"></a> / 
                     <a href="/кухни-на-заказ" style="text-decoration: none;">Услуги</a> / 
-                    Шкафы на заказ
+                    Кухни на заказ
                 </nav>
             </div>
         </div>
