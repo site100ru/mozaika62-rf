@@ -110,6 +110,8 @@
 			'mobail-header-collapse' => 'Mobail header collapse',
 			'sliding-header-collapse' => 'Sliding header collapse',
 			'contacts-desktop-menu' => 'Contacts desktop menu',
+            'footer-right' => 'footer-right',
+            'footer-left' => 'footer-left',
 			//'menu-main-menu-2' => 'Menu main menu 2',
 			//'menu-main-menu-3' => 'Menu main menu 3',
 			//'contacts-menu-2' => 'Contacts menu 2',

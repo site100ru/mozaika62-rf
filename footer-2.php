@@ -280,7 +280,7 @@
 							<div class="col-6 left-col-footer-menu">
 								<?php
 									wp_nav_menu(array(
-										'theme_location' => 'main-menu',
+										'theme_location' => 'footer-left',
 										'container' => false,
 										'menu_class' => '',
 										'fallback_cb' => '__return_false',
@@ -293,7 +293,7 @@
 							<div class="col-6 right-col-footer-menu">
 								<?php
 									wp_nav_menu(array(
-										'theme_location' => 'main-menu',
+										'theme_location' => 'footer-right',
 										'container' => false,
 										'menu_class' => '',
 										'fallback_cb' => '__return_false',
