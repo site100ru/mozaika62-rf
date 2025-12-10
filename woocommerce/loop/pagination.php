@@ -27,6 +27,11 @@ $format  = isset( $format ) ? $format : '';
 if ( $total <= 1 ) {
 	return;
 }
+
+// Определяем размер экрана для адаптивной пагинации
+$is_mobile = wp_is_mobile();
+$end_size = $is_mobile ? 1 : 3;
+$mid_size = $is_mobile ? 1 : 3;
 ?>
 <nav aria-label="Page navigation example">
     <?php
@@ -41,8 +46,8 @@ if ( $total <= 1 ) {
                 'prev_text'    => '&larr;',
                 'next_text'    => '&rarr;',
                 'type'         => 'array',
-                'end_size'     => 3,
-                'mid_size'     => 3,
+                'end_size'     => $end_size,
+                'mid_size'     => $mid_size,
             ) 
         )
     );

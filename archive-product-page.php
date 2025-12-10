@@ -515,12 +515,12 @@
 										<div class="approximation project-container-2 rounded">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (10).jpg" class="img-fluid" alt="" decoding="async" />
 											<div class="card-wrapper project-container-2-footer">
-												<div class="row" style="padding: 10px;"">
+												<div class="row" style="padding: 10px;">
 													<div class="col-6">
 														<h3 style="color: #fff;">Кухня #090</h3>		
 													</div>
-													<div class="col-6 pc-sell">
-														<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
+													<div class="col-12 pc-sell">
+														<h3 style="color: #fff;" >₽105 000</h3>
 													</div>
 												</div>
 											</div>	
@@ -532,12 +532,12 @@
 										<div class="approximation project-container-2 rounded">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (2).jpg" class="img-fluid" alt="" decoding="async" />	
 											<div class="card-wrapper project-container-2-footer">
-												<div class="row" style="padding: 10px;"">
+												<div class="row" style="padding: 10px;">
 													<div class="col-6">
 														<h3 style="color: #fff;">Кухня #090</h3>		
 													</div>
-													<div class="col-6 pc-sell">
-														<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
+													<div class="col-12 pc-sell">
+														<h3 style="color: #fff;" >₽105 000</h3>
 													</div>
 												</div>
 											</div>	
@@ -549,12 +549,12 @@
 										<div class="approximation project-container-2 rounded">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (3).jpg" class="img-fluid" alt="" decoding="async" />	
 											<div class="card-wrapper project-container-2-footer">
-												<div class="row" style="padding: 10px;"">
+												<div class="row" style="padding: 10px;">
 													<div class="col-6">
 														<h3 style="color: #fff;">Кухня #090</h3>		
 													</div>
-													<div class="col-6 pc-sell">
-														<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
+													<div class="col-12 pc-sell">
+														<h3 style="color: #fff;" >₽105 000</h3>
 													</div>
 												</div>
 											</div>	
@@ -566,12 +566,12 @@
 										<div class="approximation project-container-2 rounded">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (4).jpg" class="img-fluid" alt="" decoding="async" />	
 											<div class="card-wrapper project-container-2-footer">
-												<div class="row" style="padding: 10px;"">
+												<div class="row" style="padding: 10px;">
 													<div class="col-6">
 														<h3 style="color: #fff;">Кухня #090</h3>		
 													</div>
-													<div class="col-6 pc-sell">
-														<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
+													<div class="col-12 pc-sell">
+														<h3 style="color: #fff;" >₽105 000</h3>
 													</div>
 												</div>
 											</div>	
@@ -583,12 +583,12 @@
 										<div class="approximation project-container-2 rounded">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (5).jpg" class="img-fluid" alt="" decoding="async" fetchpriority="high" />
 											<div class="card-wrapper project-container-2-footer">
-												<div class="row" style="padding: 10px;"">
+												<div class="row" style="padding: 10px;">
 													<div class="col-6">
 														<h3 style="color: #fff;">Кухня #090</h3>		
 													</div>
-													<div class="col-6 pc-sell">
-														<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
+													<div class="col-12 pc-selll">
+														<h3 style="color: #fff;" >₽105 000</h3>
 													</div>
 												</div>
 											</div>	
@@ -600,12 +600,12 @@
 										<div class="approximation project-container-2 rounded">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (6).jpg" class="img-fluid" alt="" decoding="async" />
 											<div class="card-wrapper project-container-2-footer">
-												<div class="row" style="padding: 10px;"">
+												<div class="row" style="padding: 10px;">
 													<div class="col-6">
 														<h3 style="color: #fff;">Кухня #090</h3>		
 													</div>
-													<div class="col-6 pc-sell">
-														<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
+													<div class="col-12 pc-sellllllllll">
+														<h3 style="color: #fff;" >₽105 000</h3>
 													</div>
 												</div>
 											</div>	
@@ -617,12 +617,12 @@
 										<div class="approximation project-container-2 rounded">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (7).jpg" class="img-fluid" alt="" decoding="async" />	
 											<div class="card-wrapper project-container-2-footer">
-												<div class="row" style="padding: 10px;"">
+												<div class="row" style="padding: 10px;">
 													<div class="col-6">
 														<h3 style="color: #fff;">Кухня #090</h3>		
 													</div>
-													<div class="col-6 pc-sell">
-														<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
+													<div class="col-12 pc-selll">
+														<h3 style="color: #fff;" >₽105 000</h3>
 													</div>
 												</div>
 											</div>	
@@ -634,12 +634,12 @@
 										<div class="approximation project-container-2 rounded">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (8).jpg" class="img-fluid" alt="" decoding="async" />
 											<div class="card-wrapper project-container-2-footer">
-												<div class="row" style="padding: 10px;"">
+												<div class="row" style="padding: 10px;">
 													<div class="col-6">
 														<h3 style="color: #fff;">Кухня #090</h3>		
 													</div>
-													<div class="col-6 pc-sell">
-														<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
+													<div class="col-12 pc-sell">
+														<h3 style="color: #fff;" >₽105 000</h3>
 													</div>
 												</div>
 											</div>	
@@ -651,12 +651,12 @@
 										<div class="approximation project-container-2 rounded">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (9).jpg" class="img-fluid" alt="" decoding="async" />	
 											<div class="card-wrapper project-container-2-footer">
-												<div class="row" style="padding: 10px;"">
+												<div class="row" style="padding: 10px;">
 													<div class="col-6">
 														<h3 style="color: #fff;">Кухня #090</h3>		
 													</div>
-													<div class="col-6 pc-sell">
-														<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
+													<div class="col-12 pc-sell">
+														<h3 style="color: #fff;" >₽105 000</h3>
 													</div>
 												</div>
 											</div>	
@@ -668,12 +668,12 @@
 										<div class="approximation project-container-2 rounded">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (10).jpg" class="img-fluid" alt="" decoding="async" />
 											<div class="card-wrapper project-container-2-footer">
-												<div class="row" style="padding: 10px;"">
+												<div class="row" style="padding: 10px;">
 													<div class="col-6">
 														<h3 style="color: #fff;">Кухня #090</h3>		
 													</div>
-													<div class="col-6 pc-sell">
-														<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
+													<div class="col-12 pc-sell">
+														<h3 style="color: #fff;" >₽105 000</h3>
 													</div>
 												</div>
 											</div>	
@@ -685,12 +685,12 @@
 										<div class="approximation project-container-2 rounded">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (1).jpg" class="img-fluid" alt="">
 											<div class="card-wrapper project-container-2-footer">
-												<div class="row" style="padding: 10px;"">
+												<div class="row" style="padding: 10px;">
 													<div class="col-6">
 														<h3 style="color: #fff;">Кухня #090</h3>		
 													</div>
-													<div class="col-6 pc-sell">
-														<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
+													<div class="col-12 pc-sell">
+														<h3 style="color: #fff;" >₽105 000</h3>
 													</div>
 												</div>
 											</div>	
@@ -702,12 +702,12 @@
 										<div class="approximation project-container-2 rounded">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (1).jpg" class="img-fluid" alt="">
 											<div class="card-wrapper project-container-2-footer">
-												<div class="row" style="padding: 10px;"">
+												<div class="row" style="padding: 10px;">
 													<div class="col-6">
 														<h3 style="color: #fff;">Кухня #090</h3>		
 													</div>
-													<div class="col-6 pc-sell">
-														<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
+													<div class="col-12 pc-sell">
+														<h3 style="color: #fff;" >₽105 000</h3>
 													</div>
 												</div>
 											</div>	

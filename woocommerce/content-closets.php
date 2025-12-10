@@ -59,8 +59,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 						<?php do_action( 'woocommerce_shop_loop_item_title' ); ?>
 					</h3>		
 				</div>
-				<div class="col-6 pc-sell">
-					<h3 2 style="color: #fff;" class="text-end-product">
+				<div class="col-12 pc-sell">
+					<h3 2 style="color: #fff;">
 						<?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
 					</h3>
 				</div>

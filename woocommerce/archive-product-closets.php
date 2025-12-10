@@ -507,7 +507,7 @@
 											<div class="col-6">
 												<h3 style="color: #fff;">Кухня #090</h3>		
 											</div>
-											<div class="col-6 pc-sell">
+											<div class="col-12 pc-sell">
 												<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
 											</div>
 										</div>
@@ -524,7 +524,7 @@
 											<div class="col-6">
 												<h3 style="color: #fff;">Кухня #090</h3>		
 											</div>
-											<div class="col-6 pc-sell">
+											<div class="col-12 pc-sell">
 												<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
 											</div>
 										</div>
@@ -541,7 +541,7 @@
 											<div class="col-6">
 												<h3 style="color: #fff;">Кухня #090</h3>		
 											</div>
-											<div class="col-6 pc-sell">
+											<div class="col-12 pc-sell">
 												<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
 											</div>
 										</div>
@@ -558,7 +558,7 @@
 											<div class="col-6">
 												<h3 style="color: #fff;">Кухня #090</h3>		
 											</div>
-											<div class="col-6 pc-sell">
+											<div class="col-12 pc-sell">
 												<h3 style="color: #fff;" class="text-end-product">₽105 000</h3>
 											</div>
 										</div>
