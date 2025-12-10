@@ -2510,6 +2510,18 @@ footer {
 	background: url(../img/home-portfolio.webp) no-repeat;
 }
 
+.parallax-home-section.index-parallax-home-section {
+    background: url(../img/home-background.webp) no-repeat;
+}
+
+@media (max-width: 768px) {
+    .parallax-home-section.index-parallax-home-section {
+        background: url(../img/index-home-background.webp) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
 
 /*** CALLBACK BUTTON ***/
 .callback-button-wrapper {

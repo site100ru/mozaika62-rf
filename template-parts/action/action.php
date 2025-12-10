@@ -86,7 +86,7 @@ $show_breadcrumbs = isset($args['show_breadcrumbs'])
 
 $breadcrumbs_title = isset($args['breadcrumbs_title'])
     ? $args['breadcrumbs_title']
-    : 'Кухни на заказ'; // Хлебные крошки 
+    : ''; // Хлебные крошки 
 
 $actions_count = isset($args['actions_count'])
     ? $args['actions_count']
@@ -215,8 +215,7 @@ function get_column_classes($total, $index)
                 <div class="col">
                     <nav class="breadcrumbs pt-4">
                         <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/breadcrumbs-icon.svg"></a>
-                        /
-                        <a href="/кухни-на-заказ" style="text-decoration: none;">Услуги</a> /
+                        / Акции
                         <?php echo esc_html($breadcrumbs_title); ?>
                     </nav>
                 </div>
