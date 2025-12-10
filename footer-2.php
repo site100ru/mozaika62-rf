@@ -284,7 +284,7 @@
 										'container' => false,
 										'menu_class' => '',
 										'fallback_cb' => '__return_false',
-										'items_wrap' => '<ul id="menu-main-menu-2" class="navbar-nav ms-auto mb-lg-0 %2$s">%3$s</ul>',
+										'items_wrap' => '<ul id="menu-main-menu-5" class="navbar-nav ms-auto mb-lg-0 %2$s">%3$s</ul>',
 										'depth' => 2,
 										'walker' => new bootstrap_5_wp_nav_menu_walker()
 									));
@@ -297,7 +297,7 @@
 										'container' => false,
 										'menu_class' => '',
 										'fallback_cb' => '__return_false',
-										'items_wrap' => '<ul id="menu-main-menu-3" class="navbar-nav ms-auto mb-lg-0 %2$s">%3$s</ul>',
+										'items_wrap' => '<ul id="menu-main-menu-6" class="navbar-nav ms-auto mb-lg-0 %2$s">%3$s</ul>',
 										'depth' => 2,
 										'walker' => new bootstrap_5_wp_nav_menu_walker()
 									));
