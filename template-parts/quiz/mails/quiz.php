@@ -119,7 +119,7 @@ elseif ($branch === 'other') {
 // Проверяем телефон
 if ($_POST && $phone) {
     
-    $to = "sidorov-vv3@mail.ru";
+    $to = "sidorov-vv3@mail.ru, vasilyev-r@mail.ru";
     $subject = "Заявка с Квиза с сайта мозаика62.рф - " . $answer1;
     
     $has_file = false;
@@ -127,19 +127,27 @@ if ($_POST && $phone) {
     $file_tmp = '';
     $file_type = '';
     
-    if (isset($_FILES['file']) && isset($_FILES['file']['error']) && is_array($_FILES['file']['error'])) {
-        // Проверяем первый файл в массиве
-        if (isset($_FILES['file']['error'][0]) && $_FILES['file']['error'][0] == 0) {
-            $has_file = true;
-            $file_name = $_FILES['file']['name'][0];
-            $file_tmp = $_FILES['file']['tmp_name'][0];
-            $file_type = $_FILES['file']['type'][0];
-            
-            $email_body .= "<p><strong>Прикреплен файл:</strong> " . htmlspecialchars($file_name) . "</p>";
-        }
+    if (isset($_FILES['file']) && isset($_FILES['file']['tmp_name'])) {
+        if (is_array($_FILES['file']['tmp_name'])) {
+            if (isset($_FILES['file']['error'][0]) && $_FILES['file']['error'][0] == UPLOAD_ERR_OK) {
+                $has_file = true;
+                $file_name = $_FILES['file']['name'][0];
+                $file_tmp = $_FILES['file']['tmp_name'][0];
+                $file_type = $_FILES['file']['type'][0];
+                
+                error_log("File attached (array): $file_name");
+            }
+        } 
     }
     
-    // Если есть файл - отправляем с MIME
+    if ($has_file) {
+        $email_body .= "<p><strong>Прикреплен файл:</strong> " . htmlspecialchars($file_name) . "</p>";
+    }
+    
+    // ==========================================
+    // ОТПРАВКА ПИСЬМА
+    // ==========================================
+    
     if ($has_file && file_exists($file_tmp)) {
         $boundary = md5(time());
         
@@ -162,14 +170,17 @@ if ($_POST && $phone) {
         $message .= $file_content . "\r\n";
         $message .= "--{$boundary}--";
         
-        mail($to, $subject, $message, $headers);
-    } else {
-        // Обычное письмо без файла
+        $mail_sent = mail($to, $subject, $message, $headers);
+        error_log("Mail with file sent: " . ($mail_sent ? 'YES' : 'NO'));
+    } 
+    // Обычное письмо без файла
+    else {
         $headers = "From: info@мозаика62.рф\r\n";
         $headers .= "Reply-To: info@мозаика62.рф\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n";
         
-        mail($to, $subject, $email_body, $headers);
+        $mail_sent = mail($to, $subject, $email_body, $headers);
+        error_log("Mail without file sent: " . ($mail_sent ? 'YES' : 'NO'));
     }
     
     $_SESSION['win'] = 1;

@@ -516,10 +516,46 @@ document.addEventListener('DOMContentLoaded', function () {
     // ВЕТКА ДРУГОЕ
     // ============================================
 
-    // Кнопка "Далее" для вопроса 2-other (Описание)
+
+    // ============================================
+    // ОБРАБОТКА ФАЙЛА 
+    // ============================================
+
+    var selectedFile = null;
+
+    // Отслеживаем выбор файла
+    var fileInput = document.getElementById('question-2-other-file');
+    var filePreview = document.getElementById('file-preview');
+
+    if (fileInput) {
+        fileInput.addEventListener('change', function(e) {
+            if (this.files && this.files.length > 0) {
+                selectedFile = this.files[0];
+                
+                // Показываем информацию о файле
+                if (filePreview) {
+                    var fileSize = (selectedFile.size / 1024).toFixed(1);
+                    filePreview.innerHTML = '📎 <strong>' + selectedFile.name + '</strong> (' + fileSize + ' KB)';
+                }
+                
+                console.log('Файл выбран:', selectedFile.name);
+            } else {
+                selectedFile = null;
+                if (filePreview) {
+                    filePreview.innerHTML = '';
+                }
+            }
+        });
+    }
+
+    // Обновляем обработчик кнопки "Далее" для question-2-other
     var btnNext2Other = document.getElementById('btn-next-question-2-other');
     if (btnNext2Other) {
-        btnNext2Other.addEventListener('click', function (e) {
+        // Удаляем старый обработчик и добавляем новый
+        var newBtnNext2Other = btnNext2Other.cloneNode(true);
+        btnNext2Other.parentNode.replaceChild(newBtnNext2Other, btnNext2Other);
+        
+        newBtnNext2Other.addEventListener('click', function (e) {
             e.preventDefault();
 
             var textarea = document.querySelector('#question-2-other textarea');
@@ -529,6 +565,17 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             document.getElementById('form-question-2-other-description').value = textarea.value;
+
+            if (selectedFile) {
+                var hiddenFileInput = document.getElementById('quiz-file-hidden');
+                if (hiddenFileInput) {
+                    var dataTransfer = new DataTransfer();
+                    dataTransfer.items.add(selectedFile);
+                    hiddenFileInput.files = dataTransfer.files;
+                    
+                    console.log('Файл перенесен в форму:', selectedFile.name);
+                }
+            }
 
             document.getElementById('question-2-other').style.display = 'none';
             document.getElementById('question-final').style.display = 'block';

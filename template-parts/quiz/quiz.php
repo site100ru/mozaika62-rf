@@ -1208,7 +1208,7 @@
                                     <div class="mb-3">
                                         <div class="input-group custom-file-button">
                                             <label class="btn btn-lg btn-corporate-color-1 input-group-text" style="border-radius: 8px;" for="question-2-other-file">Прикрепить</label>
-                                            <input type="file" name="file[]" class="form-control" style="border: none" id="question-2-other-file" accept=".jpg,.jpeg,.png,.pdf,.heic" multiple="" />
+                                            <input type="file" class="form-control" style="border: none" id="question-2-other-file" accept=".jpg,.jpeg,.png,.pdf,.heic" />
                                         </div>
                                     </div>
                                 </div>
@@ -1245,6 +1245,7 @@
                             <form action="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/mails/quiz.php" id="quiz" enctype="multipart/form-data" method="post" name="quiz" class="form">
                                 <div class="loader-box"><span class="loader"></span></div>
 
+                                <input type="file" name="file[]" id="quiz-file-hidden" style="display: none;" accept=".jpg,.jpeg,.png,.pdf,.heic" />
                                 <input type="hidden" name="form-source" value="quiz">
                                 <input type="hidden" name="button-context" value="quiz-configurator">
                                 <input type="hidden" id="form-branch" name="form-branch">
