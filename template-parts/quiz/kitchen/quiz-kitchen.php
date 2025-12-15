@@ -535,7 +535,7 @@
                         <div class="col" id="question-final" style="display: none">
                             <h3 class="quiz-section-subtitle mb-4 text-start">Куда отправить расчет?</h3>
 
-                            <form action="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/mails/quiz.php" id="quiz"
+                            <form action="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/mails/kitchen-quiz.php" id="quiz"
                                 method="post" name="quiz" class="form">
                                 <div class="loader-box"><span class="loader"></span></div>
 
