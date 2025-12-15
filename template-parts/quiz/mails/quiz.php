@@ -1,6 +1,5 @@
 <?php
 session_start();
-$win = "true";
 
 // Определяем ветку квиза
 $branch = isset($_POST['form-branch']) ? $_POST['form-branch'] : '';
@@ -10,44 +9,32 @@ $answer1 = isset($_POST['form-question-1']) ? $_POST['form-question-1'] : 'Не 
 $name = isset($_POST['form-name']) ? $_POST['form-name'] : '';
 $phone = isset($_POST['form-phone']) ? $_POST['form-phone'] : '';
 
-// Способы связи (чекбоксы)
-$answer_final_1 = isset($_POST['form-answer-final-1']) ? $_POST['form-answer-final-1'] : '';
-$answer_final_2 = isset($_POST['form-answer-final-2']) ? $_POST['form-answer-final-2'] : '';
-$answer_final_3 = isset($_POST['form-answer-final-3']) ? $_POST['form-answer-final-3'] : '';
-$answer_final_4 = isset($_POST['form-answer-final-4']) ? $_POST['form-answer-final-4'] : '';
-
-// Собираем способы связи в одну строку
+// Способы связи
 $contact_methods = array();
-if ($answer_final_1) $contact_methods[] = $answer_final_1;
-if ($answer_final_2) $contact_methods[] = $answer_final_2;
-if ($answer_final_3) $contact_methods[] = $answer_final_3;
-if ($answer_final_4) $contact_methods[] = $answer_final_4;
+if (isset($_POST['form-answer-final-1']) && $_POST['form-answer-final-1']) 
+    $contact_methods[] = $_POST['form-answer-final-1'];
+if (isset($_POST['form-answer-final-2']) && $_POST['form-answer-final-2']) 
+    $contact_methods[] = $_POST['form-answer-final-2'];
+if (isset($_POST['form-answer-final-3']) && $_POST['form-answer-final-3']) 
+    $contact_methods[] = $_POST['form-answer-final-3'];
+if (isset($_POST['form-answer-final-4']) && $_POST['form-answer-final-4']) 
+    $contact_methods[] = $_POST['form-answer-final-4'];
 $contact_methods_str = !empty($contact_methods) ? implode(', ', $contact_methods) : 'Не выбрано';
 
-// Заголовки письма
-$headers = "From: info@мозаика62.рф\r\n";
-$headers .= "Reply-To: info@мозаика62.рф\r\n";
-$headers .= "Return-Path: info@мозаика62.рф\r\n";
-$headers .= "CC: info@мозаика62.рф\r\n";
-$headers .= "BCC: info@мозаика62.рф\r\n";
-$headers .= "Content-type: text/html; charset=utf-8\r\n";
-
-// Формируем тело письма в зависимости от ветки
+// Формируем тело письма
 $email_body = "
     <h3>Новая заявка с Квиза с сайта мозаика62.рф</h3>
     <p><strong>Имя:</strong> " . $name . "</p>
     <p><strong>Телефон:</strong> " . $phone . "</p>
     <p><strong>Способы связи:</strong> " . $contact_methods_str . "</p>
+    <hr>
     <p><strong>Тип мебели:</strong> " . $answer1 . "</p>
 ";
 
-// ============================================
 // ВЕТКА КУХНЯ
-// ============================================
 if ($branch === 'kitchen') {
     $answer2_kitchen = isset($_POST['form-question-2-kitchen']) ? $_POST['form-question-2-kitchen'] : 'Не указано';
     
-    // Дополнительные особенности (множественный выбор)
     $features = array();
     if (isset($_POST['form-answer-3-kitchen-1']) && $_POST['form-answer-3-kitchen-1']) 
         $features[] = $_POST['form-answer-3-kitchen-1'];
@@ -57,19 +44,17 @@ if ($branch === 'kitchen') {
         $features[] = $_POST['form-answer-3-kitchen-3'];
     $features_str = !empty($features) ? implode(', ', $features) : 'Не выбрано';
     
-    // Размеры
-    $side1 = isset($_POST['form-side-1']) && $_POST['form-side-1'] ? $_POST['form-side-1'] . ' м' : '';
-    $side2 = isset($_POST['form-side-2']) && $_POST['form-side-2'] ? $_POST['form-side-2'] . ' м' : '';
-    $side3 = isset($_POST['form-side-3']) && $_POST['form-side-3'] ? $_POST['form-side-3'] . ' м' : '';
-    $bar_size = isset($_POST['form-bar-size']) && $_POST['form-bar-size'] ? $_POST['form-bar-size'] . ' м' : '';
-    $island_size = isset($_POST['form-island-size']) && $_POST['form-island-size'] ? $_POST['form-island-size'] . ' м' : '';
-    
     $sizes = array();
-    if ($side1) $sizes[] = "Сторона 1: " . $side1;
-    if ($side2) $sizes[] = "Сторона 2: " . $side2;
-    if ($side3) $sizes[] = "Сторона 3: " . $side3;
-    if ($bar_size) $sizes[] = "Размер барной стойки: " . $bar_size;
-    if ($island_size) $sizes[] = "Размер острова: " . $island_size;
+    if (isset($_POST['form-side-1']) && $_POST['form-side-1']) 
+        $sizes[] = "Сторона 1: " . $_POST['form-side-1'] . " м";
+    if (isset($_POST['form-side-2']) && $_POST['form-side-2']) 
+        $sizes[] = "Сторона 2: " . $_POST['form-side-2'] . " м";
+    if (isset($_POST['form-side-3']) && $_POST['form-side-3']) 
+        $sizes[] = "Сторона 3: " . $_POST['form-side-3'] . " м";
+    if (isset($_POST['form-bar-size']) && $_POST['form-bar-size']) 
+        $sizes[] = "Размер барной стойки: " . $_POST['form-bar-size'] . " м";
+    if (isset($_POST['form-island-size']) && $_POST['form-island-size']) 
+        $sizes[] = "Размер острова: " . $_POST['form-island-size'] . " м";
     $sizes_str = !empty($sizes) ? implode('<br>', $sizes) : 'Не указано';
     
     $answer5_kitchen = isset($_POST['form-question-5-kitchen']) ? $_POST['form-question-5-kitchen'] : 'Не указано';
@@ -87,15 +72,12 @@ if ($branch === 'kitchen') {
     ";
 }
 
-// ============================================
 // ВЕТКА ШКАФ
-// ============================================
 elseif ($branch === 'wardrobe') {
     $answer2_wardrobe = isset($_POST['form-question-2-wardrobe']) ? $_POST['form-question-2-wardrobe'] : 'Не указано';
     $answer3_wardrobe = isset($_POST['form-question-3-wardrobe']) ? $_POST['form-question-3-wardrobe'] : 'Не указано';
     $answer4_wardrobe = isset($_POST['form-question-4-wardrobe']) ? $_POST['form-question-4-wardrobe'] : 'Не указано';
     
-    // Ширина шкафа (множественный выбор)
     $widths = array();
     for ($i = 1; $i <= 10; $i++) {
         if (isset($_POST['form-answer-5-wardrobe-' . $i]) && $_POST['form-answer-5-wardrobe-' . $i]) {
@@ -104,7 +86,6 @@ elseif ($branch === 'wardrobe') {
     }
     $widths_str = !empty($widths) ? implode(', ', $widths) : 'Не указано';
     
-    // Количество дверей (множественный выбор)
     $doors = array();
     for ($i = 1; $i <= 6; $i++) {
         if (isset($_POST['form-answer-6-wardrobe-' . $i]) && $_POST['form-answer-6-wardrobe-' . $i]) {
@@ -126,38 +107,65 @@ elseif ($branch === 'wardrobe') {
     ";
 }
 
-// ============================================
 // ВЕТКА ДРУГОЕ
-// ============================================
 elseif ($branch === 'other') {
     $description = isset($_POST['form-question-2-other-description']) ? $_POST['form-question-2-other-description'] : 'Не указано';
-    
     $email_body .= "
         <h4>Описание изделия:</h4>
         <p>" . nl2br($description) . "</p>
     ";
-    
-    // Обработка файлов если есть
-    if (isset($_FILES['file']) && !empty($_FILES['file']['name'][0])) {
-        $email_body .= "<p><strong>Примечание:</strong> К заявке прикреплены файлы</p>";
-    }
 }
 
-/* Проверяем что заполнено поле с телефоном */
+// Проверяем телефон
 if ($_POST && $phone) {
-    // Отправляем письмо
-    mail(
-        "sidorov-vv3@mail.ru",
-        "Заявка с Квиза с сайта мозаика62.рф - " . $answer1,
-        $email_body,
-        $headers
-    );
+    
+    $to = "sdiorov-vv3@mail.ru, vasilyev-r@mail.ru";
+    $subject = "Заявка с Квиза с сайта мозаика62.рф - " . $answer1;
+    
+    // Проверяем есть ли файл
+    $has_file = false;
+    if (isset($_FILES['file']) && $_FILES['file']['error'][0] == 0) {
+        $has_file = true;
+        $file_name = $_FILES['file']['name'][0];
+        $file_tmp = $_FILES['file']['tmp_name'][0];
+        $file_type = $_FILES['file']['type'][0];
+        
+        $email_body .= "<p><strong>Прикреплен файл:</strong> " . $file_name . "</p>";
+    }
+    
+    // Если есть файл 
+    if ($has_file) {
+        $boundary = md5(time());
+        
+        $headers = "From: info@мозаика62.рф\r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: multipart/mixed; boundary=\"{$boundary}\"\r\n";
+        
+        $message = "--{$boundary}\r\n";
+        $message .= "Content-Type: text/html; charset=utf-8\r\n\r\n";
+        $message .= $email_body . "\r\n\r\n";
+        
+        // Прикрепляем файл
+        $file_content = chunk_split(base64_encode(file_get_contents($file_tmp)));
+        $message .= "--{$boundary}\r\n";
+        $message .= "Content-Type: {$file_type}; name=\"{$file_name}\"\r\n";
+        $message .= "Content-Transfer-Encoding: base64\r\n";
+        $message .= "Content-Disposition: attachment; filename=\"{$file_name}\"\r\n\r\n";
+        $message .= $file_content . "\r\n";
+        $message .= "--{$boundary}--";
+        
+        mail($to, $subject, $message, $headers);
+    } else {
+        // Обычное письмо без файла
+        $headers = "From: info@мозаика62.рф\r\n";
+        $headers .= "Content-type: text/html; charset=utf-8\r\n";
+        mail($to, $subject, $email_body, $headers);
+    }
     
     $_SESSION['win'] = 1;
     $_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение в компанию «мозаика62». Мы ответим Вам в&#160;ближайшее время.</p>';
     header("Location: " . $_SERVER['HTTP_REFERER']);
 } else {
-    // Если поле с телефоном НЕ заполнено
     $_SESSION['win'] = 1;
     $_SESSION['recaptcha'] = '<p class="text-light"><strong>Извините!</strong><br>Ваши действия похожи на робота. Пожалуйста повторите попытку!</p>';
     header("Location: " . $_SERVER['HTTP_REFERER']);
