@@ -1207,7 +1207,7 @@
 
                                     <div class="mb-3">
                                         <div class="input-group custom-file-button">
-                                            <label class="btn btn-lg btn-corporate-color-1 input-group-text" style="border-radius: 8px;" for="question-2-other-file">Прикрепить</label>
+                                            <label class="btn btn-lg btn-corporate-color-1 input-group-text" for="question-2-other-file">Прикрепить</label>
                                             <input type="file" class="form-control" style="border: none" id="question-2-other-file" accept=".jpg,.jpeg,.png,.pdf,.heic" />
                                         </div>
                                     </div>
