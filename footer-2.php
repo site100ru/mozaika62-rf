@@ -625,7 +625,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.5.1.min.js"></script>
 
 <!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/064ae6a0a2.js"></script>
+<!-- <script src="https://kit.fontawesome.com/064ae6a0a2.js"></script> -->
 
 
 <!-- Theme JS -->

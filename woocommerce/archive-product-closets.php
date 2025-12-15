@@ -1172,6 +1172,7 @@
 </section>
 <!-- End gradient order section -->
 
+<?php get_template_part('template-parts/quiz/wardrobe/quiz-wardrobe'); ?>
 
 
 <?php get_footer( '1' ); ?>

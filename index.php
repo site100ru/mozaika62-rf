@@ -633,5 +633,9 @@ get_template_part('template-parts/action/action', '', [
 </section>
 <!-- /Advantage section -->
 
+<!-- SECTION ORDER 1 -->
+<?php get_template_part('template-parts/quiz/quiz'); ?>
+<!-- /SECTION ORDER 1 -->
+
 
 <?php include 'footer-1.php'; ?>

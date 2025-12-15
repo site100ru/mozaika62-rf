@@ -624,7 +624,7 @@
 <!--script src="https://code.jquery.com/jquery-3.6.0.min.js"></script-->
 
 <!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/064ae6a0a2.js"></script>
+<!-- <script src="https://kit.fontawesome.com/064ae6a0a2.js"></script> -->
 
 
 <!-- Theme JS -->

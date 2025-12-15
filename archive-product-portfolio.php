@@ -1129,5 +1129,7 @@ get_template_part('template-parts/action/action', '', [
 </section>
 <!-- End gradient order section -->
 
+<?php get_template_part('template-parts/quiz/kitchen/quiz-kitchen'); ?>
+
 		
 <?php include 'footer-1.php'; ?>

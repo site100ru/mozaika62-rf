@@ -21,7 +21,7 @@
 		
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/ico/favicon.jpg" type="image/x-icon" />
 
-		<script src="https://kit.fontawesome.com/064ae6a0a2.js"></script>
+		<!-- <script src="https://kit.fontawesome.com/064ae6a0a2.js"></script> -->
 		
 		<!-- Animate.css -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
