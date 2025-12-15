@@ -1242,8 +1242,7 @@
                         <div class="col" id="question-final" style="display: none">
                             <h3 class="quiz-section-subtitle mb-4 text-start">Куда отправить расчет?</h3>
 
-                            <form action="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/mails/quiz.php" id="quiz"
-                                method="post" name="quiz" class="form">
+                            <form action="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/mails/quiz.php" id="quiz" enctype="multipart/form-data" method="post" name="quiz" class="form">
                                 <div class="loader-box"><span class="loader"></span></div>
 
                                 <input type="hidden" name="form-source" value="quiz">
