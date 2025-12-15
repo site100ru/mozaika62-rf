@@ -119,7 +119,7 @@ elseif ($branch === 'other') {
 // Проверяем телефон
 if ($_POST && $phone) {
     
-    $to = "sdiorov-vv3@mail.ru, vasilyev-r@mail.ru";
+    $to = "sidorov-vv3@mail.ru, vasilyev-r@mail.ru";
     $subject = "Заявка с Квиза с сайта мозаика62.рф - " . $answer1;
     
     // Проверяем есть ли файл
