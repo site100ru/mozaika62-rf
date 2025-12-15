@@ -119,30 +119,38 @@ elseif ($branch === 'other') {
 // Проверяем телефон
 if ($_POST && $phone) {
     
-    $to = "sidorov-vv3@mail.ru, vasilyev-r@mail.ru";
+    $to = "sidorov-vv3@mail.ru";
     $subject = "Заявка с Квиза с сайта мозаика62.рф - " . $answer1;
     
-    // Проверяем есть ли файл
     $has_file = false;
-    if (isset($_FILES['file']) && $_FILES['file']['error'][0] == 0) {
-        $has_file = true;
-        $file_name = $_FILES['file']['name'][0];
-        $file_tmp = $_FILES['file']['tmp_name'][0];
-        $file_type = $_FILES['file']['type'][0];
-        
-        $email_body .= "<p><strong>Прикреплен файл:</strong> " . $file_name . "</p>";
+    $file_name = '';
+    $file_tmp = '';
+    $file_type = '';
+    
+    if (isset($_FILES['file']) && isset($_FILES['file']['error']) && is_array($_FILES['file']['error'])) {
+        // Проверяем первый файл в массиве
+        if (isset($_FILES['file']['error'][0]) && $_FILES['file']['error'][0] == 0) {
+            $has_file = true;
+            $file_name = $_FILES['file']['name'][0];
+            $file_tmp = $_FILES['file']['tmp_name'][0];
+            $file_type = $_FILES['file']['type'][0];
+            
+            $email_body .= "<p><strong>Прикреплен файл:</strong> " . htmlspecialchars($file_name) . "</p>";
+        }
     }
     
-    // Если есть файл 
-    if ($has_file) {
+    // Если есть файл - отправляем с MIME
+    if ($has_file && file_exists($file_tmp)) {
         $boundary = md5(time());
         
         $headers = "From: info@мозаика62.рф\r\n";
+        $headers .= "Reply-To: info@мозаика62.рф\r\n";
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: multipart/mixed; boundary=\"{$boundary}\"\r\n";
         
         $message = "--{$boundary}\r\n";
-        $message .= "Content-Type: text/html; charset=utf-8\r\n\r\n";
+        $message .= "Content-Type: text/html; charset=utf-8\r\n";
+        $message .= "Content-Transfer-Encoding: 8bit\r\n\r\n";
         $message .= $email_body . "\r\n\r\n";
         
         // Прикрепляем файл
@@ -158,7 +166,9 @@ if ($_POST && $phone) {
     } else {
         // Обычное письмо без файла
         $headers = "From: info@мозаика62.рф\r\n";
+        $headers .= "Reply-To: info@мозаика62.рф\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n";
+        
         mail($to, $subject, $email_body, $headers);
     }
     
