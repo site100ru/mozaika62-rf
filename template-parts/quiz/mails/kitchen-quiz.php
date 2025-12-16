@@ -51,11 +51,8 @@ $answer5_kitchen = isset($_POST['form-question-5-kitchen']) ? $_POST['form-quest
 $answer6_kitchen = isset($_POST['form-question-6-kitchen']) ? $_POST['form-question-6-kitchen'] : 'Не указано';
 
 // Заголовки письма
-$headers = "From: info@мозаика62.рф\r\n";
-$headers .= "Reply-To: info@мозаика62.рф\r\n";
-$headers .= "Return-Path: info@мозаика62.рф\r\n";
-$headers .= "CC: info@мозаика62.рф\r\n";
-$headers .= "BCC: info@мозаика62.рф\r\n";
+$headers = "MIME-Version: 1.0\r\n";
+$headers .= "From: info@мозаика62.рф\r\n";
 $headers .= "Content-type: text/html; charset=utf-8\r\n";
 
 // Формируем тело письма
