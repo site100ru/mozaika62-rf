@@ -61,6 +61,7 @@ $email_body = "
     <p><strong>Имя:</strong> " . $name . "</p>
     <p><strong>Телефон:</strong> " . $phone . "</p>
     <p><strong>Способы связи:</strong> " . $contact_methods_str . "</p>
+    <hr>
     <h4>Параметры кухни:</h4>
     <p><strong>Планировка:</strong> " . $answer1_kitchen . "</p>
     <p><strong>Дополнительные особенности:</strong> " . $features_str . "</p>
