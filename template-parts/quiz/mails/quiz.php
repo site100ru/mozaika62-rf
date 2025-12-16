@@ -46,15 +46,15 @@ if ($branch === 'kitchen') {
     
     $sizes = array();
     if (isset($_POST['form-side-1']) && $_POST['form-side-1']) 
-        $sizes[] = "Сторона 1: " . $_POST['form-side-1'] . " м";
+        $sizes[] = "Сторона 1: " . $_POST['form-side-1'];
     if (isset($_POST['form-side-2']) && $_POST['form-side-2']) 
-        $sizes[] = "Сторона 2: " . $_POST['form-side-2'] . " м";
+        $sizes[] = "Сторона 2: " . $_POST['form-side-2'];
     if (isset($_POST['form-side-3']) && $_POST['form-side-3']) 
-        $sizes[] = "Сторона 3: " . $_POST['form-side-3'] . " м";
+        $sizes[] = "Сторона 3: " . $_POST['form-side-3'];
     if (isset($_POST['form-bar-size']) && $_POST['form-bar-size']) 
-        $sizes[] = "Размер барной стойки: " . $_POST['form-bar-size'] . " м";
+        $sizes[] = "Размер барной стойки: " . $_POST['form-bar-size'];
     if (isset($_POST['form-island-size']) && $_POST['form-island-size']) 
-        $sizes[] = "Размер острова: " . $_POST['form-island-size'] . " м";
+        $sizes[] = "Размер острова: " . $_POST['form-island-size'];
     $sizes_str = !empty($sizes) ? implode('<br>', $sizes) : 'Не указано';
     
     $answer5_kitchen = isset($_POST['form-question-5-kitchen']) ? $_POST['form-question-5-kitchen'] : 'Не указано';
@@ -171,7 +171,6 @@ if ($_POST && $phone) {
         $message .= "--{$boundary}--";
         
         $mail_sent = mail($to, $subject, $message, $headers);
-        error_log("Mail with file sent: " . ($mail_sent ? 'YES' : 'NO'));
     } 
     // Обычное письмо без файла
     else {
@@ -180,7 +179,6 @@ if ($_POST && $phone) {
         $headers .= "Content-type: text/html; charset=utf-8\r\n";
         
         $mail_sent = mail($to, $subject, $email_body, $headers);
-        error_log("Mail without file sent: " . ($mail_sent ? 'YES' : 'NO'));
     }
     
     $_SESSION['win'] = 1;

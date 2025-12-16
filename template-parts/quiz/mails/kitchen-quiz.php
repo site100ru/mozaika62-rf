@@ -32,11 +32,11 @@ if (isset($_POST['form-answer-2-kitchen-3']) && $_POST['form-answer-2-kitchen-3'
 $features_str = !empty($features) ? implode(', ', $features) : 'Не выбрано';
 
 // Размеры
-$side1 = isset($_POST['form-side-1']) && $_POST['form-side-1'] ? $_POST['form-side-1'] . ' м' : '';
-$side2 = isset($_POST['form-side-2']) && $_POST['form-side-2'] ? $_POST['form-side-2'] . ' м' : '';
-$side3 = isset($_POST['form-side-3']) && $_POST['form-side-3'] ? $_POST['form-side-3'] . ' м' : '';
-$bar_size = isset($_POST['form-bar-size']) && $_POST['form-bar-size'] ? $_POST['form-bar-size'] . ' м' : '';
-$island_size = isset($_POST['form-island-size']) && $_POST['form-island-size'] ? $_POST['form-island-size'] . ' м' : '';
+$side1 = isset($_POST['form-side-1']) && $_POST['form-side-1'] ? $_POST['form-side-1'] : '';
+$side2 = isset($_POST['form-side-2']) && $_POST['form-side-2'] ? $_POST['form-side-2'] : '';
+$side3 = isset($_POST['form-side-3']) && $_POST['form-side-3'] ? $_POST['form-side-3'] : '';
+$bar_size = isset($_POST['form-bar-size']) && $_POST['form-bar-size'] ? $_POST['form-bar-size'] : '';
+$island_size = isset($_POST['form-island-size']) && $_POST['form-island-size'] ? $_POST['form-island-size'] : '';
 
 $sizes = array();
 if ($side1) $sizes[] = "Сторона 1: " . $side1;
