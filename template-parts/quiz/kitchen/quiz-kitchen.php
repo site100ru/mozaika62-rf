@@ -4,7 +4,7 @@
             <div class="col">
                 <div class="section-title-wrapper text-center">
                     <h2 class="section-title">Узнайте примерную стоимость вашей кухни</h2>
-                    <p class="section-subtitle">Ответьте на 6 коротких вопросов</p>
+                    <p class="section-subtitle">Ответьте на 7 коротких вопросов</p>
                     <img class="text-center img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" style="margin-bottom: 60px;" />
                 </div>
 
@@ -13,7 +13,7 @@
 
                         <!-- question-1-kitchen (Планировка) -->
                         <div class="col" id="question-1-kitchen">
-                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>1/6</span> Какая планировка кухни Вам нужна?</h3>
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>1/7</span> Какая планировка кухни Вам нужна?</h3>
 
                             <div class="row quiz-questions-container">
 
@@ -71,11 +71,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" disabled value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" id="btn-next-question-1-kitchen" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -86,7 +86,7 @@
 
                         <!-- question-2-kitchen (Дополнительные особенности) -->
                         <div class="col" id="question-2-kitchen" style="display: none;">
-                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>2/6</span> Какие дополнительные особенности кухни Вы хотите?</h3>
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>2/7</span> Какие дополнительные особенности кухни Вы хотите?</h3>
 
                             <div class="row quiz-questions-container">
 
@@ -144,11 +144,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" id="btn-next-question-2-kitchen" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -159,50 +159,18 @@
 
                         <!-- question-3-kitchen (Размеры) -->
                         <div class="col" id="question-3-kitchen" style="display: none;">
-                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>3/6</span> Введите размеры кухни</h3>
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>3/7</span> Введите размеры кухни</h3>
 
-                            <div class="quiz-questions-container">
-                                <div class="row ">
-
-                                    <div class="col-12 col-lg-4 col-xl-3 mb-3 dynamic-input" data-show-condition='["Прямая","Угловая","П-образная"]' style="display: none;">
-                                        <label for="side-1" class="mb-1">Сторона 1</label>
+                            <div class="quiz-questions-container">                                
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 mb-3">
+                                        <label for="kitchen-size" class="mb-3">Опишите своими словами размеры кухни, чтобы мы могли учесть все особенности и предложить наиболее точный расчет.</label>
                                         <div>
-                                            <input type="text" class="form-control" id="side-1" name="side-1" placeholder="Введите размер" />
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-lg-4 col-xl-3 mb-3 dynamic-input" data-show-condition='["Угловая","П-образная"]' style="display: none;">
-                                        <label for="side-2" class="mb-1">Сторона 2</label>
-                                        <div>
-                                            <input type="text" class="form-control" id="side-2" name="side-2" placeholder="Введите размер" />
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-lg-4 col-xl-3 mb-3 dynamic-input" data-show-condition='["П-образная"]' style="display: none;">
-                                        <label for="side-3" class="mb-1">Сторона 3</label>
-                                        <div>
-                                            <input type="text" class="form-control" id="side-3" name="side-3" placeholder="Введите размер" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row ">
-                                    <div class="col-12 col-lg-4 col-xl-3 mb-3 dynamic-input" data-show-condition='["Барная стойка"]' style="display: none;">
-                                        <label for="bar-size" class="mb-1">Размер барной стойки</label>
-                                        <div>
-                                            <input type="text" class="form-control" id="bar-size" name="bar-size" placeholder="Введите размер" />
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-lg-4 col-xl-3 mb-3 dynamic-input" data-show-condition='["Островок"]' style="display: none;">
-                                        <label for="island-size" class="mb-1">Размер острова</label>
-                                        <div>
-                                            <input type="text" class="form-control" id="island-size" name="island-size" placeholder="Введите размер" />
+                                            <input type="text" class="form-control" id="kitchen-size" name="kitchen-size" placeholder="Например: 5 на 3 м или 3,3 м, барная стойка 1 на 1" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="row align-items-center">
                                 <div class="col-3 col-lg-1 mb-3 mb-lg-0">
@@ -215,11 +183,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
                                     <input type="button" id="btn-next-question-3-kitchen" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -230,7 +198,7 @@
 
                         <!-- question-4-kitchen (Стиль) -->
                         <div class="col" id="question-4-kitchen" style="display: none;">
-                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>4/6</span> Какой стиль кухни Вы рассматриваете?</h3>
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>4/7</span> Какой стиль кухни Вы рассматриваете?</h3>
 
                             <div class="row quiz-questions-container">
 
@@ -302,11 +270,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" id="btn-next-question-4-kitchen" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -317,7 +285,7 @@
 
                         <!-- question-5-kitchen (Материал фасада) -->
                         <div class="col" id="question-5-kitchen" style="display: none;">
-                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>5/6</span> Какой материал фасада Вы рассматриваете?</h3>
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>5/7</span> Какой материал фасада Вы рассматриваете?</h3>
 
                             <div class="row quiz-questions-container">
 
@@ -445,11 +413,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" id="btn-next-question-5-kitchen" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -457,53 +425,62 @@
                         <!-- /question-5-kitchen -->
 
 
+                        <!-- question-5-5-kitchen (Budget) -->
+                        <div class="col" id="question-5-5-kitchen" style="display: none;">
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>6/7</span> Какой бюджет Вы планируете?</h3>
 
-                        <!-- question-6-kitchen (Подарок) -->
-                        <div class="col" id="question-6-kitchen" style="display: none;">
-                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>6/6</span> Какой подарок Вы хотите получить в случае заказа?</h3>
+                            <div class="row quiz-questions-container d-flex flex-column">
 
-                            <div class="row quiz-questions-container">
-
-                                <div class="col-6 col-sm-4 col-xl-3">
-                                    <label class="option_item mb-3" for="answer-6-kitchen-1">
-                                        <input type="radio" id="answer-6-kitchen-1" name="question-6-kitchen" class="checkbox" value="Дополнительная скидка 10%" />
-                                        <div class="option_inner">
-                                            <div class="shadow-wrapper">
-                                                <div class="shadow-wrapper-decoration"></div>
+                                <div class="col-12 col-md-8">
+                                    <label class="d-flex quiz-chek gap-3" for="answer-5-5-kitchen-1">
+                                        <div class="option_item">
+                                            <input type="radio" id="answer-5-5-kitchen-1" name="question-5-5-kitchen" class="checkbox" value="150 — 200 тыс. руб." />
+                                            <div class="option_inner text-start">
+                                                <div class="shadow-wrapper-box"></div>
+                                                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/ico/checkbox.svg" />
                                             </div>
-                                            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/img/7-kitchen-1.webp"
-                                                style="width: 100%" />
                                         </div>
+                                        <h6 class="quiz-section-h3 mb-4">150 — 200 тыс. руб.</h6>
                                     </label>
-                                    <h6 class="quiz-section-h3 mb-4">Дополнительная скидка 10%</h6>
                                 </div>
 
-                                <div class="col-6 col-sm-4 col-xl-3">
-                                    <label class="option_item mb-3" for="answer-6-kitchen-2">
-                                        <input type="radio" id="answer-6-kitchen-2" name="question-6-kitchen" class="checkbox" value="Беспроцентная рассрочка на 6 месяцев" />
-                                        <div class="option_inner">
-                                            <div class="shadow-wrapper">
-                                                <div class="shadow-wrapper-decoration"></div>
+                                <div class="col-12 col-md-8">
+                                    <label class="d-flex quiz-chek gap-3" for="answer-5-5-kitchen-2">
+                                        <div class="option_item">
+                                            <input type="radio" id="answer-5-5-kitchen-2" name="question-5-5-kitchen" class="checkbox" value="200 — 300 тыс. руб." />
+                                            <div class="option_inner text-start">
+                                                <div class="shadow-wrapper-box"></div>
+                                                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/ico/checkbox.svg" />
                                             </div>
-                                            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/img/7-kitchen-2.webp"
-                                                style="width: 100%" />
                                         </div>
+                                        <h6 class="quiz-section-h3 mb-4">200 — 300 тыс. руб.</h6>
                                     </label>
-                                    <h6 class="quiz-section-h3 mb-4">Беспроцентная рассрочка на 6 месяцев</h6>
                                 </div>
 
-                                <div class="col-6 col-sm-4 col-xl-3">
-                                    <label class="option_item mb-3" for="answer-6-kitchen-3">
-                                        <input type="radio" id="answer-6-kitchen-3" name="question-6-kitchen" class="checkbox" value="Скидка 15% на заказ шкафа в течении года" />
-                                        <div class="option_inner">
-                                            <div class="shadow-wrapper">
-                                                <div class="shadow-wrapper-decoration"></div>
+                                <div class="col-12 col-md-8">
+                                    <label class="d-flex quiz-chek gap-3" for="answer-5-5-kitchen-3">
+                                        <div class="option_item">
+                                            <input type="radio" id="answer-5-5-kitchen-3" name="question-5-5-kitchen" class="checkbox" value="более 300 тыс. руб." />
+                                            <div class="option_inner text-start">
+                                                <div class="shadow-wrapper-box"></div>
+                                                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/ico/checkbox.svg" />
                                             </div>
-                                            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/img/7-kitchen-3.webp"
-                                                style="width: 100%" />
                                         </div>
+                                        <h6 class="quiz-section-h3 mb-4">более 300 тыс. руб.</h6>
                                     </label>
-                                    <h6 class="quiz-section-h3 mb-4">Скидка 15% на заказ шкафа в течении года</h6>
+                                </div>
+
+                                <div class="col-12 col-md-8">
+                                    <label class="d-flex quiz-chek gap-3" for="answer-5-5-kitchen-4">
+                                        <div class="option_item">
+                                            <input type="radio" id="answer-5-5-kitchen-4" name="question-5-5-kitchen" class="checkbox" value="не определился" />
+                                            <div class="option_inner text-start">
+                                                <div class="shadow-wrapper-box"></div>
+                                                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/ico/checkbox.svg" />
+                                            </div>
+                                        </div>
+                                        <h6 class="quiz-section-h3 mb-4">не определился</h6>
+                                    </label>
                                 </div>
                             </div>
 
@@ -518,11 +495,79 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
+                                    <input type="button" id="btn-next-question-5-5-kitchen" value="Далее" class="btn btn-corporate-color-1" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /question-5-5-kitchen -->
+
+                        <!-- question-6-kitchen (Подарок) -->
+                        <div class="col" id="question-6-kitchen" style="display: none;">
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>7/7</span> Какой подарок Вы хотите получить в случае заказа?</h3>
+
+                            <div class="row quiz-questions-container">
+
+                                <div class="col-6 col-sm-4 col-xl-3">
+                                    <label class="option_item mb-3" for="answer-6-kitchen-1">
+                                        <input type="radio" id="answer-6-kitchen-1" name="question-6-kitchen" class="checkbox" value="Дополнительная скидка 10%" />
+                                        <div class="option_inner">
+                                            <div class="shadow-wrapper">
+                                                <div class="shadow-wrapper-decoration"></div>
+                                            </div>
+                                            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/img/7-kitchen-1.webp" style="width: 100%" />
+                                        </div>
+                                    </label>
+                                    <h6 class="quiz-section-h3 mb-4">Дополнительная скидка 10%</h6>
+                                </div>
+
+                                <div class="col-6 col-sm-4 col-xl-3">
+                                    <label class="option_item mb-3" for="answer-6-kitchen-2">
+                                        <input type="radio" id="answer-6-kitchen-2" name="question-6-kitchen" class="checkbox" value="Беспроцентная рассрочка на 6 месяцев" />
+                                        <div class="option_inner">
+                                            <div class="shadow-wrapper">
+                                                <div class="shadow-wrapper-decoration"></div>
+                                            </div>
+                                            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/img/7-kitchen-2.webp" style="width: 100%" />
+                                        </div>
+                                    </label>
+                                    <h6 class="quiz-section-h3 mb-4">Беспроцентная рассрочка на 6 месяцев</h6>
+                                </div>
+
+                                <div class="col-6 col-sm-4 col-xl-3">
+                                    <label class="option_item mb-3" for="answer-6-kitchen-3">
+                                        <input type="radio" id="answer-6-kitchen-3" name="question-6-kitchen" class="checkbox" value="Скидка 15% на заказ шкафа в течении года" />
+                                        <div class="option_inner">
+                                            <div class="shadow-wrapper">
+                                                <div class="shadow-wrapper-decoration"></div>
+                                            </div>
+                                            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/img/7-kitchen-3.webp" style="width: 100%" />
+                                        </div>
+                                    </label>
+                                    <h6 class="quiz-section-h3 mb-4">Скидка 15% на заказ шкафа в течении года</h6>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center">
+                                <div class="col-3 col-lg-1 mb-3 mb-lg-0">
+                                    <div class="progress-title">Готово:</div>
+                                </div>
+
+                                <div class="col-9 col-lg-5 mb-3 mb-lg-0">
+                                    <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 92%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
+                                    <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" id="btn-next-question-6-kitchen" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -619,11 +664,11 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                    <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                         <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                     </div>
 
-                                    <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                    <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                         <button type="submit" class="btn btn-corporate-color-1"> Отправить </button>
                                     </div>
                                 </div>
@@ -646,11 +691,10 @@
                                 <input type="hidden" id="form-answer-2-kitchen-1" name="form-answer-2-kitchen-1" />
                                 <input type="hidden" id="form-answer-2-kitchen-2" name="form-answer-2-kitchen-2" />
                                 <input type="hidden" id="form-answer-2-kitchen-3" name="form-answer-2-kitchen-3" />
-                                <input type="hidden" id="form-side-1" name="form-side-1" />
-                                <input type="hidden" id="form-side-2" name="form-side-2" />
-                                <input type="hidden" id="form-side-3" name="form-side-3" />
-                                <input type="hidden" id="form-bar-size" name="form-bar-size" />
-                                <input type="hidden" id="form-island-size" name="form-island-size" />
+
+                                <input type="hidden" id="form-kitchen-size" name="form-kitchen-size" />
+                                <input type="hidden" id="form-question-5-5-kitchen" name="form-question-5-5-kitchen" />
+
                                 <input type="hidden" id="form-question-4-kitchen" name="form-question-4-kitchen" />
                                 <input type="hidden" id="form-question-5-kitchen" name="form-question-5-kitchen" />
                                 <input type="hidden" id="form-question-6-kitchen" name="form-question-6-kitchen" />

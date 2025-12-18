@@ -30,22 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btnNext2Kitchen.addEventListener('click', function (e) {
             e.preventDefault();
 
-            // Проверяем что выбран хотя бы один checkbox
-            var hasChecked = false;
-            for (var i = 1; i <= 3; i++) {
-                var checkbox = document.getElementById('answer-2-kitchen-' + i);
-                if (checkbox && checkbox.checked) {
-                    hasChecked = true;
-                    break;
-                }
-            }
-
-            if (!hasChecked) {
-                alert('Для продолжения выберите хотя бы одну дополнительную особенность.');
-                return false;
-            }
-
-            // Собираем выбранные ответы
+            // Собираем выбранные ответы (можно не выбирать ни одного)
             for (var i = 1; i <= 3; i++) {
                 var checkbox = document.getElementById('answer-2-kitchen-' + i);
                 if (checkbox && checkbox.checked) {
@@ -55,9 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             document.getElementById('question-2-kitchen').style.display = 'none';
             document.getElementById('question-3-kitchen').style.display = 'block';
-            
-            // Обновляем видимость динамических инпутов
-            updateDynamicInputsKitchen();
         });
     }
 
@@ -72,91 +54,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ============================================
-    // ВОПРОС 3 - Размеры
+    // ВОПРОС 3 - Размеры (УПРОЩЕННАЯ ВЕРСИЯ)
     // ============================================
     
-    // Функция обновления видимости динамических инпутов
-    function updateDynamicInputsKitchen() {
-        var selectedLayout = document.querySelector('input[name="question-1-kitchen"]:checked');
-        var layoutValue = selectedLayout ? selectedLayout.value : '';
-        
-        var selectedFeatures = [];
-        for (var i = 1; i <= 3; i++) {
-            var checkbox = document.getElementById('answer-2-kitchen-' + i);
-            if (checkbox && checkbox.checked) {
-                selectedFeatures.push(checkbox.value);
-            }
-        }
-        
-        // Показываем/скрываем инпуты на основе условий
-        var allInputs = document.querySelectorAll('#question-3-kitchen .dynamic-input');
-        allInputs.forEach(function(inputDiv) {
-            var showCondition = JSON.parse(inputDiv.getAttribute('data-show-condition') || '[]');
-            var shouldShow = false;
-            
-            for (var j = 0; j < showCondition.length; j++) {
-                if (layoutValue === showCondition[j] || selectedFeatures.indexOf(showCondition[j]) !== -1) {
-                    shouldShow = true;
-                    break;
-                }
-            }
-            
-            inputDiv.style.display = shouldShow ? 'block' : 'none';
-            
-            if (!shouldShow) {
-                var input = inputDiv.querySelector('input');
-                if (input) input.value = '';
-            }
-        });
-    }
-
-    // Обработчики для обновления динамических инпутов при изменении
-    var question1KitchenRadios = document.querySelectorAll('input[name="question-1-kitchen"]');
-    question1KitchenRadios.forEach(function(radio) {
-        radio.addEventListener('change', function() {
-            if (document.getElementById('question-3-kitchen').style.display === 'block') {
-                updateDynamicInputsKitchen();
-            }
-        });
-    });
-
-    var question2KitchenCheckboxes = document.querySelectorAll('input[name^="answer-2-kitchen"]');
-    question2KitchenCheckboxes.forEach(function(checkbox) {
-        checkbox.addEventListener('change', function() {
-            if (document.getElementById('question-3-kitchen').style.display === 'block') {
-                updateDynamicInputsKitchen();
-            }
-        });
-    });
-
     var btnNext3Kitchen = document.getElementById('btn-next-question-3-kitchen');
     if (btnNext3Kitchen) {
         btnNext3Kitchen.addEventListener('click', function (e) {
             e.preventDefault();
 
-            // Проверяем заполнение видимых инпутов
-            var visibleInputs = document.querySelectorAll('#question-3-kitchen .dynamic-input[style*="display: block"] input, #question-3-kitchen .dynamic-input[style*="display: flex"] input');
-            var allFilled = true;
-            
-            visibleInputs.forEach(function(input) {
-                if (!input.value.trim()) {
-                    allFilled = false;
-                }
-            });
-            
-            if (visibleInputs.length > 0 && !allFilled) {
-                alert('Пожалуйста, заполните все обязательные поля размеров.');
+            var kitchenSizeInput = document.getElementById('kitchen-size');
+            if (!kitchenSizeInput || !kitchenSizeInput.value.trim()) {
+                alert('Пожалуйста, укажите размеры кухни.');
                 return false;
             }
 
-            // Сохраняем все значения динамических инпутов
-            var allDynamicInputs = document.querySelectorAll('#question-3-kitchen .dynamic-input input');
-            allDynamicInputs.forEach(function(input) {
-                var hiddenField = document.getElementById('form-' + input.name);
-                if (hiddenField) {
-                    hiddenField.value = input.value;
-                }
-            });
+            // Сохраняем размер кухни
+            document.getElementById('form-kitchen-size').value = kitchenSizeInput.value;
 
             document.getElementById('question-3-kitchen').style.display = 'none';
             document.getElementById('question-4-kitchen').style.display = 'block';
@@ -221,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('form-question-5-kitchen').value = answer;
 
             document.getElementById('question-5-kitchen').style.display = 'none';
-            document.getElementById('question-6-kitchen').style.display = 'block';
+            document.getElementById('question-5-5-kitchen').style.display = 'block';
         });
     }
 
@@ -232,6 +145,37 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             document.getElementById('question-5-kitchen').style.display = 'none';
             document.getElementById('question-4-kitchen').style.display = 'block';
+        });
+    }
+
+    // ============================================
+    // ВОПРОС 5.5 - Бюджет (НОВЫЙ)
+    // ============================================
+    var btnNext55Kitchen = document.getElementById('btn-next-question-5-5-kitchen');
+    if (btnNext55Kitchen) {
+        btnNext55Kitchen.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            if (!document.querySelector('input[name="question-5-5-kitchen"]:checked')) {
+                alert('Для продолжения выберите планируемый бюджет.');
+                return false;
+            }
+
+            var answer = document.querySelector('input[name="question-5-5-kitchen"]:checked').value;
+            document.getElementById('form-question-5-5-kitchen').value = answer;
+
+            document.getElementById('question-5-5-kitchen').style.display = 'none';
+            document.getElementById('question-6-kitchen').style.display = 'block';
+        });
+    }
+
+    // Кнопка "Назад" для вопроса 5.5
+    var btnPrev55Kitchen = document.querySelector('#question-5-5-kitchen input[value="Назад"]');
+    if (btnPrev55Kitchen) {
+        btnPrev55Kitchen.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('question-5-5-kitchen').style.display = 'none';
+            document.getElementById('question-5-kitchen').style.display = 'block';
         });
     }
 
@@ -262,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btnPrev6Kitchen.addEventListener('click', function (e) {
             e.preventDefault();
             document.getElementById('question-6-kitchen').style.display = 'none';
-            document.getElementById('question-5-kitchen').style.display = 'block';
+            document.getElementById('question-5-5-kitchen').style.display = 'block';
         });
     }
 

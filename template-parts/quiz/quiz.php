@@ -238,7 +238,7 @@
                                 
                                 <div class="row">
                                     <div class="col-12 mb-3">
-                                        <label for="kitchen-size" class="mb-3">Опишите своими словами размеры кухни, чтобы мы могли учесть все особенности и предложить наиболее точный расчет.                                        </label>
+                                        <label for="kitchen-size" class="mb-3">Опишите своими словами размеры кухни, чтобы мы могли учесть все особенности и предложить наиболее точный расчет.</label>
                                         <div>
                                             <input type="text" class="form-control" id="kitchen-size" name="kitchen-size" placeholder="Например: 5 на 3 м или 3,3 м, барная стойка 1 на 1" />
                                         </div>

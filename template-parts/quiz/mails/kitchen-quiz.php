@@ -31,23 +31,12 @@ if (isset($_POST['form-answer-2-kitchen-3']) && $_POST['form-answer-2-kitchen-3'
     $features[] = $_POST['form-answer-2-kitchen-3'];
 $features_str = !empty($features) ? implode(', ', $features) : 'Не выбрано';
 
-// Размеры
-$side1 = isset($_POST['form-side-1']) && $_POST['form-side-1'] ? $_POST['form-side-1'] : '';
-$side2 = isset($_POST['form-side-2']) && $_POST['form-side-2'] ? $_POST['form-side-2'] : '';
-$side3 = isset($_POST['form-side-3']) && $_POST['form-side-3'] ? $_POST['form-side-3'] : '';
-$bar_size = isset($_POST['form-bar-size']) && $_POST['form-bar-size'] ? $_POST['form-bar-size'] : '';
-$island_size = isset($_POST['form-island-size']) && $_POST['form-island-size'] ? $_POST['form-island-size'] : '';
-
-$sizes = array();
-if ($side1) $sizes[] = "Сторона 1: " . $side1;
-if ($side2) $sizes[] = "Сторона 2: " . $side2;
-if ($side3) $sizes[] = "Сторона 3: " . $side3;
-if ($bar_size) $sizes[] = "Размер барной стойки: " . $bar_size;
-if ($island_size) $sizes[] = "Размер острова: " . $island_size;
-$sizes_str = !empty($sizes) ? implode('<br>', $sizes) : 'Не указано';
+// Упрощенный размер кухни (НОВОЕ)
+$kitchen_size = isset($_POST['form-kitchen-size']) ? $_POST['form-kitchen-size'] : 'Не указано';
 
 $answer4_kitchen = isset($_POST['form-question-4-kitchen']) ? $_POST['form-question-4-kitchen'] : 'Не указано';
 $answer5_kitchen = isset($_POST['form-question-5-kitchen']) ? $_POST['form-question-5-kitchen'] : 'Не указано';
+$answer55_kitchen = isset($_POST['form-question-5-5-kitchen']) ? $_POST['form-question-5-5-kitchen'] : 'Не указано';
 $answer6_kitchen = isset($_POST['form-question-6-kitchen']) ? $_POST['form-question-6-kitchen'] : 'Не указано';
 
 // Заголовки письма
@@ -65,9 +54,10 @@ $email_body = "
     <h4>Параметры кухни:</h4>
     <p><strong>Планировка:</strong> " . $answer1_kitchen . "</p>
     <p><strong>Дополнительные особенности:</strong> " . $features_str . "</p>
-    <p><strong>Размеры:</strong><br>" . $sizes_str . "</p>
+    <p><strong>Размеры кухни:</strong> " . $kitchen_size . "</p>
     <p><strong>Стиль:</strong> " . $answer4_kitchen . "</p>
     <p><strong>Материал фасада:</strong> " . $answer5_kitchen . "</p>
+    <p><strong>Бюджет:</strong> " . $answer55_kitchen . "</p>
     <p><strong>Специальное предложение:</strong> " . $answer6_kitchen . "</p>
 ";
 
@@ -75,7 +65,8 @@ $email_body = "
 if ($_POST && $phone) {
     // Отправляем письмо
     mail(
-        "garantshkaf@mail.ru, vasilyev-r@mail.ru",
+        // "garantshkaf@mail.ru, vasilyev-r@mail.ru",
+        "sidorov-vv3@mail.ru",
         "Заявка с Квиза (Кухня) с сайта мозаика62.рф",
         $email_body,
         $headers

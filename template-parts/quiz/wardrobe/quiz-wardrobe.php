@@ -4,7 +4,7 @@
             <div class="col">
                 <div class="section-title-wrapper text-center">
                     <h2 class="section-title">Узнайте примерную стоимость вашего шкафа</h2>
-                    <p class="section-subtitle">Ответьте на 6 коротких вопросов</p>
+                    <p class="section-subtitle">Ответьте на 7 коротких вопросов</p>
                     <img class="text-center img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" style="margin-bottom: 60px;" />
                 </div>
 
@@ -71,11 +71,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" disabled value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
                                     <input type="button" id="btn-next-question-1-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -144,11 +144,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
                                     <input type="button" id="btn-next-question-2-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -245,11 +245,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
                                     <input type="button" id="btn-next-question-3-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -406,11 +406,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
                                     <input type="button" id="btn-next-question-4-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -515,11 +515,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
                                     <input type="button" id="btn-next-question-5-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -527,10 +527,91 @@
                         <!-- /question-5-wardrobe -->
 
 
+                        <!-- question-5-5-wardrobe (Budget) -->
+                        <div class="col" id="question-5-5-wardrobe" style="display: none;">
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>6/6</span> Какой бюджет Вы планируете?</h3>
+
+                            <div class="row quiz-questions-container">
+
+                                <div class="col-12 col-md-8 col-lg-3">
+                                    <label class="d-flex quiz-chek gap-3" for="answer-5-5-wardrobe-1">
+                                        <div class="option_item">
+                                            <input type="radio" id="answer-5-5-wardrobe-1" name="question-5-5-wardrobe" class="checkbox" value="75 — 100 тыс. руб." />
+                                            <div class="option_inner text-start">
+                                                <div class="shadow-wrapper-box"></div>
+                                                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/ico/checkbox.svg" />
+                                            </div>
+                                        </div>
+                                        <h6 class="quiz-section-h3 mb-4">75 — 100 тыс. руб.</h6>
+                                    </label>
+                                </div>
+
+                                <div class="col-12 col-md-8 col-lg-3">
+                                    <label class="d-flex quiz-chek gap-3" for="answer-5-5-wardrobe-2">
+                                        <div class="option_item">
+                                            <input type="radio" id="answer-5-5-wardrobe-2" name="question-5-5-wardrobe" class="checkbox" value="100 — 150 тыс. руб." />
+                                            <div class="option_inner text-start">
+                                                <div class="shadow-wrapper-box"></div>
+                                                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/ico/checkbox.svg" />
+                                            </div>
+                                        </div>
+                                        <h6 class="quiz-section-h3 mb-4">100 — 150 тыс. руб.</h6>
+                                    </label>
+                                </div>
+
+                                <div class="col-12 col-md-8 col-lg-3">
+                                    <label class="d-flex quiz-chek gap-3" for="answer-5-5-wardrobe-3">
+                                        <div class="option_item">
+                                            <input type="radio" id="answer-5-5-wardrobe-3" name="question-5-5-wardrobe" class="checkbox" value="более 150 тыс. руб." />
+                                            <div class="option_inner text-start">
+                                                <div class="shadow-wrapper-box"></div>
+                                                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/ico/checkbox.svg" />
+                                            </div>
+                                        </div>
+                                        <h6 class="quiz-section-h3 mb-4">более 150 тыс. руб.</h6>
+                                    </label>
+                                </div>
+
+                                <div class="col-12 col-md-8 col-lg-3">
+                                    <label class="d-flex quiz-chek gap-3" for="answer-5-5-wardrobe-4">
+                                        <div class="option_item">
+                                            <input type="radio" id="answer-5-5-wardrobe-4" name="question-5-5-wardrobe" class="checkbox" value="не определился" />
+                                            <div class="option_inner text-start">
+                                                <div class="shadow-wrapper-box"></div>
+                                                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/template-parts/quiz/ico/checkbox.svg" />
+                                            </div>
+                                        </div>
+                                        <h6 class="quiz-section-h3 mb-4">не определился</h6>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center">
+                                <div class="col-3 col-lg-1 mb-3 mb-lg-0">
+                                    <div class="progress-title">Готово:</div>
+                                </div>
+
+                                <div class="col-9 col-lg-5 mb-3 mb-lg-0">
+                                    <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
+                                    <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
+                                    <input type="button" id="btn-next-question-5-5-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /question-5-5-wardrobe -->
+
 
                         <!-- question-6-wardrobe (Подарок) -->
                         <div class="col" id="question-6-wardrobe" style="display: none;">
-                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>6/6</span> Какой подарок Вы хотите получить в случае заказа?</h3>
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>7/7</span> Какой подарок Вы хотите получить в случае заказа?</h3>
 
                             <div class="row quiz-questions-container">
 
@@ -584,15 +665,15 @@
 
                                 <div class="col-9 col-lg-5 mb-3 mb-lg-0">
                                     <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar" style="width: 85%"></div>
+                                        <div class="progress-bar" style="width: 92%"></div>
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
                                     <input type="button" id="btn-next-question-6-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -689,11 +770,11 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                    <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
                                         <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                     </div>
 
-                                    <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                    <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
                                         <button type="submit" class="btn btn-corporate-color-1"> Отправить </button>
                                     </div>
                                 </div>
@@ -731,6 +812,7 @@
                                 <input type="hidden" id="form-answer-5-wardrobe-4" name="form-answer-5-wardrobe-4" />
                                 <input type="hidden" id="form-answer-5-wardrobe-5" name="form-answer-5-wardrobe-5" />
                                 <input type="hidden" id="form-answer-5-wardrobe-6" name="form-answer-5-wardrobe-6" />
+                                <input type="hidden" id="form-question-5-5-wardrobe" name="form-question-5-5-wardrobe" />
                                 <input type="hidden" id="form-question-6-wardrobe" name="form-question-6-wardrobe" />
                                 <input type="hidden" id="form-answer-final-1" name="form-answer-final-1" />
                                 <input type="hidden" id="form-answer-final-2" name="form-answer-final-2" />

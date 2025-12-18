@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             document.getElementById('question-5-wardrobe').style.display = 'none';
-            document.getElementById('question-6-wardrobe').style.display = 'block';
+            document.getElementById('question-5-5-wardrobe').style.display = 'block';
         });
     }
 
@@ -157,6 +157,37 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             document.getElementById('question-5-wardrobe').style.display = 'none';
             document.getElementById('question-4-wardrobe').style.display = 'block';
+        });
+    }
+
+    // ============================================
+    // ВОПРОС 5.5 - Бюджет
+    // ============================================
+    var btnNext55Wardrobe = document.getElementById('btn-next-question-5-5-wardrobe');
+    if (btnNext55Wardrobe) {
+        btnNext55Wardrobe.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            if (!document.querySelector('input[name="question-5-5-wardrobe"]:checked')) {
+                alert('Для продолжения выберите планируемый бюджет.');
+                return false;
+            }
+
+            var answer = document.querySelector('input[name="question-5-5-wardrobe"]:checked').value;
+            document.getElementById('form-question-5-5-wardrobe').value = answer;
+
+            document.getElementById('question-5-5-wardrobe').style.display = 'none';
+            document.getElementById('question-6-wardrobe').style.display = 'block';
+        });
+    }
+
+    // Кнопка "Назад" для вопроса 5.5
+    var btnPrev55Wardrobe = document.querySelector('#question-5-5-wardrobe input[value="Назад"]');
+    if (btnPrev55Wardrobe) {
+        btnPrev55Wardrobe.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('question-5-5-wardrobe').style.display = 'none';
+            document.getElementById('question-5-wardrobe').style.display = 'block';
         });
     }
 
@@ -187,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btnPrev6Wardrobe.addEventListener('click', function (e) {
             e.preventDefault();
             document.getElementById('question-6-wardrobe').style.display = 'none';
-            document.getElementById('question-5-wardrobe').style.display = 'block';
+            document.getElementById('question-5-5-wardrobe').style.display = 'block';
         });
     }
 

@@ -41,6 +41,7 @@ for ($i = 1; $i <= 6; $i++) {
 }
 $doors_str = !empty($doors) ? implode(', ', $doors) : 'Не указано';
 
+$answer55_wardrobe = isset($_POST['form-question-5-5-wardrobe']) ? $_POST['form-question-5-5-wardrobe'] : 'Не указано';
 $answer6_wardrobe = isset($_POST['form-question-6-wardrobe']) ? $_POST['form-question-6-wardrobe'] : 'Не указано';
 
 // Заголовки письма
@@ -61,6 +62,7 @@ $email_body = "
     <p><strong>Материал фасада:</strong> " . $answer3_wardrobe . "</p>
     <p><strong>Ширина шкафа:</strong> " . $widths_str . "</p>
     <p><strong>Количество дверей:</strong> " . $doors_str . "</p>
+    <p><strong>Бюджет:</strong> " . $answer55_wardrobe . "</p>
     <p><strong>Специальное предложение:</strong> " . $answer6_wardrobe . "</p>
 ";
 
