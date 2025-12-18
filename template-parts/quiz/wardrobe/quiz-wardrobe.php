@@ -71,11 +71,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-2 order-sm-1">
                                     <input type="button" disabled value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-1 order-sm-2">
                                     <input type="button" id="btn-next-question-1-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -144,11 +144,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-2 order-sm-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-1 order-sm-2">
                                     <input type="button" id="btn-next-question-2-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -245,11 +245,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-2 order-sm-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-1 order-sm-2">
                                     <input type="button" id="btn-next-question-3-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -406,11 +406,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-2 order-sm-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-1 order-sm-2">
                                     <input type="button" id="btn-next-question-4-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -515,11 +515,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-2 order-sm-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-1 order-sm-2">
                                     <input type="button" id="btn-next-question-5-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -597,11 +597,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-2 order-sm-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-1 order-sm-2">
                                     <input type="button" id="btn-next-question-5-5-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -669,11 +669,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-2 order-sm-1">
                                     <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                 </div>
 
-                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
+                                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-1 order-sm-2">
                                     <input type="button" id="btn-next-question-6-wardrobe" value="Далее" class="btn btn-corporate-color-1" />
                                 </div>
                             </div>
@@ -770,11 +770,11 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-2 order-lg-1">
+                                    <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-2 order-sm-1">
                                         <input type="button" value="Назад" class="btn btn-corporate-color-outline-1" />
                                     </div>
 
-                                    <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-sm-1 order-lg-2">
+                                    <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0 order-1 order-sm-2">
                                         <button type="submit" class="btn btn-corporate-color-1"> Отправить </button>
                                     </div>
                                 </div>
