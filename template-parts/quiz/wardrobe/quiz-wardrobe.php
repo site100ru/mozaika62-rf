@@ -13,7 +13,7 @@
 
                         <!-- question-1-wardrobe (Тип шкафа) -->
                         <div class="col" id="question-1-wardrobe">
-                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>1/6</span> Какой тип шкафа Вам нужен?</h3>
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>1/7</span> Какой тип шкафа Вам нужен?</h3>
 
                             <div class="row quiz-questions-container">
 
@@ -86,7 +86,7 @@
 
                         <!-- question-2-wardrobe (Тип дверей) -->
                         <div class="col" id="question-2-wardrobe" style="display: none;">
-                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>2/6</span> Какого типа двери Вы хотите?</h3>
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>2/7</span> Какого типа двери Вы хотите?</h3>
 
                             <div class="row quiz-questions-container">
 
@@ -159,7 +159,7 @@
 
                         <!-- question-3-wardrobe (Материал фасада) -->
                         <div class="col" id="question-3-wardrobe" style="display: none;">
-                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>3/6</span> Какой материал фасада Вы хотите?</h3>
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>3/7</span> Какой материал фасада Вы хотите?</h3>
 
                             <div class="row quiz-questions-container">
 
@@ -260,7 +260,7 @@
 
                         <!-- question-4-wardrobe (Ширина) -->
                         <div class="col" id="question-4-wardrobe" style="display: none;">
-                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>4/6</span> Какая ориентировочная ширина шкафа планируется?</h3>
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>4/7</span> Какая ориентировочная ширина шкафа планируется?</h3>
 
                             <div class="row quiz-questions-container">
 
@@ -421,7 +421,7 @@
 
                         <!-- question-5-wardrobe (Количество дверей) -->
                         <div class="col" id="question-5-wardrobe" style="display: none;">
-                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>5/6</span> Какое количество дверей Вы предполагаете?</h3>
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>5/7</span> Какое количество дверей Вы предполагаете?</h3>
 
                             <div class="row quiz-questions-container">
 
@@ -529,7 +529,7 @@
 
                         <!-- question-5-5-wardrobe (Budget) -->
                         <div class="col" id="question-5-5-wardrobe" style="display: none;">
-                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>6/6</span> Какой бюджет Вы планируете?</h3>
+                            <h3 class="quiz-section-subtitle mb-4 text-start"><span>6/7</span> Какой бюджет Вы планируете?</h3>
 
                             <div class="row quiz-questions-container">
 
