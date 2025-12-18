@@ -531,9 +531,9 @@
                         <div class="col" id="question-5-5-wardrobe" style="display: none;">
                             <h3 class="quiz-section-subtitle mb-4 text-start"><span>6/7</span> Какой бюджет Вы планируете?</h3>
 
-                            <div class="row quiz-questions-container">
+                            <div class="row quiz-questions-container d-flex flex-column">
 
-                                <div class="col-12 col-md-8 col-lg-3">
+                                <div class="col-12 col-md-8">
                                     <label class="d-flex quiz-chek gap-3" for="answer-5-5-wardrobe-1">
                                         <div class="option_item">
                                             <input type="radio" id="answer-5-5-wardrobe-1" name="question-5-5-wardrobe" class="checkbox" value="75 — 100 тыс. руб." />
@@ -546,7 +546,7 @@
                                     </label>
                                 </div>
 
-                                <div class="col-12 col-md-8 col-lg-3">
+                                <div class="col-12 col-md-8">
                                     <label class="d-flex quiz-chek gap-3" for="answer-5-5-wardrobe-2">
                                         <div class="option_item">
                                             <input type="radio" id="answer-5-5-wardrobe-2" name="question-5-5-wardrobe" class="checkbox" value="100 — 150 тыс. руб." />
@@ -559,7 +559,7 @@
                                     </label>
                                 </div>
 
-                                <div class="col-12 col-md-8 col-lg-3">
+                                <div class="col-12 col-md-8">
                                     <label class="d-flex quiz-chek gap-3" for="answer-5-5-wardrobe-3">
                                         <div class="option_item">
                                             <input type="radio" id="answer-5-5-wardrobe-3" name="question-5-5-wardrobe" class="checkbox" value="более 150 тыс. руб." />
@@ -572,7 +572,7 @@
                                     </label>
                                 </div>
 
-                                <div class="col-12 col-md-8 col-lg-3">
+                                <div class="col-12 col-md-8">
                                     <label class="d-flex quiz-chek gap-3" for="answer-5-5-wardrobe-4">
                                         <div class="option_item">
                                             <input type="radio" id="answer-5-5-wardrobe-4" name="question-5-5-wardrobe" class="checkbox" value="не определился" />
