@@ -31,21 +31,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 currentBranch = 'kitchen';
                 // Сохраняем ветку в форме
                 document.getElementById('form-branch').value = currentBranch;
-                // Переключаем на первый вопрос кухни
                 document.getElementById('question-1').style.display = 'none';
                 document.getElementById('question-2-kitchen').style.display = 'block';
             } else if (selectedInput.id === 'answer-1-2') {
                 currentBranch = 'wardrobe';
                 // Сохраняем ветку в форме
                 document.getElementById('form-branch').value = currentBranch;
-                // Переключаем на первый вопрос шкафа
                 document.getElementById('question-1').style.display = 'none';
                 document.getElementById('question-2-wardrobe').style.display = 'block';
             } else if (selectedInput.id === 'answer-1-3') {
                 currentBranch = 'other';
                 // Сохраняем ветку в форме
                 document.getElementById('form-branch').value = currentBranch;
-                // Переключаем на вопрос "другое"
                 document.getElementById('question-1').style.display = 'none';
                 document.getElementById('question-2-other').style.display = 'block';
             }
@@ -91,21 +88,6 @@ document.addEventListener('DOMContentLoaded', function () {
         btnNext3Kitchen.addEventListener('click', function (e) {
             e.preventDefault();
 
-            // Проверяем что выбран хотя бы один checkbox
-            var hasChecked = false;
-            for (var i = 1; i <= 3; i++) {
-                var checkbox = document.getElementById('answer-3-kitchen-' + i);
-                if (checkbox && checkbox.checked) {
-                    hasChecked = true;
-                    break;
-                }
-            }
-
-            if (!hasChecked) {
-                alert('Для продолжения выберите хотя бы одну дополнительную особенность или пропустите этот шаг нажав "Пропустить".');
-                return false;
-            }
-
             // Собираем выбранные ответы
             var selectedFeatures = [];
             for (var i = 1; i <= 3; i++) {
@@ -118,9 +100,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             document.getElementById('question-3-kitchen').style.display = 'none';
             document.getElementById('question-4-kitchen').style.display = 'block';
-            
-            // Обновляем видимость динамических инпутов
-            updateDynamicInputsKitchen();
         });
     }
 
@@ -134,89 +113,20 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Функция обновления видимости динамических инпутов для кухни
-    function updateDynamicInputsKitchen() {
-        var selectedLayout = document.querySelector('input[name="question-2-kitchen"]:checked');
-        var layoutValue = selectedLayout ? selectedLayout.value : '';
-        
-        var selectedFeatures = [];
-        for (var i = 1; i <= 3; i++) {
-            var checkbox = document.getElementById('answer-3-kitchen-' + i);
-            if (checkbox && checkbox.checked) {
-                selectedFeatures.push(checkbox.value);
-            }
-        }
-        
-        // Показываем/скрываем инпуты на основе условий
-        var allInputs = document.querySelectorAll('#question-4-kitchen .dynamic-input');
-        allInputs.forEach(function(inputDiv) {
-            var showCondition = JSON.parse(inputDiv.getAttribute('data-show-condition') || '[]');
-            var shouldShow = false;
-            
-            for (var j = 0; j < showCondition.length; j++) {
-                if (layoutValue === showCondition[j] || selectedFeatures.indexOf(showCondition[j]) !== -1) {
-                    shouldShow = true;
-                    break;
-                }
-            }
-            
-            inputDiv.style.display = shouldShow ? 'block' : 'none';
-            
-            if (!shouldShow) {
-                var input = inputDiv.querySelector('input');
-                if (input) input.value = '';
-            }
-        });
-    }
-
-    // Обработчики для обновления динамических инпутов при изменении
-    var question2KitchenRadios = document.querySelectorAll('input[name="question-2-kitchen"]');
-    question2KitchenRadios.forEach(function(radio) {
-        radio.addEventListener('change', function() {
-            if (document.getElementById('question-4-kitchen').style.display === 'block') {
-                updateDynamicInputsKitchen();
-            }
-        });
-    });
-
-    var question3KitchenCheckboxes = document.querySelectorAll('input[name^="answer-3-kitchen"]');
-    question3KitchenCheckboxes.forEach(function(checkbox) {
-        checkbox.addEventListener('change', function() {
-            if (document.getElementById('question-4-kitchen').style.display === 'block') {
-                updateDynamicInputsKitchen();
-            }
-        });
-    });
-
     // Кнопка "Далее" для вопроса 4-kitchen (Размеры)
     var btnNext4Kitchen = document.getElementById('btn-next-question-4-kitchen');
     if (btnNext4Kitchen) {
         btnNext4Kitchen.addEventListener('click', function (e) {
             e.preventDefault();
 
-            // Проверяем заполнение видимых инпутов
-            var visibleInputs = document.querySelectorAll('#question-4-kitchen .dynamic-input[style*="display: block"] input, #question-4-kitchen .dynamic-input[style*="display: flex"] input');
-            var allFilled = true;
-            
-            visibleInputs.forEach(function(input) {
-                if (!input.value.trim()) {
-                    allFilled = false;
-                }
-            });
-            
-            if (visibleInputs.length > 0 && !allFilled) {
-                alert('Пожалуйста, заполните все обязательные поля размеров.');
+            var kitchenSizeInput = document.getElementById('kitchen-size');
+            if (!kitchenSizeInput || !kitchenSizeInput.value.trim()) {
+                alert('Пожалуйста, укажите размеры кухни.');
                 return false;
             }
 
-            // Сохраняем все значения динамических инпутов
-            var allDynamicInputs = document.querySelectorAll('#question-4-kitchen .dynamic-input input');
-            allDynamicInputs.forEach(function(input) {
-                var hiddenField = document.getElementById('form-' + input.name);
-                if (hiddenField) {
-                    hiddenField.value = input.value;
-                }
-            });
+            // Сохраняем размер кухни
+            document.getElementById('form-kitchen-size').value = kitchenSizeInput.value;
 
             document.getElementById('question-4-kitchen').style.display = 'none';
             document.getElementById('question-5-kitchen').style.display = 'block';
@@ -277,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('form-question-6-kitchen').value = answer;
 
             document.getElementById('question-6-kitchen').style.display = 'none';
-            document.getElementById('question-7-kitchen').style.display = 'block';
+            document.getElementById('question-6-5-kitchen').style.display = 'block';
         });
     }
 
@@ -288,6 +198,35 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             document.getElementById('question-6-kitchen').style.display = 'none';
             document.getElementById('question-5-kitchen').style.display = 'block';
+        });
+    }
+
+    // Кнопка "Далее" для вопроса 6-5-kitchen
+    var btnNext65Kitchen = document.getElementById('btn-next-question-6-5-kitchen');
+    if (btnNext65Kitchen) {
+        btnNext65Kitchen.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            if (!document.querySelector('input[name="question-6-5-kitchen"]:checked')) {
+                alert('Для продолжения выберите планируемый бюджет.');
+                return false;
+            }
+
+            var answer = document.querySelector('input[name="question-6-5-kitchen"]:checked').value;
+            document.getElementById('form-question-6-5-kitchen').value = answer;
+
+            document.getElementById('question-6-5-kitchen').style.display = 'none';
+            document.getElementById('question-7-kitchen').style.display = 'block';
+        });
+    }
+
+    // Кнопка "Назад" для вопроса 6-5-kitchen
+    var btnPrev65Kitchen = document.querySelector('#question-6-5-kitchen input[value="Назад"]');
+    if (btnPrev65Kitchen) {
+        btnPrev65Kitchen.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('question-6-5-kitchen').style.display = 'none';
+            document.getElementById('question-6-kitchen').style.display = 'block';
         });
     }
 
@@ -316,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btnPrev7Kitchen.addEventListener('click', function (e) {
             e.preventDefault();
             document.getElementById('question-7-kitchen').style.display = 'none';
-            document.getElementById('question-6-kitchen').style.display = 'block';
+            document.getElementById('question-6-5-kitchen').style.display = 'block';
         });
     }
 
@@ -469,7 +408,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             document.getElementById('question-6-wardrobe').style.display = 'none';
-            document.getElementById('question-7-wardrobe').style.display = 'block';
+            document.getElementById('question-6-5-wardrobe').style.display = 'block';
         });
     }
 
@@ -480,6 +419,35 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             document.getElementById('question-6-wardrobe').style.display = 'none';
             document.getElementById('question-5-wardrobe').style.display = 'block';
+        });
+    }
+
+    // Кнопка "Далее" для вопроса 6-5-wardrobe (Бюджет) 
+    var btnNext65Wardrobe = document.getElementById('btn-next-question-6-5-wardrobe');
+    if (btnNext65Wardrobe) {
+        btnNext65Wardrobe.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            if (!document.querySelector('input[name="question-6-5-wardrobe"]:checked')) {
+                alert('Для продолжения выберите планируемый бюджет.');
+                return false;
+            }
+
+            var answer = document.querySelector('input[name="question-6-5-wardrobe"]:checked').value;
+            document.getElementById('form-question-6-5-wardrobe').value = answer;
+
+            document.getElementById('question-6-5-wardrobe').style.display = 'none';
+            document.getElementById('question-7-wardrobe').style.display = 'block';
+        });
+    }
+
+    // Кнопка "Назад" для вопроса 6-5-wardrobe
+    var btnPrev65Wardrobe = document.querySelector('#question-6-5-wardrobe input[value="Назад"]');
+    if (btnPrev65Wardrobe) {
+        btnPrev65Wardrobe.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('question-6-5-wardrobe').style.display = 'none';
+            document.getElementById('question-6-wardrobe').style.display = 'block';
         });
     }
 
@@ -508,7 +476,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btnPrev7Wardrobe.addEventListener('click', function (e) {
             e.preventDefault();
             document.getElementById('question-7-wardrobe').style.display = 'none';
-            document.getElementById('question-6-wardrobe').style.display = 'block';
+            document.getElementById('question-6-5-wardrobe').style.display = 'block';
         });
     }
 
@@ -537,8 +505,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     var fileSize = (selectedFile.size / 1024).toFixed(1);
                     filePreview.innerHTML = '📎 <strong>' + selectedFile.name + '</strong> (' + fileSize + ' KB)';
                 }
-                
-                console.log('Файл выбран:', selectedFile.name);
             } else {
                 selectedFile = null;
                 if (filePreview) {
@@ -572,8 +538,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     var dataTransfer = new DataTransfer();
                     dataTransfer.items.add(selectedFile);
                     hiddenFileInput.files = dataTransfer.files;
-                    
-                    console.log('Файл перенесен в форму:', selectedFile.name);
                 }
             }
 

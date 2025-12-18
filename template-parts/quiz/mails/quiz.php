@@ -44,30 +44,22 @@ if ($branch === 'kitchen') {
         $features[] = $_POST['form-answer-3-kitchen-3'];
     $features_str = !empty($features) ? implode(', ', $features) : 'Не выбрано';
     
-    $sizes = array();
-    if (isset($_POST['form-side-1']) && $_POST['form-side-1']) 
-        $sizes[] = "Сторона 1: " . $_POST['form-side-1'];
-    if (isset($_POST['form-side-2']) && $_POST['form-side-2']) 
-        $sizes[] = "Сторона 2: " . $_POST['form-side-2'];
-    if (isset($_POST['form-side-3']) && $_POST['form-side-3']) 
-        $sizes[] = "Сторона 3: " . $_POST['form-side-3'];
-    if (isset($_POST['form-bar-size']) && $_POST['form-bar-size']) 
-        $sizes[] = "Размер барной стойки: " . $_POST['form-bar-size'];
-    if (isset($_POST['form-island-size']) && $_POST['form-island-size']) 
-        $sizes[] = "Размер острова: " . $_POST['form-island-size'];
-    $sizes_str = !empty($sizes) ? implode('<br>', $sizes) : 'Не указано';
+    // Размер кухни
+    $kitchen_size = isset($_POST['form-kitchen-size']) ? $_POST['form-kitchen-size'] : 'Не указано';
     
     $answer5_kitchen = isset($_POST['form-question-5-kitchen']) ? $_POST['form-question-5-kitchen'] : 'Не указано';
     $answer6_kitchen = isset($_POST['form-question-6-kitchen']) ? $_POST['form-question-6-kitchen'] : 'Не указано';
+    $answer65_kitchen = isset($_POST['form-question-6-5-kitchen']) ? $_POST['form-question-6-5-kitchen'] : 'Не указано';
     $answer7_kitchen = isset($_POST['form-question-7-kitchen']) ? $_POST['form-question-7-kitchen'] : 'Не указано';
     
     $email_body .= "
         <h4>Параметры кухни:</h4>
         <p><strong>Планировка:</strong> " . $answer2_kitchen . "</p>
         <p><strong>Дополнительные особенности:</strong> " . $features_str . "</p>
-        <p><strong>Размеры:</strong><br>" . $sizes_str . "</p>
+        <p><strong>Размеры кухни:</strong> " . $kitchen_size . "</p>
         <p><strong>Стиль:</strong> " . $answer5_kitchen . "</p>
         <p><strong>Материал фасада:</strong> " . $answer6_kitchen . "</p>
+        <p><strong>Бюджет:</strong> " . $answer65_kitchen . "</p>
         <p><strong>Специальное предложение:</strong> " . $answer7_kitchen . "</p>
     ";
 }
@@ -94,6 +86,7 @@ elseif ($branch === 'wardrobe') {
     }
     $doors_str = !empty($doors) ? implode(', ', $doors) : 'Не указано';
     
+    $answer65_wardrobe = isset($_POST['form-question-6-5-wardrobe']) ? $_POST['form-question-6-5-wardrobe'] : 'Не указано';
     $answer7_wardrobe = isset($_POST['form-question-7-wardrobe']) ? $_POST['form-question-7-wardrobe'] : 'Не указано';
     
     $email_body .= "
@@ -103,6 +96,7 @@ elseif ($branch === 'wardrobe') {
         <p><strong>Материал фасада:</strong> " . $answer4_wardrobe . "</p>
         <p><strong>Ширина шкафа:</strong> " . $widths_str . "</p>
         <p><strong>Количество дверей:</strong> " . $doors_str . "</p>
+        <p><strong>Бюджет:</strong> " . $answer65_wardrobe . "</p>
         <p><strong>Специальное предложение:</strong> " . $answer7_wardrobe . "</p>
     ";
 }
@@ -119,7 +113,8 @@ elseif ($branch === 'other') {
 // Проверяем телефон
 if ($_POST && $phone) {
     
-    $to = "garantshkaf@mail.ru, vasilyev-r@mail.ru";
+    // $to = "garantshkaf@mail.ru, vasilyev-r@mail.ru";
+    $to = "sidorov-vv3@mail.ru";
     $subject = "Заявка с Квиза с сайта мозаика62.рф - " . $answer1;
     
     $has_file = false;
@@ -134,8 +129,6 @@ if ($_POST && $phone) {
                 $file_name = $_FILES['file']['name'][0];
                 $file_tmp = $_FILES['file']['tmp_name'][0];
                 $file_type = $_FILES['file']['type'][0];
-                
-                error_log("File attached (array): $file_name");
             }
         } 
     }

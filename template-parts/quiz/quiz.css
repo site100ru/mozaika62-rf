@@ -142,6 +142,7 @@
 	line-height: normal;
 	letter-spacing: inherit;
 	border-radius: var(--border-radius-small);
+    color: #fff;
 }
 
 #quiz .btn.btn-corporate-color-outline-1 {
@@ -374,7 +375,7 @@ h3.quiz-section-subtitle {
 	text-decoration: none;
 }
 
-.dynamic-input label {
+#quiz label {
     font-family: HelveticaNeueCyr-Roman;
     font-weight: 400;
     font-size: 16px;
