@@ -214,7 +214,7 @@
 								<!-- Mobile menu -->
 				
 								<li class="nav-item d-lg-none">
-									<a class="nav-link active" href="#" data-bs-toggle="modal" data-bs-target="#measurerModal">Вызов замерщика</a>
+									<a class="nav-link active" href="#" data-bs-toggle="modal" data-bs-target="#callbackModal">Вызов замерщика</a>
 								</li>
 								<li class="nav-item d-lg-none">
 									<div style="font-size: 12px; font-family: HelveticaNeueCyr-Light; text-transform: none;">
@@ -318,7 +318,7 @@
 								<!-- Mobile menu -->
 				
 								<li class="nav-item d-lg-none">
-									<a class="nav-link active" href="#" data-bs-toggle="modal" data-bs-target="#measurerModal">Вызов замерщика</a>
+									<a class="nav-link active" href="#" data-bs-toggle="modal" data-bs-target="#callbackModal">Вызов замерщика</a>
 								</li>
 								<li class="nav-item d-lg-none">
 									<div style="font-size: 12px; font-family: Gilroy-Light; text-transform: none;">
