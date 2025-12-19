@@ -66,7 +66,7 @@ if ($_POST && $phone) {
     // Отправляем письмо
     mail(
         // "garantshkaf@mail.ru, vasilyev-r@mail.ru",
-        "sidorov-vv3@mail.ru",
+        "sidorov-vv3@mail.ru, vasilyev-r@mail.ru",
         "Заявка с Квиза (Кухня) с сайта мозаика62.рф",
         $email_body,
         $headers
