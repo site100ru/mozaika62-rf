@@ -80,7 +80,6 @@
 			
 			$picture = "";
  			$mail_to = "mozaika62@bk.ru, vasilyev-r@mail.ru"; // Адрес доставки почты
-// 			$mail_to = "sidorov-vv3@mail.ru, vasilyev-r@yandex.ru, vasilyev-r@mail.ru"; // Адрес доставки почты
 			$thm = "Заявка на расчет стоимости с сайта мозаика62.рф"; // Тема письма
 			
 			
