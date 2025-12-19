@@ -249,7 +249,8 @@
 			<div class="col-xl-10 col-xxl-9">
 				<h1 class="home-title mb-3">Каталог кухонь по индивидуальным размерам на заказ от производителя</h1>
 				<p class="home-subtitle mb-4">Изготовим качественную кухню с учетом Ваших пожеланий и особенностей помещения. Рассчитаем стоимость за 15 минут.</p>
-				<a href="#" type="button" class="btn btn-lg btn-corporate-color-1" data-bs-toggle="modal" data-bs-target="#calculatePriceWithDownloadModal">Рассчитать стоимость</a>
+				<!-- <a href="#" type="button" class="btn btn-lg btn-corporate-color-1" data-bs-toggle="modal" data-bs-target="#calculatePriceWithDownloadModal">Рассчитать стоимость</a> -->
+                <a href="#quiz" class="btn btn-lg btn-corporate-color-1">Рассчитать стоимость</a>
 			</div>	
 		</div>
 	</div>
