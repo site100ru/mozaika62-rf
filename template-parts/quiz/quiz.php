@@ -1550,11 +1550,15 @@
 
                                         <div class="social">
                                             <a href="https://t.me/+79511014610" target="_blank">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg" class="ico-button ps-0 pe-3" />
+                                                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg" class="ico-button ps-0 pe-2" />
                                             </a>
 
                                             <a href="https://wa.me/79511014610?web=1&app_absent=1" target="_blank">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg" class="ico-button" />
+                                                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg" class="ico-button pe-2" />
+                                            </a>
+
+                                            <a href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis" target="_blank">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
                                             </a>
                                         </div>
                                     </div>

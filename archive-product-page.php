@@ -147,6 +147,11 @@
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 									</a>
 								</li>
+                                <li class="nav-item">
+                                    <a class="nav-link ico-button" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                                    </a>
+                                </li>
 							</ul>
 						</div>
 					</div>
@@ -230,9 +235,12 @@
 									<a class="ico-button pe-2" href="https://wa.me/79511014610?web=1&app_absent=1">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 									</a>
-									<a class="ico-button pe-0" href="https://t.me/vasilyevr">
+									<a class="ico-button pe-0" href="https://t.me/+79511014610">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 									</a>
+                                    <a class="ico-button pe-0" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                                    </a>
 								</li>	
 								<!-- End mobile menu -->
 							</ul>
@@ -334,7 +342,7 @@
 									<a class="ico-button pe-2" href="whatsapp://send?phone=+79256424787">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 									</a>
-									<a class="ico-button pe-0" href="https://t.me/vasilyevr">
+									<a class="ico-button pe-0" href="https://t.me/+79511014610">
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 									</a>
 								</li>	
@@ -777,6 +785,11 @@
 											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
 										</a>
 									</li>
+                                    <li class="nav-item">
+                                        <a class="nav-link ico-button px-2" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                                        </a>
+                                    </li>
 								</ul>
 							</div>
 						</div>
@@ -1364,6 +1377,12 @@
 											<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
 										</a>
 									</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link ico-button px-2" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                                        </a>
+                                    </li>
 								</ul>
 							</div>
 						</div>
@@ -1525,6 +1544,11 @@
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
 							</li>
+                            <li class="nav-item">
+                                <a class="nav-link ico-button px-2" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                                </a>
+                            </li>
 							<li class="nav-item">
 								<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/instagram-ico.svg">
@@ -1624,6 +1648,11 @@
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
 							</li>
+                            <li class="nav-item">
+                                <a class="nav-link ico-button px-2" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
+                                </a>
+                            </li>
 							<li class="nav-item">
 								<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/instagram-ico.svg">
@@ -1831,74 +1860,84 @@
 			<div id="telegramBtn" class="callback-telegram-button" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Telegram">
 				<a href="https://t.me/+79511014610"><div class="callback-telegram-button-ico"></div></a>
 			</div>
+            <div id="maxBtn" class="callback-max-button" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Max">
+                <a href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                    <div class="callback-max-button-ico"></div>
+                </a>
+            </div>
 		</div>
 		<!-- /Callback button HTML -->
 
 		<!-- Callback button JS -->
 		<script>
-			function callbackButtonClick() {
-				
-				let formBtn = document.getElementById('formBtn').style.top;
-				
-				
-				if ( formBtn == "0px" || formBtn == 0 ) {
-					document.getElementById('callbackBtn').style.animation = "none";
-					document.getElementById('btnIco').style.animation = "change2 linear .5s";
-					document.getElementById('btnIco').style.webkitAnimation = "change2 linear .5s";
-					document.getElementById('btnIco').style.webkitTransition ="transform 1s ease-in-out";
-					
-					document.getElementById('btnIco').style.webkitTransform = "rotate(180deg)";
-					document.getElementById('btnIco').style.transform = "rotate(180deg)";
-					
-					
-					document.getElementById('btnIco').style.backgroundImage = "url(https://dekorsever.ru/wp-content/themes/site100-furniture/<?php echo get_template_directory_uri(); ?>/img/ico/callback-button-close.png)";
-					document.getElementById('btnIco').style.backgroundPosition = "center";
-					document.getElementById('btnIco').style.backgroundRepeat = "no-repeat";
-					
-					document.getElementById('btnIco').style.webkitBackgroundSize = "cover";
-					document.getElementById('btnIco').style.backgroundSize = "cover";
-					
-					
-					document.getElementById('formBtn').style.top = "-60px";
-					document.getElementById('formBtn').style.opacity = "1";
-					
-					document.getElementById('phoneBtn').style.top = "-120px";
-					document.getElementById('phoneBtn').style.opacity = "1";
-					
-					document.getElementById('whatsappBtn').style.top = "-180px";
-					document.getElementById('whatsappBtn').style.opacity = "1";
-					
-					document.getElementById('telegramBtn').style.top = "-240px";
-					document.getElementById('telegramBtn').style.opacity = "1";
-				} else {
-					document.getElementById('callbackBtn').style.animation = "waves linear 2s infinite";
-					document.getElementById('btnIco').style.animation = "change linear 16s infinite";
-					document.getElementById('btnIco').style.webkitTransition ="transform 1s ease-in-out";
-					document.getElementById('btnIco').style.webkitAnimation = "change linear 16s infinite";
-					document.getElementById('btnIco').style.transform = "rotate(180deg)";
-					document.getElementById('btnIco').style.webkitTransform = "rotate(180deg)";
-					document.getElementById('btnIco').style.backgroundImage = "url(https://dekorsever.ru/wp-content/themes/site100-furniture/<?php echo get_template_directory_uri(); ?>/img/ico/callback-button-ico.png)";
-					document.getElementById('btnIco').style.backgroundPosition = "center";
-					document.getElementById('btnIco').style.backgroundRepeat = "no-repeat";
-					
-					document.getElementById('btnIco').style.webkitBackgroundSize = "cover";
-					document.getElementById('btnIco').style.backgroundSize = "cover";
-					
-					
-					document.getElementById('formBtn').style.top = "0px";
-					document.getElementById('formBtn').style.opacity = "0";
-					
-					document.getElementById('phoneBtn').style.top = "0px";
-					document.getElementById('phoneBtn').style.opacity = "0";
-					
-					document.getElementById('whatsappBtn').style.top = "0px";
-					document.getElementById('whatsappBtn').style.opacity = "0";
-					
-					document.getElementById('telegramBtn').style.top = "0px";
-					document.getElementById('telegramBtn').style.opacity = "0";
-				}
-			}
-		</script>
+            function callbackButtonClick() {
+                
+                let formBtn = document.getElementById('formBtn').style.top;
+                
+                if ( formBtn == "0px" || formBtn == 0 ) {
+                    document.getElementById('callbackBtn').style.animation = "none";
+                    document.getElementById('btnIco').style.animation = "change2 linear .5s";
+                    document.getElementById('btnIco').style.webkitAnimation = "change2 linear .5s";
+                    document.getElementById('btnIco').style.webkitTransition ="transform 1s ease-in-out";
+                    
+                    document.getElementById('btnIco').style.webkitTransform = "rotate(180deg)";
+                    document.getElementById('btnIco').style.transform = "rotate(180deg)";
+                    
+                    
+                    document.getElementById('btnIco').style.backgroundImage = "url(<?php echo get_stylesheet_directory_uri(); ?>/img/ico/callback-button-close.png)";
+                    document.getElementById('btnIco').style.backgroundPosition = "center";
+                    document.getElementById('btnIco').style.backgroundRepeat = "no-repeat";
+                    
+                    document.getElementById('btnIco').style.webkitBackgroundSize = "cover";
+                    document.getElementById('btnIco').style.backgroundSize = "cover";
+                    
+                    
+                    document.getElementById('formBtn').style.top = "-60px";
+                    document.getElementById('formBtn').style.opacity = "1";
+                    
+                    document.getElementById('phoneBtn').style.top = "-120px";
+                    document.getElementById('phoneBtn').style.opacity = "1";
+                    
+                    document.getElementById('whatsappBtn').style.top = "-180px";
+                    document.getElementById('whatsappBtn').style.opacity = "1";
+                    
+                    document.getElementById('telegramBtn').style.top = "-240px";
+                    document.getElementById('telegramBtn').style.opacity = "1";
+
+                    document.getElementById('maxBtn').style.top = "-300px";
+                    document.getElementById('maxBtn').style.opacity = "1";
+                } else {
+                    document.getElementById('callbackBtn').style.animation = "waves linear 2s infinite";
+                    document.getElementById('btnIco').style.animation = "change linear 16s infinite";
+                    document.getElementById('btnIco').style.webkitTransition ="transform 1s ease-in-out";
+                    document.getElementById('btnIco').style.webkitAnimation = "change linear 16s infinite";
+                    document.getElementById('btnIco').style.transform = "rotate(180deg)";
+                    document.getElementById('btnIco').style.webkitTransform = "rotate(180deg)";
+                    document.getElementById('btnIco').style.backgroundImage = "url(<?php echo get_stylesheet_directory_uri(); ?>/img/ico/callback-button-ico.png)";
+                    document.getElementById('btnIco').style.backgroundPosition = "center";
+                    document.getElementById('btnIco').style.backgroundRepeat = "no-repeat";
+                    
+                    document.getElementById('btnIco').style.webkitBackgroundSize = "cover";
+                    document.getElementById('btnIco').style.backgroundSize = "cover";
+                    
+                    
+                    document.getElementById('formBtn').style.top = "0px";
+                    document.getElementById('formBtn').style.opacity = "0";
+                    
+                    document.getElementById('phoneBtn').style.top = "0px";
+                    document.getElementById('phoneBtn').style.opacity = "0";
+                    
+                    document.getElementById('whatsappBtn').style.top = "0px";
+                    document.getElementById('whatsappBtn').style.opacity = "0";
+                    
+                    document.getElementById('telegramBtn').style.top = "0px";
+                    document.getElementById('telegramBtn').style.opacity = "0";
+                    
+                    document.getElementById('maxBtn').style.top = "0px";
+                    document.getElementById('maxBtn').style.opacity = "0";
+                }
+            }
+        </script>
 		<!-- /Callback button JS -->
 		
 		
