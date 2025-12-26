@@ -11,15 +11,15 @@ jobs:
       - name: Connect to server
         uses: appleboy/ssh-action@v0.1.10
         with:
-          host: ${{ secrets.REGRU_HOST }}
-          username: ${{ secrets.REGRU_USER }}
-          key: ${{ secrets.REGRU_KEY }}
+          host: ${{ secrets.MOZAIKA_HOST }}
+          username: ${{ secrets.MOZAIKA_USER }}
+          key: ${{ secrets.MOZAIKA_KEY }}
           script: |
             # ========== ДЛЯ ПЕРВОЙ ИНИЦИАЛИЗАЦИИ ==========
             # cd /var/www/u1538455/data/www/мозаика62.рф/wp-content/themes
             # git clone https://github.com/site100ru/mozaika62-rf.git new
 
-            cd /var/www/u1538455/data/www/мозаика62.рф/wp-content/themes/new
+            cd ~/mozaika/public_html/wp-content/themes/new
             git pull
 
             # ========== ЧТО МЕНЯТЬ ДЛЯ ДРУГИХ ПРОЕКТОВ ==========
