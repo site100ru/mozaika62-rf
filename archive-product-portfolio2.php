@@ -151,9 +151,9 @@
 				<!-- Header nav bottom -->
 				<nav class="header-nav-bottom navbar navbar-expand-lg navbar-light py-0">
 					<div class="container">
-						<a class="navbar-brand" href="#">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/logo-light.svg">
-						</a>
+						<a href="/" class="navbar-brand custom-logo-link new-year" rel="home" aria-current="page">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico/logo-light.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
+                        </a>
 						
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobail-header-collapse" aria-controls="mobail-header-collapse" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -2015,5 +2015,8 @@
 			var im = new Inputmask("+7(999)999-99-99");
 			im.mask(telMask);
 		</script>
+
+        <?php include get_template_directory() . '/inc/snowflake/snowflake.php'; ?>
+
 	</body>
 </html>

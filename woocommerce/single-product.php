@@ -133,9 +133,9 @@
 	<!-- Menu header -->
 	<nav id="header-2-bottom" class="navbar navbar-expand-xl navbar-light bg-white shadow py-2 py-md-0">
 		<div class="container">
-			<a class="navbar-brand" href="#">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/logo-dark.svg">
-			</a>
+            <a href="/" class="navbar-brand custom-logo-link new-year" rel="home" aria-current="page">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/ico/logo-dark.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
+            </a>
 			
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
