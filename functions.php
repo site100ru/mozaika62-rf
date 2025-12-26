@@ -496,4 +496,13 @@
         return $list_args;
     }
     add_filter('woocommerce_product_categories_widget_args', 'filter_product_categories_widget');
+
+    // КЛАССЫ В BODY_CLASS
+add_filter('body_class', 'custom_body_classes');
+
+function custom_body_classes($classes) {
+    // Добавить класс для всех страниц
+    $classes[] = 'b-new-year';
+    return $classes;
+}
 ?>
