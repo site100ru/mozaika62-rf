@@ -2695,3 +2695,7 @@ body.b-new-year:before {
 	}
 }
 /*** END NEW YEAR ***/
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button{
+    display: none !important;
+}
