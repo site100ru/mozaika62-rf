@@ -20,18 +20,7 @@ jobs:
             # git clone https://github.com/site100ru/mozaika62-rf.git new
 
             cd ~/mozaika/public_html/wp-content/themes/new
-  
-            # Отменить все локальные изменения
-            git checkout -- .
-            
-            # Получить свежую версию с GitHub
-            git fetch origin
-            git reset --hard origin/main
-            
-            # Перезагрузить файлы
-            git clean -fd
-           
-            #git pull
+            git pull
 
             # ========== ЧТО МЕНЯТЬ ДЛЯ ДРУГИХ ПРОЕКТОВ ==========
             # мозаика62.рф - доменное имя сайта
