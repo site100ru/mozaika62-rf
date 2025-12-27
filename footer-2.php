@@ -155,27 +155,27 @@
 			<div class="col">
 				<ul class="nav justify-content-center">
 					<li class="nav-item">
-						<a class="nav-link ico-button px-2" href="https://wa.me/79511014610?web=1&app_absent=1">
+						<a class="nav-link ico-button px-2" href="https://wa.me/79511014610?web=1&app_absent=1" target="_blank">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link ico-button px-2" href="https://t.me/+79511014610">
+						<a class="nav-link ico-button px-2" href="https://t.me/+79511014610" target="_blank">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 						</a>
 					</li>
                     <li class="nav-item">
-                        <a class="nav-link ico-button px-2" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                        <a class="nav-link ico-button px-2" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62">
+						<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62" target="_blank">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/instagram-ico.svg">
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link ico-button px-2" href="https://vk.com/mozaika.kitchen62">
+						<a class="nav-link ico-button px-2" href="https://vk.com/mozaika.kitchen62" target="_blank">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/vk-ico.svg">
 						</a>
 					</li>
@@ -264,22 +264,22 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link ico-button px-2" href="https://t.me/+79511014610">
+						<a class="nav-link ico-button px-2" href="https://t.me/+79511014610" target="_blank">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 						</a>
 					</li>
                     <li class="nav-item">
-                        <a class="nav-link ico-button px-2" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                        <a class="nav-link ico-button px-2" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62">
+						<a class="nav-link ico-button px-2" href="https://www.instagram.com/mozaika.kitchen62" target="_blank">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/instagram-ico.svg">
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link ico-button px-2" href="https://vk.com/mozaika.kitchen62">
+						<a class="nav-link ico-button px-2" href="https://vk.com/mozaika.kitchen62" target="_blank">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/vk-ico.svg">
 						</a>
 					</li>
@@ -555,10 +555,10 @@
 		<!--a href="https://wa.clck.bar/79361385058?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!"><div class="callback-whatsapp-button-ico"></div></a-->
 	</div>
 	<div id="telegramBtn" class="callback-telegram-button" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Telegram">
-		<a href="https://t.me/+79511014610"><div class="callback-telegram-button-ico"></div></a>
+		<a href="https://t.me/+79511014610" target="_blank"><div class="callback-telegram-button-ico"></div></a>
 	</div>
     <div id="maxBtn" class="callback-max-button" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" data-bs-title="Max">
-        <a href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+        <a href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis" target="_blank">
             <div class="callback-max-button-ico"></div>
         </a>
     </div>

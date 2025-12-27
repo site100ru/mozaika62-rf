@@ -99,17 +99,17 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link ico-button" href="https://t.me/+79511014610">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
+							<a class="nav-link ico-button" href="https://t.me/+79511014610" target="_blank">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg" target="_blank">
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link ico-button" href="https://wa.me/79511014610?web=1&app_absent=1">
+							<a class="nav-link ico-button" href="https://wa.me/79511014610?web=1&app_absent=1" target="_blank">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 							</a>
 						</li>
                         <li class="nav-item">
-                            <a class="nav-link ico-button" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                            <a class="nav-link ico-button" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis" target="_blank">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
                             </a>
                         </li>
@@ -154,13 +154,13 @@
 										</div>
 									</li>
 									<li class="nav-item d-lg-none pb-4">
-										<a class="ico-button pe-2" href="https://wa.me/79511014610?web=1&app_absent=1">
+										<a class="ico-button pe-2" href="https://wa.me/79511014610?web=1&app_absent=1" target="_blank">
 											<img src="'.get_template_directory_uri().'/img/ico/whatsapp-ico.svg">
 										</a>
-										<a class="ico-button pe-2" href="https://t.me/+79511014610">
+										<a class="ico-button pe-2" href="https://t.me/+79511014610" target="_blank">
                                             <img src="'.get_template_directory_uri().'/img/ico/telegram-ico.svg">
                                         </a>
-                                        <a class="ico-button pe-0" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                                        <a class="ico-button pe-0" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis" target="_blank">
                                             <img src="'.get_template_directory_uri().'/img/ico/max.svg">
                                         </a>
 									</li>	
@@ -222,13 +222,13 @@
 										</div>
 									</li>
 									<li class="nav-item d-lg-none pb-2">
-										<a class="ico-button pe-2" href="https://wa.me/79511014610?web=1&app_absent=1">
+										<a class="ico-button pe-2" href="https://wa.me/79511014610?web=1&app_absent=1" target="_blank">
 											<img src="'.get_template_directory_uri().'/img/ico/whatsapp-ico.svg">
 										</a>
-										<a class="ico-button pe-2" href="https://t.me/+79511014610">
+										<a class="ico-button pe-2" href="https://t.me/+79511014610" target="_blank">
                                             <img src="'.get_template_directory_uri().'/img/ico/telegram-ico.svg">
                                         </a>
-                                        <a class="ico-button pe-0" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                                        <a class="ico-button pe-0" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis" target="_blank">
                                             <img src="'.get_template_directory_uri().'/img/ico/max.svg">
                                         </a>
 									</li>	
@@ -574,19 +574,19 @@ get_template_part('template-parts/action/action', '', [
 					<div class="col">
 						<ul class="nav justify-content-md-end mt-4">
 							<li class="nav-item">
-								<a class="nav-link ico-button px-2" href="https://wa.me/79511014610?web=1&amp;app_absent=1">
+								<a class="nav-link ico-button px-2" href="https://wa.me/79511014610?web=1&amp;app_absent=1" target="_blank">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link ico-button px-2" href="https://t.me/+79511014610">
+								<a class="nav-link ico-button px-2" href="https://t.me/+79511014610" target="_blank">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
 							</li>
 
                             <li class="nav-item">
-                                <a class="nav-link ico-button px-2" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                                <a class="nav-link ico-button px-2" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis" target="_blank">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
                                 </a>
                             </li>
@@ -1127,19 +1127,19 @@ get_template_part('template-parts/action/action', '', [
 					<div class="col">
 						<ul class="nav justify-content-md-end mt-4">
 							<li class="nav-item">
-								<a class="nav-link ico-button px-2" href="https://wa.me/79511014610?web=1&amp;app_absent=1">
+								<a class="nav-link ico-button px-2" href="https://wa.me/79511014610?web=1&amp;app_absent=1" target="_blank">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link ico-button px-2" href="https://t.me/+79511014610">
+								<a class="nav-link ico-button px-2" href="https://t.me/+79511014610" target="_blank">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
 							</li>
 
                             <li class="nav-item">
-                                <a class="nav-link ico-button px-2" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis">
+                                <a class="nav-link ico-button px-2" href="https://max.ru/u/f9LHodD0cOJ43FcHRXMZDl7Pj6Znjki8fXkN8cmXFNxOU9f0FntW8dTdUis" target="_blank">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/ico/max.svg">
                                 </a>
                             </li>
