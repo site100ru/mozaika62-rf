@@ -2708,3 +2708,7 @@ body.b-new-year:before {
 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button{
     display: none !important;
 }
+
+.woocommerce img, .woocommerce-page img {
+    height: inherit;
+}

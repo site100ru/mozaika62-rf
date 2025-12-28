@@ -54,8 +54,9 @@ if ( post_password_required() ) {
 					do_action( 'woocommerce_before_single_product_summary' );
 					?>
 				</div>
-				<div class="col-md-6">
-					<div class="summary entry-summary">
+                <div class="col-md-1"></div>
+				<div class="col-md-5">
+					<div class="summary entry-summary w-100">
 						<div class="row pt-5 pt-md-0">
 							<div class="col text-dark text-start">
 								<?php
