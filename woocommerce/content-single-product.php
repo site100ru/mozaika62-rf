@@ -43,7 +43,7 @@ if ( post_password_required() ) {
 				</div>
 			</div>
 			<div class="row justify-content-start">
-				<div class="col-md-7">
+				<div class="col-md-7 single_img h-100">
 					<?php
 					/**
 					 * Hook: woocommerce_before_single_product_summary.
