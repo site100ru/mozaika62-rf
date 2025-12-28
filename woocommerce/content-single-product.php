@@ -43,7 +43,7 @@ if ( post_password_required() ) {
 				</div>
 			</div>
 			<div class="row justify-content-start">
-				<div class="col-md-6">
+				<div class="col-md-7">
 					<?php
 					/**
 					 * Hook: woocommerce_before_single_product_summary.
@@ -54,7 +54,6 @@ if ( post_password_required() ) {
 					do_action( 'woocommerce_before_single_product_summary' );
 					?>
 				</div>
-                <div class="col-md-1"></div>
 				<div class="col-md-5">
 					<div class="summary entry-summary w-100">
 						<div class="row pt-5 pt-md-0">
