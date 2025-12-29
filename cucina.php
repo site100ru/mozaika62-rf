@@ -12,8 +12,8 @@
 
 <!-- Home section -->
 <div id="sp-home" class="scroll-points"></div>
-<section class="main-home-section home-cucina">
-	<div class="parallax-home-section" style="min-height: 640px;"></div>
+<section class="main-home-section">
+	<div class="home-cucina-parallax-home-section" style="min-height: 640px;"></div>
 	<header class="d-none d-lg-block">
 		<!-- Header nav top -->
 		<nav class="header-nav-top navbar navbar-expand-lg navbar-light d-none d-lg-block py-0">

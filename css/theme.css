@@ -801,7 +801,7 @@ a.navbar-brand {
 }
 
 /* Parallax home section */
-.home-cucina .parallax-home-section  {
+.home-cucina-parallax-home-section  {
 	min-height: 640px;
 	width: 100%;
 	position: fixed;
