@@ -12,7 +12,7 @@
 <div id="sp-home" class="scroll-points"></div>		
 <section class="main-home-section">
 	<!-- Header -->
-    <div class="parallax-home-section index-parallax-home-section" style="min-height: 640px;"></div>
+    <div class="index-parallax-home-section" style="min-height: 640px;"></div>
 
     <header class="d-none d-lg-block">
         <!-- Header nav top -->

@@ -711,9 +711,6 @@ a.navbar-brand {
 	height: 640px;
 }
 
-.home-cucina .parallax-home-section {
-	background: url(../img/home-background-cucina.jpg);
-}
 
 /* end home section CUCINA*/
 
@@ -766,13 +763,95 @@ a.navbar-brand {
 	z-index: -1;
 }
 
-	/* md (less than 768px) */
-	@media (max-width: 767.98px) {
-		.parallax-home-section {
-			background-position: 15% 50%;
-		}
-	}
+/* md (less than 768px) */
+@media (max-width: 767.98px) {
+    .parallax-home-section {
+        background-position: 15% 50%;
+    }
+}
 /* End parallax home section */
+
+.index-parallax-home-section {
+	min-height: 640px;
+	width: 100%;
+	position: fixed;
+	background-position: 50% 50%;
+	background-size: cover;
+	z-index: -1;
+	background: url(../img/contact.jpg) no-repeat;
+}
+
+/* Parallax home section closets */
+.parallax-home-section-closets {
+	min-height: 640px;
+	width: 100%;
+	position: fixed;
+	background: url(../img/home-closets-section-bg.webp) no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	z-index: -1;
+	/*display: block;*/ 
+}
+
+/* md (less than 768px) */
+@media (max-width: 767.98px) {
+    .parallax-home-section-closets {
+        background-position: 25% 50%;
+    }
+}
+
+/* Parallax home section */
+.home-cucina .parallax-home-section  {
+	min-height: 640px;
+	width: 100%;
+	position: fixed;
+	background: url(../img/home-background-cucina.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	z-index: -1;
+}
+
+.closets-home-section {
+	min-height: 640px;
+	width: 100%;
+	position: fixed;
+	background: url(../img/closets-home-section-bg.webp) no-repeat;
+	background-position: 50% 100%;
+	background-size: cover;
+	z-index: -1;
+}
+
+.parallax-home-section-portfolio {
+	min-height: 640px;
+	width: 100%;
+	position: fixed;
+	background: url(../img/home-portfolio.webp) no-repeat;
+	background-position: 50% 100%;
+	background-size: cover;
+	z-index: -1;
+}
+
+.index-parallax-home-section {
+	min-height: 640px;
+	width: 100%;
+	position: fixed;
+    background: url(../img/home-background.webp) no-repeat;
+	background-position: 50% 100%;
+	background-size: cover;
+	z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .index-parallax-home-section {
+        background: url(../img/index-home-background.webp) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+/* End parallax home section closets */
+/*** END HOME ***/
 
 .home-subtitle {
 	font-family: Gilroy-Light;
@@ -2573,27 +2652,6 @@ footer {
     .contact-box-info {
         flex-direction: column;
         gap: 15px;
-    }
-}
-
-.parallax-home-section.closets-home-section {
-	background: url(../img/closets-home-section-bg.webp) no-repeat;
-	background-position: 50% 100%;
-}
-
-.parallax-home-section.parallax-home-section-portfolio {
-	background: url(../img/home-portfolio.webp) no-repeat;
-}
-
-.parallax-home-section.index-parallax-home-section {
-    background: url(../img/home-background.webp) no-repeat;
-}
-
-@media (max-width: 768px) {
-    .parallax-home-section.index-parallax-home-section {
-        background: url(../img/index-home-background.webp) no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 }
 
