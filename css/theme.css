@@ -429,6 +429,7 @@ a:hover {
     float: right;
     margin: auto;
     line-height: 16px;
+    text-wrap: nowrap;
 }
 
 /** End header nav top **/
@@ -2573,9 +2574,6 @@ footer {
         flex-direction: column;
         gap: 15px;
     }
-    .breadcrumbs_box {
-        margin-top: 70px;
-    }
 }
 
 .parallax-home-section.closets-home-section {
@@ -2631,6 +2629,11 @@ footer {
 	color: var(--corporate-color-1);
 }
 
+@media (max-width: 1200px ) {
+    .custom-logo {
+        max-width: 180px;
+    }
+}
 
 /*** NEW YEAR ***/
 a.custom-logo-link.new-year {

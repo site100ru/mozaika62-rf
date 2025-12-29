@@ -40,7 +40,7 @@
 <!-- Header 2 -->
 <header class="header-2">
 	<!-- Top menu header -->
-	<nav class="navbar navbar-expand-xl navbar-light bg-light d-none d-lg-block py-3 py-md-0" style="border-bottom: 1px solid #d7d7d7">
+	<nav class="header-nav-top navbar navbar-expand-lg navbar-light bg-light d-none d-xl-block py-0" style="border-bottom: 1px solid #d7d7d7">
 		<div class="container">
 			<div class="collapse navbar-collapse" id="navbarSupportedContent1">
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
@@ -130,8 +130,9 @@
 	</nav>
 	<!-- /Top menu header  -->
 
+
 	<!-- Menu header -->
-	<nav id="header-2-bottom" class="navbar navbar-expand-xl navbar-light bg-white shadow py-2 py-md-0">
+	<nav id="header-2-bottom" class="header-nav-bottom navbar navbar-expand-lg navbar-light bg-white shadow py-2 py-lg-0">
 		<div class="container">
             <a href="/" class="navbar-brand custom-logo-link new-year" rel="home" aria-current="page">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/ico/logo-dark.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
@@ -479,6 +480,5 @@
 	 */
 	//do_action( 'woocommerce_sidebar' );
 ?>
-
 
 <?php get_footer( '1' ); ?>

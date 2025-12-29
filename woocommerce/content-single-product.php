@@ -32,14 +32,16 @@ if ( post_password_required() ) {
 }
 ?>
 
-<section class="single-product-section bg-white py-md-5">
+<section class="single-product-section bg-white">
 	<div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'pt-md-3', $product ); ?>>
 		<div class="container pt-md-3 pb-5 single-product">
 			<div class="row">
 				<div class="col breadcrumbs_box">
-					<div class="breadcrumbs" style="padding: 25px 0;">
-						<?php woocommerce_breadcrumb(); ?>
-					</div>
+					<div class="row">
+                        <div class="breadcrumbs" >
+                            <?php woocommerce_breadcrumb(); ?>
+                        </div>
+                    </div>
 				</div>
 			</div>
 			<div class="row justify-content-start">
@@ -54,10 +56,10 @@ if ( post_password_required() ) {
 					do_action( 'woocommerce_before_single_product_summary' );
 					?>
 				</div>
-				<div class="col-md-5">
-					<div class="summary entry-summary w-100">
-						<div class="row pt-5 pt-md-0">
-							<div class="col text-dark text-start">
+                <div class="col-md-5" style="width: 100%; max-width: 100%; flex: 1; padding-right: 0;">
+					<div class="summary entry-summary">
+						<div class="row pt-5 pt-lg-0 w-100">
+							<div class="col text-dark text-start" style="padding-right: 0;">
 								<?php
 								/**
 								 * Hook: woocommerce_single_product_summary.

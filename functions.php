@@ -155,14 +155,13 @@
 	
 	
 	// Цена
-	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+    remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
 	//add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 20 );
 	
 	// Кнопка
-	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+    remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
 
-	
-	/* Изменям значек валюты */
+    /* Изменям значек валюты */
 	add_filter('woocommerce_currency_symbol', 'change_existing_currency_symbol', 10, 2);
 	function change_existing_currency_symbol( $currency_symbol, $currency ) {
 		 switch( $currency ) {

@@ -23,30 +23,29 @@ function vyezjalo(){
 }
 
 
-
 /* Функция "Прилипало" */
 function prilipalo() {
-	onscroll = function() {
-		var prokrutka = window.pageYOffset;
-		if ( window.screen.width >= 769 ) {
-			if ( prokrutka > 57 ) {
-				document.getElementById('header-2-bottom').classList.add('fixed-top');
-				document.getElementById('header-2-bottom').style.position = 'fixed';
-				document.getElementById('header-2-bottom').style.top = 0;
-			} else {
-				document.getElementById('header-2-bottom').classList.remove('fixed-top');
-				document.getElementById('header-2-bottom').style.position = 'absolute';
-				//document.getElementById('header-2-bottom').style.width = '100%';
-				document.getElementById('header-2-bottom').style.top = '57px';
-			}
-		} else {
+    window.addEventListener('scroll', function() {
+        var prokrutka = window.pageYOffset;
+        var screenWidth = window.innerWidth;
+
+        if (screenWidth >= 1200) {
+            if (prokrutka > 57) {
+                document.getElementById('header-2-bottom').classList.add('fixed-top');
+                document.getElementById('header-2-bottom').style.position = 'fixed';
+                document.getElementById('header-2-bottom').style.top = 0;
+            } else {
+                document.getElementById('header-2-bottom').classList.remove('fixed-top');
+                document.getElementById('header-2-bottom').style.position = 'absolute';
+                document.getElementById('header-2-bottom').style.top = '57px';
+            }
+        } else {
 			document.getElementById('header-2-bottom').style.position = '';
 			document.getElementById('header-2-bottom').style.top = 0;
 			document.getElementById('header-2-bottom').classList.add('fixed-top');
 		}
-	}
+    });
 }
-
 
 
 /* Убираем сообщение об успешной отправки */

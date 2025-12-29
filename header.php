@@ -52,4 +52,4 @@
 	<noscript><div><img src="https://mc.yandex.ru/watch/55290793" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
 </head>
-<body <?php body_class(); ?>>
+<body>
