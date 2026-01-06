@@ -279,7 +279,7 @@
 										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/location-ico.svg">
 									</div>
 									<div class="nav-li-float-right">
-										<span>гор. Рязань, ул. Чапаева, д. 56, Мебельный центр "Базар" (ост. "Центральный рынок").</span>
+										<span style="text-wrap: wrap;">гор. Рязань, ул. Чапаева, д. 56, Мебельный центр "Базар" (ост. "Центральный рынок").</span>
 									</div>
 									<div style="clear: both;"></div>
 								</div>
