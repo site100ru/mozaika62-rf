@@ -33,14 +33,14 @@ $actions_data = [
         'modal_data' => 'discount-10',
         'description' => 'Скидка 10% На кухни с фасадами SMART'
     ],
-    [
-        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-1.webp',
-        'alt_text' => 'Бесплатная доставка',
-        'order' => 3,
-        'category' => 'kitchen, closets',
-        'modal_data' => 'discount-25',
-        'description' => 'Заказывайте со скидкой -25% до 31 января'
-    ],
+    // [
+    //     'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-1.webp',
+    //     'alt_text' => 'Бесплатная доставка',
+    //     'order' => 3,
+    //     'category' => 'kitchen, closets',
+    //     'modal_data' => 'discount-25',
+    //     'description' => 'Заказывайте со скидкой -25% до 31 января'
+    // ],
     [
         'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-2.webp',
         'alt_text' => 'Пластиковая столешница 26 мм В ПОДАРОК',
