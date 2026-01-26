@@ -291,34 +291,43 @@
 						
 						<!-- Add general category in dynamic_sidebar() -->
 						<script>
-							// Создаем новый элемент li
-							const newListItem = document.createElement('li');
-							newListItem.className = 'cat-item';
+document.addEventListener('DOMContentLoaded', function() {
+    // Создаем новый элемент li
+    const newListItem = document.createElement('li');
+    newListItem.className = 'cat-item';
 
-							// Проверяем, находимся ли на странице категории "кухни"
-							const isKitchenPage = window.location.href === 'https://мозаика62.рф/product-category/кухни/';
+    // Проверяем, находимся ли на странице категории "кухни"
+    const isKitchenPage = window.location.href === 'https://мозаика62.рф/product-category/кухни/';
 
-							// Если находимся на странице категории, добавляем класс current-cat
-							if (isKitchenPage) {
-								newListItem.classList.add('current-cat');
-							}
+    console.log('Текущий URL:', window.location.href);
+    console.log('Совпадение с целевым URL:', isKitchenPage);
 
-							// Создаем элемент ссылки
-							const newLink = document.createElement('a');
-							newLink.href = 'https://мозаика62.рф/product-category/кухни/';
-							newLink.textContent = 'Все кухни';
+    // Если находимся на странице категории, добавляем класс current-cat
+    if (isKitchenPage) {
+        newListItem.classList.add('current-cat');
+        console.log('Класс current-cat добавлен');
+    }
 
-							// Добавляем ссылку в элемент li
-							newListItem.appendChild(newLink);
+    // Создаем элемент ссылки
+    const newLink = document.createElement('a');
+    newLink.href = 'https://мозаика62.рф/product-category/кухни/';
+    newLink.textContent = 'Все кухни';
 
-							// Находим элемент ul с классом product-categories
-							const productCategoriesList = document.querySelector('#woocommerce_product_categories-2 ul.product-categories');
+    // Добавляем ссылку в элемент li
+    newListItem.appendChild(newLink);
 
-							// Если список найден, вставляем новый элемент первым в списке
-							if (productCategoriesList) {
-								productCategoriesList.insertBefore(newListItem, productCategoriesList.firstChild);
-							}
-						</script>
+    // Находим элемент ul с классом product-categories
+    const productCategoriesList = document.querySelector('#woocommerce_product_categories-2 ul.product-categories');
+
+    console.log('Найден ли список:', !!productCategoriesList);
+
+    // Если список найден, вставляем новый элемент первым в списке
+    if (productCategoriesList) {
+        productCategoriesList.insertBefore(newListItem, productCategoriesList.firstChild);
+        console.log('Элемент добавлен. Классы:', newListItem.className);
+    }
+});
+</script>
 					</div>
 					<div class="col-md-10">
 						<div class="row">
