@@ -322,7 +322,7 @@ window.addEventListener('load', function() {
         newListItem.appendChild(newLink);
 
         // Находим элемент ul с классом product-categories
-        const productCategoriesList = document.querySelector('#woocommerce_product_categories-2 ul.product-categories');
+        const productCategoriesList = document.querySelector('.widget-title');
 
         if (productCategoriesList) {
             productCategoriesList.insertBefore(newListItem, productCategoriesList.firstChild);
