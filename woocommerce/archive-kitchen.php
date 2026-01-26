@@ -291,34 +291,62 @@
 						
 						<!-- Add general category in dynamic_sidebar() -->
 						<script>
-							// Создаем новый элемент li
-							const newListItem = document.createElement('li');
-							newListItem.className = 'cat-item';
-
-							// Проверяем, находимся ли на странице категории "кухни"
-							const isKitchenPage = window.location.href === 'https://мозаика62.рф/product-category/кухни/';
-
-							// Если находимся на странице категории, добавляем класс current-cat
-							if (isKitchenPage) {
-								newListItem.classList.add('current-cat');
-							}
-
-							// Создаем элемент ссылки
-							const newLink = document.createElement('a');
-							newLink.href = 'https://мозаика62.рф/product-category/кухни/';
-							newLink.textContent = 'Все кухни';
-
-							// Добавляем ссылку в элемент li
-							newListItem.appendChild(newLink);
-
-							// Находим элемент ul с классом product-categories
-							const productCategoriesList = document.querySelector('#woocommerce_product_categories-2 ul.product-categories');
-
-							// Если список найден, вставляем новый элемент первым в списке
-							if (productCategoriesList) {
-								productCategoriesList.insertBefore(newListItem, productCategoriesList.firstChild);
-							}
-						</script>
+							document.addEventListener('DOMContentLoaded', function() {
+								// Создаем новый элемент li
+								const newListItem = document.createElement('li');
+								
+								// Простая проверка по pathname
+								const currentPath = window.location.pathname;
+								const targetPath = '/product-category/кухни/';
+								
+								// Нормализуем пути (убираем лишние слеши)
+								const normalizePath = (path) => {
+									return path.replace(/^\/+|\/+$/g, '');
+								};
+								
+								const isKitchenPage = normalizePath(currentPath) === normalizePath(targetPath);
+								
+								// Устанавливаем классы сразу
+								if (isKitchenPage) {
+									newListItem.className = 'cat-item current-cat';
+									console.log('Страница кухни найдена! Установлен current-cat');
+								} else {
+									newListItem.className = 'cat-item';
+									console.log('Не страница кухни. Path:', currentPath);
+								}
+								
+								// Создаем элемент ссылки
+								const newLink = document.createElement('a');
+								newLink.href = 'https://мозаика62.рф/product-category/кухни/';
+								newLink.textContent = 'Все кухни';
+								
+								// Добавляем ссылку в элемент li
+								newListItem.appendChild(newLink);
+								
+								// Находим список
+								const productCategoriesList = document.querySelector('#woocommerce_product_categories-2 ul.product-categories');
+								
+								if (productCategoriesList) {
+									productCategoriesList.insertBefore(newListItem, productCategoriesList.firstChild);
+									
+									// Проверяем результат
+									const addedElement = productCategoriesList.querySelector('li:first-child');
+									console.log('Добавленный элемент:', addedElement.outerHTML);
+									console.log('Классы элемента:', addedElement.className);
+								} else {
+									console.error('Список категорий не найден!');
+									
+									// Попробуем через небольшой таймаут
+									setTimeout(function() {
+										const list = document.querySelector('#woocommerce_product_categories-2 ul.product-categories');
+										if (list) {
+											list.insertBefore(newListItem, list.firstChild);
+											console.log('Элемент добавлен после таймаута');
+										}
+									}, 500);
+								}
+							});
+							</script>
 					</div>
 					<div class="col-md-10">
 						<div class="row">
