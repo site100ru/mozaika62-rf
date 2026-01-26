@@ -291,26 +291,46 @@
 						
 						<!-- Add general category in dynamic_sidebar()-->
 						<script>
-							// Создаем новый элемент li
-							const newListItem = document.createElement('li');
-							newListItem.className = 'cat-item current-cat';
-
-							// Создаем элемент ссылки
-							const newLink = document.createElement('a');
-							newLink.href = 'https://мозаика62.рф/product-category/кухни/';
-							newLink.textContent = 'Все кухни';
-
-							// Добавляем ссылку в элемент li
-							newListItem.appendChild(newLink);
-
-							// Находим элемент ul с классом product-categories
-							const productCategoriesList = document.querySelector('#woocommerce_product_categories-2 ul.product-categories');
-
-							// Если список найден, вставляем новый элемент первым в списке
-							if (productCategoriesList) {
-								productCategoriesList.insertBefore(newListItem, productCategoriesList.firstChild);
-							}
-						</script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Находим список категорий
+    const productCategoriesList = document.querySelector('#woocommerce_product_categories-2 ul.product-categories');
+    
+    if (!productCategoriesList) {
+        console.error('Список не найден!');
+        return;
+    }
+    
+    // Создаем новый элемент li
+    const newListItem = document.createElement('li');
+    
+    // Проверяем текущую страницу
+    const path = window.location.pathname;
+    const isKitchenCategory = path.includes('/product-category/кухни');
+    
+    // Устанавливаем классы
+    newListItem.className = 'cat-item';
+    if (isKitchenCategory) {
+        newListItem.classList.add('current-cat');
+    }
+    
+    // Создаем ссылку
+    const newLink = document.createElement('a');
+    newLink.href = '/product-category/кухни/';
+    newLink.textContent = 'Все кухни';
+    
+    // Добавляем ссылку в li
+    newListItem.appendChild(newLink);
+    
+    // Вставляем в начало списка
+    productCategoriesList.insertBefore(newListItem, productCategoriesList.firstChild);
+    
+    console.log('Элемент "Все кухни" добавлен', {
+        path: path,
+        isKitchenCategory: isKitchenCategory,
+        classes: newListItem.className
+    });
+});
+</script>
 					</div>
 					<div class="col-md-10">
 						<div class="row">
