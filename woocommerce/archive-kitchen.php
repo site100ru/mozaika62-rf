@@ -291,62 +291,71 @@
 						
 						<!-- Add general category in dynamic_sidebar() -->
 						<script>
-							document.addEventListener('DOMContentLoaded', function() {
-								// Создаем новый элемент li
-								const newListItem = document.createElement('li');
-								
-								// Простая проверка по pathname
-								const currentPath = window.location.pathname;
-								const targetPath = '/product-category/кухни/';
-								
-								// Нормализуем пути (убираем лишние слеши)
-								const normalizePath = (path) => {
-									return path.replace(/^\/+|\/+$/g, '');
-								};
-								
-								const isKitchenPage = normalizePath(currentPath) === normalizePath(targetPath);
-								
-								// Устанавливаем классы сразу
-								if (isKitchenPage) {
-									newListItem.className = 'cat-item current-cat';
-									console.log('Страница кухни найдена! Установлен current-cat');
-								} else {
-									newListItem.className = 'cat-item';
-									console.log('Не страница кухни. Path:', currentPath);
-								}
-								
-								// Создаем элемент ссылки
-								const newLink = document.createElement('a');
-								newLink.href = 'https://мозаика62.рф/product-category/кухни/';
-								newLink.textContent = 'Все кухни';
-								
-								// Добавляем ссылку в элемент li
-								newListItem.appendChild(newLink);
-								
-								// Находим список
-								const productCategoriesList = document.querySelector('#woocommerce_product_categories-2 ul.product-categories');
-								
-								if (productCategoriesList) {
-									productCategoriesList.insertBefore(newListItem, productCategoriesList.firstChild);
-									
-									// Проверяем результат
-									const addedElement = productCategoriesList.querySelector('li:first-child');
-									console.log('Добавленный элемент:', addedElement.outerHTML);
-									console.log('Классы элемента:', addedElement.className);
-								} else {
-									console.error('Список категорий не найден!');
-									
-									// Попробуем через небольшой таймаут
-									setTimeout(function() {
-										const list = document.querySelector('#woocommerce_product_categories-2 ul.product-categories');
-										if (list) {
-											list.insertBefore(newListItem, list.firstChild);
-											console.log('Элемент добавлен после таймаута');
-										}
-									}, 500);
-								}
-							});
-							</script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Создаем новый элемент li
+    const newListItem = document.createElement('li');
+    newListItem.className = 'cat-item';
+    
+    // Проверяем URL более гибко (может быть с разными параметрами)
+    const currentUrl = window.location.href;
+    const targetUrl = 'https://мозаика62.рф/product-category/кухни/';
+    
+    // Нормализуем URL для сравнения
+    const normalizeUrl = (url) => {
+        // Удаляем параметры запроса, хэш и приводим к нижнему регистру
+        url = url.split('?')[0].split('#')[0].toLowerCase();
+        // Убеждаемся, что URL заканчивается на /
+        if (!url.endsWith('/')) url += '/';
+        return url;
+    };
+    
+    // Проверяем совпадение
+    const isKitchenPage = normalizeUrl(currentUrl) === normalizeUrl(targetUrl);
+    
+    console.log('Проверка URL:', {
+        current: currentUrl,
+        normalizedCurrent: normalizeUrl(currentUrl),
+        target: targetUrl,
+        normalizedTarget: normalizeUrl(targetUrl),
+        isKitchenPage: isKitchenPage
+    });
+    
+    // Если находимся на странице категории, добавляем класс current-cat
+    if (isKitchenPage) {
+        newListItem.classList.add('current-cat');
+        console.log('current-cat добавлен');
+    } else {
+        console.log('current-cat НЕ добавлен - не совпадают URL');
+    }
+    
+    // Создаем элемент ссылки
+    const newLink = document.createElement('a');
+    newLink.href = 'https://мозаика62.рф/product-category/кухни/';
+    newLink.textContent = 'Все кухни';
+    
+    // Добавляем ссылку в элемент li
+    newListItem.appendChild(newLink);
+    
+    // Находим элемент ul с классом product-categories
+    const productCategoriesList = document.querySelector('#woocommerce_product_categories-2 ul.product-categories');
+    
+    if (productCategoriesList) {
+        productCategoriesList.insertBefore(newListItem, productCategoriesList.firstChild);
+        console.log('Элемент добавлен. Классы:', newListItem.className);
+        
+        // Двойная проверка через 1 секунду
+        setTimeout(function() {
+            const firstLi = productCategoriesList.querySelector('li:first-child');
+            if (firstLi && isKitchenPage && !firstLi.classList.contains('current-cat')) {
+                console.log('Повторно добавляем current-cat');
+                firstLi.classList.add('current-cat');
+            }
+        }, 1000);
+    } else {
+        console.error('Список не найден!');
+    }
+});
+</script>
 					</div>
 					<div class="col-md-10">
 						<div class="row">
