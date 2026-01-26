@@ -995,4 +995,27 @@ get_template_part('template-parts/action/action', '', [
 <?php get_template_part('template-parts/quiz/kitchen/quiz-kitchen'); ?>
 
 
+<script>
+	// Создаем новый элемент li
+	const newListItem = document.createElement('li');
+	newListItem.className = 'cat-item';
+
+	// Создаем элемент ссылки
+	const newLink = document.createElement('a');
+	newLink.href = 'https://мозаика62.рф/product-category/кухни/';
+	newLink.textContent = 'Все кухни';
+
+	// Добавляем ссылку в элемент li
+	newListItem.appendChild(newLink);
+
+	// Находим элемент ul с классом product-categories
+	const productCategoriesList = document.querySelector('#woocommerce_product_categories-2 ul.product-categories');
+
+	// Если список найден, вставляем новый элемент первым в списке
+	if (productCategoriesList) {
+		productCategoriesList.insertBefore(newListItem, productCategoriesList.firstChild);
+	}
+</script>
+
+
 <?php get_footer( '1' ); ?>
