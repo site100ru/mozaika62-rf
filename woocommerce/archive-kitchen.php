@@ -294,6 +294,7 @@
 							// Создаем новый элемент li
 							const newListItem = document.createElement('li');
 							const fullUrl = location.href;
+							console.log(fullUrl);
 							if (fullUrl == 'https://мозаика62.рф/product-category/кухни/' ) {
 								newListItem.className = 'cat-item current-cat';
 							} else {
