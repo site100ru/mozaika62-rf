@@ -295,7 +295,7 @@
 							const newListItem = document.createElement('li');
 							const fullUrl = location.href;
 							console.log(fullUrl);
-							if (fullUrl == 'https://мозаика62.рф/product-category/кухни/' ) {
+							if (fullUrl == 'https://xn--62-6kca7ahoms.xn--p1ai/product-category/%D0%BA%D1%83%D1%85%D0%BD%D0%B8/' ) {
 								newListItem.className = 'cat-item current-cat';
 							} else {
 								newListItem.className = 'cat-item';
