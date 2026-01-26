@@ -296,27 +296,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const newListItem = document.createElement('li');
     newListItem.className = 'cat-item';
     
-    // Проверяем URL более гибко (может быть с разными параметрами)
+    // Проверяем текущий URL
     const currentUrl = window.location.href;
-    const targetUrl = 'https://мозаика62.рф/product-category/кухни/';
     
-    // Нормализуем URL для сравнения
-    const normalizeUrl = (url) => {
-        // Удаляем параметры запроса, хэш и приводим к нижнему регистру
-        url = url.split('?')[0].split('#')[0].toLowerCase();
-        // Убеждаемся, что URL заканчивается на /
-        if (!url.endsWith('/')) url += '/';
-        return url;
-    };
+    // Целевой URL - страница категории кухни
+    const targetUrl = '/product-category/кухни/';
     
-    // Проверяем совпадение
-    const isKitchenPage = normalizeUrl(currentUrl) === normalizeUrl(targetUrl);
+    // Проверяем, содержит ли текущий URL целевую строку
+    const isKitchenPage = currentUrl.includes(targetUrl);
     
     console.log('Проверка URL:', {
         current: currentUrl,
-        normalizedCurrent: normalizeUrl(currentUrl),
         target: targetUrl,
-        normalizedTarget: normalizeUrl(targetUrl),
         isKitchenPage: isKitchenPage
     });
     
@@ -330,7 +321,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Создаем элемент ссылки
     const newLink = document.createElement('a');
-    newLink.href = 'https://мозаика62.рф/product-category/кухни/';
+    newLink.href = '/product-category/кухни/';
     newLink.textContent = 'Все кухни';
     
     // Добавляем ссылку в элемент li
@@ -340,17 +331,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const productCategoriesList = document.querySelector('#woocommerce_product_categories-2 ul.product-categories');
     
     if (productCategoriesList) {
+        // Добавляем элемент в начало списка
         productCategoriesList.insertBefore(newListItem, productCategoriesList.firstChild);
         console.log('Элемент добавлен. Классы:', newListItem.className);
         
-        // Двойная проверка через 1 секунду
+        // Дополнительная проверка через короткий таймаут
         setTimeout(function() {
             const firstLi = productCategoriesList.querySelector('li:first-child');
             if (firstLi && isKitchenPage && !firstLi.classList.contains('current-cat')) {
                 console.log('Повторно добавляем current-cat');
                 firstLi.classList.add('current-cat');
             }
-        }, 1000);
+        }, 100);
     } else {
         console.error('Список не найден!');
     }
