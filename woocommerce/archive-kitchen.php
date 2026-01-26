@@ -293,7 +293,12 @@
 						<script>
 							// Создаем новый элемент li
 							const newListItem = document.createElement('li');
-							newListItem.className = 'cat-item';
+							const fullUrl = location.href;
+							if (fullUrl == 'https://мозаика62.рф/product-category/кухни/' ) {
+								newListItem.className = 'cat-item current-cat';
+							} else {
+								newListItem.className = 'cat-item';
+							}
 
 							// Создаем элемент ссылки
 							const newLink = document.createElement('a');
