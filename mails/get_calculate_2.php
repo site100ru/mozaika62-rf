@@ -25,7 +25,7 @@
 
 			
 			$to 	 = 'mozaika62@bk.ru, vasilyev-r@mail.ru';
-			$from 	 = 'info@мозаика62.рф';
+			$from 	 = 'info@xn--62-6kca7ahoms.xn--p1ai';
 			$subject = 'Заявка на расчет стоимости с сайта мозаика62.рф';
 			 
 			
