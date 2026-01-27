@@ -24,7 +24,8 @@
 			$mes = $_POST['mes'];
 
 			
-			$to 	 = 'mozaika62@bk.ru, vasilyev-r@mail.ru';
+			// $to 	 = 'mozaika62@bk.ru, vasilyev-r@mail.ru';
+            $to 	 = 'sidorov-vv3@mail.ru, vasilyev-r@mail.ru, vasilyev-r@yandex.ru';
 			$from 	 = 'info@xn--62-6kca7ahoms.xn--p1ai';
 			$subject = 'Заявка на расчет стоимости с сайта мозаика62.рф';
 			 
