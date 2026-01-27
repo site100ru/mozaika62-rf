@@ -21,9 +21,23 @@
 			$name = $_POST['name'];
 			$tel = $_POST['tel'] ?? $_POST['phone'];
 
-			// mail("mozaika62@bk.ru, vasilyev-r@mail.ru", "Запрос на обратный звонок с сайта мозаика62.рф", "Потенциальный клиент с именем ".$name." просит перезвонить Вас на номер ".$tel);
-            mail("sidorov-vv3@mail.ru, vasilyev-r@mail.ru, vasilyev-r@yandex.ru", "Запрос на обратный звонок с сайта мозаика62.рф", "Потенциальный клиент с именем ".$name." просит перезвонить Вас на номер ".$tel);
             
+            // $to      = 'mozaika62@bk.ru, vasilyev-r@mail.ru';
+            $to      = 'sidorov-vv3@mail.ru, vasilyev-r@mail.ru, vasilyev-r@yandex.ru';
+            $from    = 'info@xn--62-6kca7ahoms.xn--p1ai';
+            $subject = 'Запрос на обратный звонок с сайта мозаика62.рф';
+
+            $headers  = "MIME-Version: 1.0\r\n";
+            $headers .= "Content-Type: text/html; charset=utf-8\r\n";
+            $headers .= "From: $from\r\n";
+
+            $message = "
+                Потенциальный клиент с именем <strong>$name</strong><br>
+                просит перезвонить на номер <strong>$tel</strong>
+            ";
+
+            mail($to, $subject, $message, $headers);
+
 			$_SESSION['win'] = 1;
 			$_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение в салон кухонь «Мозаика». Мы ответим Вам в&#160;ближайшее время.</p>';
 			header("Location: ".$_SERVER['HTTP_REFERER']);
