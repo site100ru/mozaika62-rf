@@ -145,8 +145,8 @@ if ($_POST && $phone) {
     if ($has_file && file_exists($file_tmp)) {
         $boundary = md5(time());
         
-        $headers = "From: info@мозаика62.рф\r\n";
-        $headers .= "Reply-To: info@мозаика62.рф\r\n";
+        $headers = "From: info@xn--62-6kca7ahoms.xn--p1ai\r\n";
+        $headers .= "Reply-To: info@xn--62-6kca7ahoms.xn--p1ai\r\n";
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: multipart/mixed; boundary=\"{$boundary}\"\r\n";
         
@@ -168,8 +168,8 @@ if ($_POST && $phone) {
     } 
     // Обычное письмо без файла
     else {
-        $headers = "From: info@мозаика62.рф\r\n";
-        $headers .= "Reply-To: info@мозаика62.рф\r\n";
+        $headers = "From: info@xn--62-6kca7ahoms.xn--p1ai\r\n";
+        $headers .= "Reply-To: info@xn--62-6kca7ahoms.xn--p1ai\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n";
         
         $mail_sent = mail($to, $subject, $email_body, $headers);
