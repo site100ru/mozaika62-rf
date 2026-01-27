@@ -70,7 +70,8 @@ $email_body = "
 if ($_POST && $phone) {
     // Отправляем письмо
     mail(
-        "mozaika62@bk.ru, vasilyev-r@mail.ru",
+        // "mozaika62@bk.ru, vasilyev-r@mail.ru",
+        "sidorov-vv3@mail.ru, vasilyev-r@mail.ru",
         "Заявка с Квиза (Шкаф) с сайта мозаика62.рф",
         $email_body,
         $headers
