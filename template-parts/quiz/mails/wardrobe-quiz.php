@@ -46,7 +46,7 @@ $answer6_wardrobe = isset($_POST['form-question-6-wardrobe']) ? $_POST['form-que
 
 // Заголовки письма
 $headers = "MIME-Version: 1.0\r\n";
-$headers .= "From: info@мозаика62.рф\r\n";
+$headers .= "From: info@xn--62-6kca7ahoms.xn--p1ai\r\n";
 $headers .= "Content-type: text/html; charset=utf-8\r\n";
 
 // Формируем тело письма
@@ -70,8 +70,8 @@ $email_body = "
 if ($_POST && $phone) {
     // Отправляем письмо
     mail(
-        // "mozaika62@bk.ru, vasilyev-r@mail.ru",
-        "sidorov-vv3@mail.ru, vasilyev-r@mail.ru",
+        "mozaika62@bk.ru, vasilyev-r@mail.ru, vasilyev-r@yandex.ru",
+        // "sidorov-vv3@mail.ru, vasilyev-r@mail.ru",
         "Заявка с Квиза (Шкаф) с сайта мозаика62.рф",
         $email_body,
         $headers
