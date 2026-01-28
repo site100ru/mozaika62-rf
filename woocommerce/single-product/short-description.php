@@ -62,7 +62,7 @@ if ( ! $short_description ) {
                             </з>
                         <?php else : ?>
                             <p class="product-price__row">
-                                <strong class="product-price__label">Стоимость: </strong>
+                                <strong class="product-price__label">Стоимость:&nbsp;</strong>
 
                                 <span class="product">
                                     <?php echo number_format( $price, 0, ',', ' ' ); ?> ₽
