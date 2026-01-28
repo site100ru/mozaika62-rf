@@ -2787,3 +2787,8 @@ body.b-new-year:before {
     color: var(--corporate-color-1);
 }
 
+@media (max-width: 1400px) {
+    .nav-wrap {
+        text-wrap: wrap;
+    }
+}

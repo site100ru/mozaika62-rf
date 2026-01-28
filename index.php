@@ -52,7 +52,7 @@
                                     <div class="nav-li-float-left">
                                         <img src="<?php echo get_template_directory_uri(); ?>/img/ico/callback-ico.svg">
                                     </div>
-                                    <div class="nav-li-float-right max-width-1400" >
+                                    <div class="nav-li-float-right max-width-1400 nav-wrap" >
                                         Обратный звонок
                                     </div>
                                     <div style="clear: both;"></div>
@@ -65,7 +65,7 @@
                                     <div class="nav-li-float-left">
                                         <img src="<?php echo get_template_directory_uri(); ?>/img/ico/calculator-ico.svg">
                                     </div>
-                                    <div class="nav-li-float-right max-width-1400" >
+                                    <div class="nav-li-float-right max-width-1400 nav-wrap" >
                                         Рассчитать стоимость
                                     </div>
                                     <div style="clear: both;"></div>
@@ -85,7 +85,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item me-1 me-xxl-4">
+                        <li class="nav-item me-1 me-xxl-4 d-none d-xl-block">
                             <a class="top-menu-tel nav-link" href="tel:89511014610">
                                 <div style="display: flex;">
                                     <div class="nav-li-float-left">
