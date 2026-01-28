@@ -20,6 +20,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $post;
+global $product;
+
 
 $short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
 
@@ -43,7 +45,32 @@ if ( ! $short_description ) {
 					
 				// ЕСЛИ ЦЕНА ЕСТЬ
 				} else { ?>
-					<p><strong>Стоимость:</strong> от <span class="text-corporate-color-1"><?php echo number_format( $price, 0, ',', ' ' ); ?></span> руб.</p>
+                    <div class="product-price">
+                        <?php if ( $product->is_on_sale() ) : ?>
+                            <div class="product-price__row">    
+                                <strong class="product-price__label">Стоимость:&nbsp;</strong>
+
+                                <p>
+                                    <span class="product-price__old">
+                                        ₽<?php echo number_format( $product->get_regular_price(), 0, ',', ' ' ); ?>
+                                    </span>
+
+                                    <span class="product-price__current">
+                                        &nbsp;₽<?php echo number_format( $product->get_sale_price(), 0, ',', ' ' ); ?>
+                                    </span>
+                                </p>
+                            </з>
+                        <?php else : ?>
+                            <div class="product-price__row">
+                                <strong class="product-price__label">Стоимость:</strong>
+
+                                <span class="product">
+                                    <?php echo number_format( $price, 0, ',', ' ' ); ?> ₽
+                                </span>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+					
 					
 					<?php
 						/* Проверяем, содержит ли протукт метку "Портфолио" и в зависимости от результата выводим то или иное описание. */

@@ -2769,3 +2769,21 @@ body.b-new-year:before {
 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button{
     display: none !important;
 }
+
+.product-price__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-price__old {
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #6d6d6d;
+}
+
+.product-price__current {
+    font-family: "Helvetica Neue";
+    font-weight: 700;
+    color: var(--corporate-color-1);
+}
+

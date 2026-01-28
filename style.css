@@ -125,7 +125,8 @@ h6,
 
 
 /*** SINGLE PRODUCT SECTION ***/
-.single-product-section ul {
+.single-product-section ul,
+.product-price__label {
 	list-style: none;
 	padding-left: 0;
 	font-family: Gilroy-Regular;
