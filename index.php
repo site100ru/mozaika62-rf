@@ -85,7 +85,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item me-1 me-xxl-4 d-none d-xl-block">
+                        <li class="nav-item me-1 me-xxl-4 ">
                             <a class="top-menu-tel nav-link" href="tel:89511014610">
                                 <div style="display: flex;">
                                     <div class="nav-li-float-left">
