@@ -134,7 +134,7 @@
 	<!-- Menu header -->
 	<nav id="header-2-bottom" class="header-nav-bottom navbar navbar-expand-lg navbar-light bg-white shadow py-2 py-lg-0">
 		<div class="container">
-            <a href="/" class="navbar-brand custom-logo-link new-year" rel="home" aria-current="page">
+            <a class="navbar-brand" href="/">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/ico/logo-dark.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
             </a>
 			

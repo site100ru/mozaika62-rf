@@ -133,7 +133,7 @@
         <!-- Header nav bottom -->
         <nav class="header-nav-bottom navbar navbar-expand-lg navbar-light py-0">
             <div class="container">
-                <a href="/" class="navbar-brand custom-logo-link new-year" rel="home" aria-current="page">
+                <a class="navbar-brand" href="/">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/ico/logo-light.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
                 </a>
                 
@@ -194,7 +194,7 @@
 		<!-- Header nav bottom -->
 		<nav class="header-nav-bottom navbar navbar-expand-lg navbar-light py-1 py-lg-0">
 			<div class="container">
-				<a href="/" class="navbar-brand custom-logo-link new-year bottom" rel="home" aria-current="page">
+				<a class="navbar-brand" href="/">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/ico/logo-dark.svg" class="custom-logo" alt="Логотип в шапке" decoding="async" />
                 </a>
 				
