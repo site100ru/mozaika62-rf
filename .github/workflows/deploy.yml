@@ -19,10 +19,11 @@ jobs:
             # cd /var/www/u1538455/data/www/мозаика62.рф/wp-content/themes
             # git clone https://github.com/site100ru/mozaika62-rf.git site100mozaika
 
-            git reset --hard
-            git pull
+            cd ~/mozaika/public_html/wp-content/themes/site100mozaika
 
-            # cd ~/mozaika/public_html/wp-content/themes/site100mozaika
+            git status
+            git diff
+
             # git pull
 
             # ========== ЧТО МЕНЯТЬ ДЛЯ ДРУГИХ ПРОЕКТОВ ==========
