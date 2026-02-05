@@ -520,4 +520,4 @@ function custom_robots_txt($output)
 	$output .= "Disallow: */page/*\n";
     return $output;
 }
-/*** END ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
+/*** END ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/ 
