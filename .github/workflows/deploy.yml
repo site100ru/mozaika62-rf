@@ -20,10 +20,7 @@ jobs:
             # git clone https://github.com/site100ru/mozaika62-rf.git site100mozaika
 
             cd ~/mozaika/public_html/wp-content/themes/site100mozaika
-
-            git stash
             git pull
-            git stash pop
 
             # ========== ЧТО МЕНЯТЬ ДЛЯ ДРУГИХ ПРОЕКТОВ ==========
             # мозаика62.рф - доменное имя сайта
