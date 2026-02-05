@@ -22,8 +22,8 @@ jobs:
             git fetch origin
             git reset --hard origin/main
             
-            #cd ~/mozaika/public_html/wp-content/themes/site100mozaika
-            #git pull
+            cd ~/mozaika/public_html/wp-content/themes/site100mozaika
+            git pull
 
             # ========== ЧТО МЕНЯТЬ ДЛЯ ДРУГИХ ПРОЕКТОВ ==========
             # мозаика62.рф - доменное имя сайта
