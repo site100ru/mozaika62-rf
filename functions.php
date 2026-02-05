@@ -516,7 +516,7 @@ function custom_robots_txt($output)
     $output = "User-agent: *\n";
     $output .= "Disallow: *?add-to-cart=*\n";
 	$output .= "Disallow: *?filter_*\n";
-	$output .= "Disallow: *filter_*\n";
+	$output .= "Disallow: *filter_*\n"; 
     return $output;
 }
 /*** END ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
