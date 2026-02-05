@@ -19,11 +19,14 @@ jobs:
             # cd /var/www/u1538455/data/www/мозаика62.рф/wp-content/themes
             # git clone https://github.com/site100ru/mozaika62-rf.git site100mozaika
 
+            cd ~/mozaika/public_html/wp-content/themes/site100mozaika
+  
+            # Принудительно обновить до версии из GitHub
             git fetch origin
             git reset --hard origin/main
             
-            cd ~/mozaika/public_html/wp-content/themes/site100mozaika
-            git pull
+            # Очистить неотслеживаемые файлы
+            git clean -fd
 
             # ========== ЧТО МЕНЯТЬ ДЛЯ ДРУГИХ ПРОЕКТОВ ==========
             # мозаика62.рф - доменное имя сайта
