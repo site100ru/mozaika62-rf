@@ -432,15 +432,11 @@
 			echo wp_strip_all_tags( $short_description );
 		
 		// Если страница категории продукта woocommerce
-		} elseif ( is_product_category() ) {
-			foreach( wp_get_post_terms( get_the_id(), 'product_cat' ) as $term ){
-				if( $term ){
-					//echo $term->name . '<br>'; // product category name
-					if ( $term->description ) {
-						echo $term->description; // Product category description
-					}
-				}
-			}
+        } elseif ( is_product_category() ) {
+            $term = get_queried_object(); // Получаем текущую категорию
+            if( $term && !empty( $term->description ) ){
+                echo wp_strip_all_tags( $term->description ); // Описание только текущей категории
+            }
 		
 		// Если страница портфолио
 		} elseif ( is_post_type_archive( 'portfolio' ) ) {
@@ -449,17 +445,17 @@
 		// Если страница категорий портфолио
 		} elseif ( is_tax( 'portfolio-cat' ) ) {
 			$term = get_queried_object(); // Получаем текущий термин
-			echo $term->description;
+			echo wp_strip_all_tags( $term->description );
 			//echo 'Категория портфолио';
 		
 		// Если страница магазина	
 		} elseif ( is_shop() ) {
 			$shop_page_id = wc_get_page_id('shop');
-			echo get_the_excerpt($shop_page_id);
+			echo wp_strip_all_tags( get_the_excerpt($shop_page_id) );
 		
 		// Если обычная страница
 		} else {
-			echo get_the_excerpt();
+			echo wp_strip_all_tags( get_the_excerpt() );
 		}
 	}
 	/*** END ДЕЛАЕМ ПРАВИЛЬНЫЙ DESCRIPTION ДЛЯ КАЖДОЙ СТРАНИЦЫ ***/
@@ -499,13 +495,13 @@
 
 
 // КЛАССЫ В BODY_CLASS
-add_filter('body_class', 'custom_body_classes');
+// add_filter('body_class', 'custom_body_classes');
 
-function custom_body_classes($classes) {
-	// Добавить класс для всех страниц
-	$classes[] = 'b-new-year';
-	return $classes;
-}
+// function custom_body_classes($classes) {
+// 	// Добавить класс для всех страниц
+// 	$classes[] = 'b-new-year';
+// 	return $classes;
+// }
 
 
 
@@ -516,9 +512,8 @@ function custom_robots_txt($output)
     $output = "User-agent: *\n";
     $output .= "Disallow: *?add-to-cart=*\n";
 	$output .= "Disallow: *?filter_*\n";
-	$output .= "Disallow: *filter_*\n";
-	$output .= "Disallow: */page/*\n\n";
-	$output .= "https://мозаика62.рф/sitemap.xml";
+    $output .= "Disallow: *filter_*\n"; 
     return $output;
 }
 /*** END ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
+

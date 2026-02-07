@@ -1,6 +1,28 @@
 // Ждем загрузки DOM
 document.addEventListener('DOMContentLoaded', function () {
 
+    // снять выбор радио кнопки
+    var allRadioGroups = {};
+
+    document.querySelectorAll('input[type="radio"]').forEach(function (input) {
+        var groupName = input.getAttribute('name');
+
+        if (input.type === 'radio') {
+            if (!allRadioGroups[groupName]) {
+                allRadioGroups[groupName] = null;
+            }
+
+            input.addEventListener('click', function (e) {
+                if (this === allRadioGroups[groupName]) {
+                    this.checked = false;
+                    allRadioGroups[groupName] = null;
+                } else {
+                    allRadioGroups[groupName] = this;
+                }
+            });
+        }
+    });
+
     // ============================================
     // ВОПРОС 1 - Тип шкафа
     // ============================================
@@ -231,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (btnPrevFinal) {
         btnPrevFinal.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             document.getElementById('question-final').style.display = 'none';
             document.getElementById('question-6-wardrobe').style.display = 'block';
         });
@@ -243,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var hiddenField = document.getElementById('form-answer-final-' + i);
 
         if (checkbox && hiddenField) {
-            (function(cb, hf) {
+            (function (cb, hf) {
                 cb.addEventListener('change', function () {
                     hf.value = this.checked ? this.value : '';
                 });

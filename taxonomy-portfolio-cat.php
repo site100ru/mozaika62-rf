@@ -303,7 +303,7 @@
 							</ul>
 						</div>
 						<div class="d-md-none text-center mb-4">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/left-right-finger.png" style="opacity: 1; max-width: 25px;">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/left-right-finger.svg" style="opacity: 1; max-width: 25px;">
 						</div>
 					</div>
 				</div>

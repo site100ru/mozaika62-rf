@@ -5,6 +5,28 @@ var answer_1;
 // Ждем загрузки DOM
 document.addEventListener('DOMContentLoaded', function () {
 
+    // снять выбор радио кнопки
+    var allRadioGroups = {};
+
+    document.querySelectorAll('input[type="radio"]').forEach(function (input) {
+        var groupName = input.getAttribute('name');
+
+        if (input.type === 'radio') {
+            if (!allRadioGroups[groupName]) {
+                allRadioGroups[groupName] = null;
+            }
+
+            input.addEventListener('click', function (e) {
+                if (this === allRadioGroups[groupName]) {
+                    this.checked = false;
+                    allRadioGroups[groupName] = null;
+                } else {
+                    allRadioGroups[groupName] = this;
+                }
+            });
+        }
+    });
+
     // ============================================
     // ПЕРВЫЙ ВОПРОС - Выбор типа мебели
     // ============================================
@@ -496,10 +518,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var filePreview = document.getElementById('file-preview');
 
     if (fileInput) {
-        fileInput.addEventListener('change', function(e) {
+        fileInput.addEventListener('change', function (e) {
             if (this.files && this.files.length > 0) {
                 selectedFile = this.files[0];
-                
+
                 // Показываем информацию о файле
                 if (filePreview) {
                     var fileSize = (selectedFile.size / 1024).toFixed(1);
@@ -520,7 +542,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Удаляем старый обработчик и добавляем новый
         var newBtnNext2Other = btnNext2Other.cloneNode(true);
         btnNext2Other.parentNode.replaceChild(newBtnNext2Other, btnNext2Other);
-        
+
         newBtnNext2Other.addEventListener('click', function (e) {
             e.preventDefault();
 
@@ -565,9 +587,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (btnPrevFinal) {
         btnPrevFinal.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             document.getElementById('question-final').style.display = 'none';
-            
+
             // Возвращаемся к последнему вопросу текущей ветки
             if (currentBranch === 'kitchen') {
                 document.getElementById('question-7-kitchen').style.display = 'block';
@@ -585,7 +607,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var hiddenField = document.getElementById('form-answer-final-' + i);
 
         if (checkbox && hiddenField) {
-            (function(cb, hf) {
+            (function (cb, hf) {
                 cb.addEventListener('change', function () {
                     hf.value = this.checked ? this.value : '';
                 });
