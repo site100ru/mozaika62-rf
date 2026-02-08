@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template: Секция "Отзывы о нас в независимых источниках"
  * Файл: template-parts/reviews-section/reviews-section.php
@@ -44,34 +45,28 @@ $bg_color = $args['bg_color'] ?? 'bg-light';
                     <!-- Фото и информация о клиенте -->
                     <div class="review-header d-flex align-items-center mb-3">
                         <div class="review-photo me-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico/icon-1.png"
-                                alt="Ульяна Нехорошкова" class="rounded-circle" width="50" height="50">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico/review-1.webp" alt="Валерия Козлова" class="rounded-circle" width="50" height="50">
                         </div>
                         <div class="review-info">
-                            <p class="review-title mb-0">Ульяна Нехорошкова</p>
-                            <p class="review-date text-muted small mb-0">18 июля 2025</p>
+                            <p class="review-title mb-0">Валерия Козлова</p>
+                            <p class="review-date text-muted small mb-0">4 января 2026</p>
                         </div>
                     </div>
 
                     <!-- Звездочки -->
                     <div class="review-rating mb-3">
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
                     </div>
 
                     <!-- Текст отзыва -->
                     <div class="review-text">
-                        <p class="review-description">Наши планы по ремонту сдвинулись, и я взяла шикарную кухню в
-                            магазине. Вся моя семья в восторге! Как начну готовить, так все в очереди стоят, чтобы
-                            попробовать!</p>
+                        <p class="review-description">
+                            Отличный магазин! Огромный выбор мебели на любой вкус,цвет и бюджет. Купили кровать - качество сборки и ткани на высоте. Идеально вписался в интерьер, больше спасибо!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -82,33 +77,31 @@ $bg_color = $args['bg_color'] ?? 'bg-light';
                     <!-- Фото и информация о клиенте -->
                     <div class="review-header d-flex align-items-center mb-3">
                         <div class="review-photo me-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico/icon-2.png" alt="Егор"
-                                class="rounded-circle" width="50" height="50">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico/review-2.webp" alt="Зарина Давлетшина" class="rounded-circle" width="50" height="50">
                         </div>
                         <div class="review-info">
-                            <p class="review-title mb-0">Егор</p>
-                            <p class="review-date text-muted small mb-0">14 июля 2025</p>
+                            <p class="review-title mb-0">Зарина Давлетшина</p>
+                            <p class="review-date text-muted small mb-0">26 декабря 2025</p>
                         </div>
                     </div>
 
                     <!-- Звездочки -->
                     <div class="review-rating mb-3">
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
                     </div>
 
                     <!-- Текст отзыва -->
                     <div class="review-text">
-                        <p class="review-description">Спасибо за мою новую кухню! Дизайн, функциональность и качество –
-                            всё на 5+. Особенно радует вместительность шкафов и удобная рабочая зона.</p>
+                        <p class="review-description">
+                            Отличный магазин с большим выбором качественной и стильной мебели. Консультанты помогли подобрать оптимальный вариант, доставка и сборка прошли быстро и аккуратно...
+                            <a href="https://yandex.ru/profile/89191942001" style="text-decoration: none; color: #323232; font-weight: 500; font-family: 'Gilroy-Medium';">
+                                читать еще
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -119,36 +112,28 @@ $bg_color = $args['bg_color'] ?? 'bg-light';
                     <!-- Фото и информация о клиенте -->
                     <div class="review-header d-flex align-items-center mb-3">
                         <div class="review-photo me-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico/icon-3.png"
-                                alt="Лена Шагдурова" class="rounded-circle" width="50" height="50">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico/review-3.webp" alt="Наталия Лисаченко" class="rounded-circle" width="50" height="50">
                         </div>
                         <div class="review-info">
-                            <p class="review-title mb-0">Лена Шагдурова</p>
-                            <p class="review-date text-muted small mb-0">26 апреля 2025</p>
+                            <p class="review-title mb-0">Наталия Лисаченко</p>
+                            <p class="review-date text-muted small mb-0">9 ноября 2025</p>
                         </div>
                     </div>
 
                     <!-- Звездочки -->
                     <div class="review-rating mb-3">
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
-                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg"
-                                alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
+                        <i class="star-filled"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/stars.svg" alt="stars"></i>
                     </div>
 
                     <!-- Текст отзыва -->
                     <div class="review-text">
-                        <p class="review-description">Очень довольны покупкой новой кухни! Она получилась не только
-                            красивой но и удобной. Всё элементы были качественно собраны дополнительно установили
-                            встроенную технику ... <a href="https://yandex.ru/profile/89191942001"
-                                style="text-decoration: none; color: #323232; font-weight: 500; font-family: 'Gilroy-Medium';">читать
-                                еще</a></p>
+                        <p class="review-description">
+                            Идеальный магазин мебели. Покупала кухню домой,все рассказали и показали. Персонал очень вежливый.Кухню сделали качественно и красиво. Всем довольна!
+                        </p>
                     </div>
                 </div>
             </div>
