@@ -143,6 +143,7 @@
 	letter-spacing: inherit;
 	border-radius: var(--border-radius-small);
     color: #fff;
+    align-content: center;
 }
 
 #quiz .btn.btn-corporate-color-outline-1 {
