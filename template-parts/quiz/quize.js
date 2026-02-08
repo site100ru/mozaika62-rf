@@ -5,6 +5,28 @@ var answer_1;
 // Ждем загрузки DOM
 document.addEventListener('DOMContentLoaded', function () {
 
+    // снять выбор радио кнопки
+    var allRadioGroups = {};
+
+    document.querySelectorAll('input[type="radio"]').forEach(function (input) {
+        var groupName = input.getAttribute('name');
+
+        if (input.type === 'radio') {
+            if (!allRadioGroups[groupName]) {
+                allRadioGroups[groupName] = null;
+            }
+
+            input.addEventListener('click', function (e) {
+                if (this === allRadioGroups[groupName]) {
+                    this.checked = false;
+                    allRadioGroups[groupName] = null;
+                } else {
+                    allRadioGroups[groupName] = this;
+                }
+            });
+        }
+    });
+
     // ============================================
     // ПЕРВЫЙ ВОПРОС - Выбор типа мебели
     // ============================================
