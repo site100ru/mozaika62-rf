@@ -73,7 +73,7 @@
 }
 
 .bg-light {
-	background-color: #f8f9fa;
+	background-color: #F5F5F5 !important;
 }
 
 html {
@@ -664,6 +664,7 @@ a.navbar-brand {
 /** Main home section **/
 .main-home-section {
 	min-height: 640px;
+    overflow: hidden;
 } 
 
 .home-section-height {
@@ -1030,7 +1031,7 @@ a.navbar-brand {
 #aboutSectionGalleryWrapper {
 	background: rgba(0, 0, 0, 0.85); 
 	display: none; 
-	position: fixed; 
+	position: relative; 
 	top: 0; 
 	bottom: 0; 
 	left: 0; 
@@ -1607,7 +1608,8 @@ h6,
 
 
 /* Archive portfolio section 2 */
-.archive-portfolio-section-2 .nav-item a {
+.archive-portfolio-section-2 .nav-item a,
+.archive-portfolio-section.section-portfolio .nav-item button {
     color: #000000;
     opacity: .75;
     transition: .25s;
@@ -1617,12 +1619,15 @@ h6,
     font-weight: 400;
 }
 
-.archive-portfolio-section-2 .nav-item a.active {
+.archive-portfolio-section-2 .nav-item a.active,
+.archive-portfolio-section.section-portfolio .nav-item button.active {
     color: #00A3D3;
 }
 
 .archive-portfolio-section-2 .nav-item:hover a,
-.archive-portfolio-section-2 .nav-item:focus a {
+.archive-portfolio-section-2 .nav-item:focus a,
+.archive-portfolio-section.section-portfolio .nav-item:hover button,
+.archive-portfolio-section.section-portfolio .nav-item:focus button {
     color: #00A3D3;
 }
 
@@ -2791,4 +2796,24 @@ body.b-new-year:before {
     .nav-wrap {
         text-wrap: wrap;
     }
+}
+
+.archive-portfolio-section.section-portfolio h3{
+    position: absolute; 
+    bottom: 0; 
+    text-align: left;
+    z-index: 99;
+}
+
+.archive-portfolio-section.section-portfolio .approximation {
+    max-height: 277px;
+}
+
+.myTab .nav-item:first-child button.nav-link, .nav-scroller .nav .nav-item:first-child button.nav-link {
+    padding-left: 0;
+}
+
+.parallax-section h2,
+.parallax-section p {
+    color: #C8C8C8;
 }

@@ -1,4 +1,4 @@
-<section id="quiz" class="quiz-section bg-white py-5">
+<section id="quiz" class="quiz-section bg-light py-5">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col">
