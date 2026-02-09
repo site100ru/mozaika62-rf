@@ -277,12 +277,12 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" class="mb-5">	
 			</div>
 		</div>
-		<div class="row">
+		<div class="row pb-3">
 			<?php	
 				$args = [
 					'post_type'      => 'portfolio',
-					'numberposts' 	 => 10,
-					'posts_per_page' => 10,
+					'numberposts' 	 => 16,
+					'posts_per_page' => 16,
 					'portfolio-cat'  => '03-шкафы'
 				];
 				
