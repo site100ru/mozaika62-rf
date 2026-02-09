@@ -3,7 +3,7 @@
 	/**
 	 * Template Name: Шкафы на заказ 
 	 * Template Post Type: page
-	**/
+	 */
 	
 	include 'header.php';
 	
@@ -119,7 +119,7 @@
         </nav>
         <!-- /Header nav top -->
         
-        <!-- Header nav bottom -->
+		<!-- Header nav bottom -->
         <nav class="header-nav-bottom navbar navbar-expand-lg navbar-light py-0">
             <div class="container">
                 <a class="navbar-brand" href="/">
@@ -258,19 +258,18 @@
 </section>
 <!-- /Home section -->
 
-<!-- Archive portfolio section -->
+
+<!-- ARCHIVE PORTFOLIO CLOSETS SECTION -->
 <section class="archive-portfolio-section-2 py-5 bg-white">
 	<div class="container">
         <div class="row">
             <div class="col">
                 <nav class="breadcrumbs">
                     <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/ico/breadcrumbs-icon.svg"></a> / 
-                    <a href="/кухни-на-заказ" style="text-decoration: none;">Услуги</a> / 
-                    Шкафы на заказ
+                    <a href="/кухни-на-заказ" style="text-decoration: none;">Услуги</a> / Шкафы на заказ
                 </nav>
             </div>
         </div>
-
 		<div class="row">
 			<div class="col text-md-center">
 				<h2>Наши работы</h2>
@@ -290,7 +289,7 @@
 				$query = new WP_Query( $args );
 				$count = 1;
 				while( $query->have_posts() ) : $query->the_post(); ?>
-					<div class="col-md-6">
+					<div class="col-md-3">
 						<div id="carouselExampleIndicators<?php echo $post->ID; ?>" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="999999999">
 							<div class="carousel-indicators" style="bottom: 5%;">
 								<?php
@@ -343,7 +342,8 @@
 		</div>
 	</div>
 </section>				
-<!-- /Archive-portfolio section -->
+<!-- /ARCHIVE PORTFOLIO CLOSETS SECTION -->
+
 
 <!-- Gallery wrapper-->
 <div id="galleryWrapper" style="background: rgba(0,0,0,0.85); display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 9999;">
