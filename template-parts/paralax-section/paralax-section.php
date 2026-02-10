@@ -50,7 +50,7 @@
 
         <div class="row justify-content-center">
             <div class="col-auto">
-                <a href="#" type="button" class="btn btn-lg btn-corporate-color-1" data-bs-toggle="modal" data-bs-target="#callbackModalConsul">Рассчитать стоимость</a>
+                <a href="#" type="button" class="btn btn-lg btn-corporate-color-1" data-bs-toggle="modal" data-bs-target="#callbackModalConsul">Записаться на консультацию</a>
             </div>
         </div>
     </div>
@@ -68,14 +68,15 @@
 
     .parallax-background {
         position: absolute;
-        top: 0;
+        top: -100px;
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url('<?php echo get_template_directory_uri(); ?>/img/paralax.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+        min-height: 640px;
+        background-image: url('<?php echo get_template_directory_uri(); ?>/img/paralax.webp');
+        background-size: 100%;
+        background-repeat: no-repeat;
         z-index: -1;
+        transition: background-position 2s ease;
     }
 </style>

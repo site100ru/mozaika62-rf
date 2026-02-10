@@ -378,7 +378,7 @@
 </section>
 <!-- /CONTACTS SECTION 4 -->
 
-
+<?php get_footer(); ?>
 
 <!-- Показываем сообщение об успешной отправки -->
 <div style="display: <?php echo $_SESSION['display'] ?>;" onclick="modalClose();">
@@ -400,11 +400,6 @@
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
-				<div class="row">
-					<div class="col">
-						<p><small>Мы свяжемся с Вами в течение 10 минут и ответим на все вопросы! Для звонка введите Ваше имя и телефон.</small></p>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-md-6 mb-3 mb-md-0">
 						<input type="text" name="name" class="form-control" placeholder="Ваше имя">
@@ -674,8 +669,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.bundle.min.js"></script>
 
 <!-- Scripts for Quiz and for add loader -->
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.5.1.min.js"></script>
-
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
 <!-- Font Awesome -->
 <!-- <script src="https://kit.fontawesome.com/064ae6a0a2.js"></script> -->
 

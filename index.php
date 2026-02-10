@@ -315,7 +315,7 @@ include 'header.php';
             <div class="col-md-6 mb-5">
                 <a href="https://мозаика62.рф/product-category/кухни/">
                     <div class="approximation project-container-2 services">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/card1.png" class="img-fluid" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/card1.webp" class="img-fluid" alt="">
                         <div class="card-wrapper project-container-2-footer">
                             <div class="row" style="height: 100%;">
                                 <div class="col-6">
@@ -360,7 +360,7 @@ include 'header.php';
 )); ?>
 
 <!-- Gradient order section -->
-<section class="gradient-order-section bg-white" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/sec-bg3.jpg);">
+<section class="gradient-order-section bg-white" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/sec-bg3.webp);">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-5 text-md-end">
