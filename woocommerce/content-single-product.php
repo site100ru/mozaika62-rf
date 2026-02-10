@@ -33,7 +33,24 @@ if ( post_password_required() ) {
 ?>
 
 <section class="single-product-section bg-white">
-	<div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'pt-md-3', $product ); ?>>
+    <?php
+    $product_cats = get_the_terms( $product->get_id(), 'product_cat' );
+    $cat_class = '';
+
+    if ( $product_cats && ! is_wp_error( $product_cats ) ) {
+        foreach ( $product_cats as $cat ) {
+            $decoded_slug = urldecode( $cat->slug );
+            
+            if ( $decoded_slug === 'кухни' ) {
+                $cat_class .= 'kitchens ';
+            } elseif ( $decoded_slug === 'шкафы' ) {
+                $cat_class .= 'wardrobes ';
+            }
+        }
+    }
+    ?>
+
+    <div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'pt-md-3 ' . trim($cat_class), $product ); ?>>
 		<div class="container pt-md-3 pb-5 single-product">
 			<div class="row">
 				<div class="col breadcrumbs_box">
@@ -148,7 +165,22 @@ if ( post_password_required() ) {
 	}
 </script>
 				          				
-													
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Находим элемент product
+    var productDiv = document.querySelector('[id^="product-"]');
+    var textarea = document.querySelector('#calculatePriceWithoutDownloadModal textarea[name="mes"]');
+    
+    if (productDiv && textarea) {
+        if (productDiv.classList.contains('kitchens')) {
+            textarea.placeholder = 'Для того чтобы мы смогли рассчитать стоимость более точно укажите форму, размеры, материалы кухни или другую информацию.';
+        } else if (productDiv.classList.contains('wardrobes')) {
+            textarea.placeholder = 'Для того чтобы мы смогли рассчитать стоимость более точно укажите форму, размеры, материалы шкафа или другую информацию.';
+        }
+    }
+});
+</script>
+
 <!--h2 class="product_title text-corporate-color-2 mb-3">Кухня #099</h2>
 <img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-dec.svg" style="margin-bottom: 30px;">
 <div class="woocommerce-product-details__short-description">
