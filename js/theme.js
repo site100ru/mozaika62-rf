@@ -5,6 +5,9 @@ $(window).scroll(function (e) {
     $('.parallax-home-section-closets').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
     $('.index-parallax-home-section').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
     $('.jobs-home-section').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
+    $('.closets-home-section').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
+    $('.parallax-home-section-portfolio').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
+    $('.home-cucina-parallax-home-section').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
 });
 /* End parallax home section */
 

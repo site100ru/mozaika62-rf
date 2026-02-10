@@ -12,7 +12,7 @@
 	
 <!-- Home section -->
 <div id="sp-home" class="scroll-points"></div>
-<section style="height: 400px; z-index: auto;">
+<section class="site-wrap" style="height: 400px; z-index: auto;">
 	<div class="jobs-home-section" style="min-height: 400px;"></div>
     <header class="d-none d-lg-block">
         <!-- Header nav top -->
