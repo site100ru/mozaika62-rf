@@ -213,70 +213,70 @@
 			<div class="carousel-item carousel-item-2 h-100 active">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card1.jpg" class="img-fluid" loading="lazy" alt="...">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card1.webp" class="img-fluid" loading="lazy" alt="...">
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item carousel-item-2 h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card2.jpg" class="img-fluid" loading="lazy" alt="...">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card2.webp" class="img-fluid" loading="lazy" alt="...">
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item carousel-item-2 h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card3.jpg" class="img-fluid" loading="lazy" alt="...">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card3.webp" class="img-fluid" loading="lazy" alt="...">
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item carousel-item-2 h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card4.jpg" class="img-fluid" loading="lazy" alt="...">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card4.webp" class="img-fluid" loading="lazy" alt="...">
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item carousel-item-2 h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card5.jpg" class="img-fluid" loading="lazy" alt="...">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card5.webp" class="img-fluid" loading="lazy" alt="...">
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item carousel-item-2 h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card6.jpg" class="img-fluid" loading="lazy" alt="...">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card6.webp" class="img-fluid" loading="lazy" alt="...">
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item carousel-item-2 h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card7.jpg" class="img-fluid" loading="lazy" alt="...">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card7.webp" class="img-fluid" loading="lazy" alt="...">
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item carousel-item-2 h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card8.jpg" class="img-fluid" loading="lazy" alt="...">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card8.webp" class="img-fluid" loading="lazy" alt="...">
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item carousel-item-2 h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card9.jpg" class="img-fluid" loading="lazy" alt="...">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card9.webp" class="img-fluid" loading="lazy" alt="...">
 					</div>
 				</div>
 			</div>
 			<div class="carousel-item carousel-item-2 h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card10.jpg" class="img-fluid" loading="lazy" alt="...">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card10.webp" class="img-fluid" loading="lazy" alt="...">
 					</div>
 				</div>
 			</div>

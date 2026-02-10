@@ -691,7 +691,7 @@ a.navbar-brand {
 }
 
 .home-cucina .parallax-home-section {
-	background: url(../img/home-background-cucina.jpg);
+	background: url(../img/home-background-cucina.webp);
 }
 
 /* end home section CUCINA*/
@@ -699,7 +699,7 @@ a.navbar-brand {
 /* Home video section */
 
 .home-video-section {
-    background: url(../img/main-home-bg.jpg);
+    background: url(../img/main-home-bg.webp);
 	background-size: cover;
 	background-position: center;
 	position: absolute; 
@@ -739,7 +739,7 @@ a.navbar-brand {
 	min-height: 640px;
 	width: 100%;
 	position: fixed;
-	background: url(../img/contact.jpg) no-repeat;
+	background: url(../img/contact.webp) no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
 	z-index: -1;
@@ -1684,12 +1684,12 @@ strong {
 
 /*** CONTACTS SECTION 4 ***/
 .contacts-section-4 {
-	background: url(../img/footer-bg.jpg) center;
+	background: url(../img/footer-bg.webp) center;
 	background-size: cover; }
 
 	@media (max-width: 575.98px) {
 		.contacts-section-4 {
-			background: url(../img/footer-bg.jpg) 35% 50%;
+			background: url(../img/footer-bg.webp) 35% 50%;
 			background-size: cover;
 		}
 	}
@@ -1771,7 +1771,7 @@ strong {
     left: 0;
     width: 100%;
     height: 540px;
-    background: url(../img/contact.png);
+    background: url(../img/contact.webp);
     background-position: center;
 }
 

@@ -554,7 +554,7 @@ a.navbar-brand {
 	min-height: 640px;
 	width: 100%;
 	position: fixed;
-	background: url(../img/header-catalog-background.jpg) no-repeat;
+	background: url(../img/header-catalog-background.webp) no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
 	z-index: -1;

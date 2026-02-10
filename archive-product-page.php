@@ -487,7 +487,7 @@
 								<div class="col-md-4 mb-5" style="padding-right: 0;">
 									<a href="single-portfolio-product-page.html">
 										<div class="approximation project-container-2 rounded">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (10).jpg" class="img-fluid" alt="" decoding="async" />
+											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-10.webp" class="img-fluid" alt="" decoding="async" />
 											<div class="card-wrapper project-container-2-footer">
 												<div class="row" style="padding: 10px;">
 													<div class="col-6">
@@ -504,7 +504,7 @@
 								<div class="col-md-4 mb-5" style="padding-right: 0;">
 									<a href="single-portfolio-product-page.html">
 										<div class="approximation project-container-2 rounded">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (2).jpg" class="img-fluid" alt="" decoding="async" />	
+											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-2.webp" class="img-fluid" alt="" decoding="async" />	
 											<div class="card-wrapper project-container-2-footer">
 												<div class="row" style="padding: 10px;">
 													<div class="col-6">
@@ -521,7 +521,7 @@
 								<div class="col-md-4 mb-5" style="padding-right: 0;">
 									<a href="single-portfolio-product-page.html">
 										<div class="approximation project-container-2 rounded">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (3).jpg" class="img-fluid" alt="" decoding="async" />	
+											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-3.webp" class="img-fluid" alt="" decoding="async" />	
 											<div class="card-wrapper project-container-2-footer">
 												<div class="row" style="padding: 10px;">
 													<div class="col-6">
@@ -538,7 +538,7 @@
 								<div class="col-md-4 mb-5" style="padding-right: 0;">	
 									<a href="single-portfolio-product-page.html">
 										<div class="approximation project-container-2 rounded">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (4).jpg" class="img-fluid" alt="" decoding="async" />	
+											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-4.webp" class="img-fluid" alt="" decoding="async" />	
 											<div class="card-wrapper project-container-2-footer">
 												<div class="row" style="padding: 10px;">
 													<div class="col-6">
@@ -555,7 +555,7 @@
 								<div class="col-md-4 mb-5" style="padding-right: 0;">
 									<a href="single-portfolio-product-page.html">
 										<div class="approximation project-container-2 rounded">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (5).jpg" class="img-fluid" alt="" decoding="async" fetchpriority="high" />
+											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-5.webp" class="img-fluid" alt="" decoding="async" fetchpriority="high" />
 											<div class="card-wrapper project-container-2-footer">
 												<div class="row" style="padding: 10px;">
 													<div class="col-6">
@@ -572,7 +572,7 @@
 								<div class="col-md-4 mb-5" style="padding-right: 0;">
 									<a href="single-portfolio-product-page.html">
 										<div class="approximation project-container-2 rounded">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (6).jpg" class="img-fluid" alt="" decoding="async" />
+											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-6.webp" class="img-fluid" alt="" decoding="async" />
 											<div class="card-wrapper project-container-2-footer">
 												<div class="row" style="padding: 10px;">
 													<div class="col-6">
@@ -589,7 +589,7 @@
 								<div class="col-md-4 mb-5" style="padding-right: 0;">
 									<a href="single-portfolio-product-page.html">
 										<div class="approximation project-container-2 rounded">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (7).jpg" class="img-fluid" alt="" decoding="async" />	
+											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-7.webp" class="img-fluid" alt="" decoding="async" />	
 											<div class="card-wrapper project-container-2-footer">
 												<div class="row" style="padding: 10px;">
 													<div class="col-6">
@@ -606,7 +606,7 @@
 								<div class="col-md-4 mb-5" style="padding-right: 0;">
 									<a href="single-portfolio-product-page.html">
 										<div class="approximation project-container-2 rounded">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (8).jpg" class="img-fluid" alt="" decoding="async" />
+											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-8.webp" class="img-fluid" alt="" decoding="async" />
 											<div class="card-wrapper project-container-2-footer">
 												<div class="row" style="padding: 10px;">
 													<div class="col-6">
@@ -623,7 +623,7 @@
 								<div class="col-md-4 mb-5" style="padding-right: 0;">
 									<a href="single-portfolio-product-page.html">
 										<div class="approximation project-container-2 rounded">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (9).jpg" class="img-fluid" alt="" decoding="async" />	
+											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-9.webp" class="img-fluid" alt="" decoding="async" />	
 											<div class="card-wrapper project-container-2-footer">
 												<div class="row" style="padding: 10px;">
 													<div class="col-6">
@@ -640,7 +640,7 @@
 								<div class="col-md-4 mb-5" style="padding-right: 0;">
 									<a href="single-portfolio-product-page.html">
 										<div class="approximation project-container-2 rounded">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (10).jpg" class="img-fluid" alt="" decoding="async" />
+											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-10.webp" class="img-fluid" alt="" decoding="async" />
 											<div class="card-wrapper project-container-2-footer">
 												<div class="row" style="padding: 10px;">
 													<div class="col-6">
@@ -657,7 +657,7 @@
 								<div class="col-md-4 mb-5" style="padding-right: 0;">
 									<a href="single-portfolio-product-page.html">
 										<div class="approximation project-container-2 rounded">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (1).jpg" class="img-fluid" alt="">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-1.webp" class="img-fluid" alt="">
 											<div class="card-wrapper project-container-2-footer">
 												<div class="row" style="padding: 10px;">
 													<div class="col-6">
@@ -674,7 +674,7 @@
 								<div class="col-md-4 mb-5" style="padding-right: 0;">
 									<a href="single-portfolio-product-page.html">
 										<div class="approximation project-container-2 rounded">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (1).jpg" class="img-fluid" alt="">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-1.webp" class="img-fluid" alt="">
 											<div class="card-wrapper project-container-2-footer">
 												<div class="row" style="padding: 10px;">
 													<div class="col-6">
@@ -727,7 +727,7 @@
         ?>
 		
 		<!-- Gradient order section -->
-		<section class="gradient-order-section bg-white" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.jpg);">
+		<section class="gradient-order-section bg-white" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.webp);">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-5 text-md-end">
@@ -877,70 +877,70 @@
 					<div id="img-1-0" class="carousel-item carousel-item-2 h-100 active">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
-								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-1.jpg" class="img-fluid" loading="lazy" alt="...">
+								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-1.webp" class="img-fluid" loading="lazy" alt="...">
 							</div>
 						</div>
 					</div>
 					<div id="img-2-0" class="carousel-item carousel-item-2 h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
-								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-2.jpeg" class="img-fluid" loading="lazy" alt="...">
+								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-2.webp" class="img-fluid" loading="lazy" alt="...">
 							</div>
 						</div>
 					</div>
 					<div id="img-3-0" class="carousel-item carousel-item-2 h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
-								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-3.jpeg" class="img-fluid" loading="lazy" alt="...">
+								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-3.webp" class="img-fluid" loading="lazy" alt="...">
 							</div>
 						</div>
 					</div>
 					<div id="img-4-0" class="carousel-item carousel-item-2 h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
-								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-4.jpeg" class="img-fluid" loading="lazy" alt="...">
+								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-4.webp" class="img-fluid" loading="lazy" alt="...">
 							</div>
 						</div>
 					</div>
 					<div id="img-5-0" class="carousel-item carousel-item-2 h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
-								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-5.heic" class="img-fluid" loading="lazy" alt="...">
+								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-5.webp" class="img-fluid" loading="lazy" alt="...">
 							</div>
 						</div>
 					</div>
 					<div id="img-6-0" class="carousel-item carousel-item-2 h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
-								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-6.jpeg" class="img-fluid" loading="lazy" alt="...">
+								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-6.webp" class="img-fluid" loading="lazy" alt="...">
 							</div>
 						</div>
 					</div>
 					<div id="img-7-0" class="carousel-item carousel-item-2 h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
-								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-7.jpeg" class="img-fluid" loading="lazy" alt="...">
+								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-7.webp" class="img-fluid" loading="lazy" alt="...">
 							</div>
 						</div>
 					</div>
 					<div id="img-8-0" class="carousel-item carousel-item-2 h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
-								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-8.jpeg" class="img-fluid" loading="lazy" alt="...">
+								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-8.webp" class="img-fluid" loading="lazy" alt="...">
 							</div>
 						</div>
 					</div>
 					<div id="img-9-0" class="carousel-item carousel-item-2 h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
-								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-9.jpeg" class="img-fluid" loading="lazy" alt="...">
+								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-9.webp" class="img-fluid" loading="lazy" alt="...">
 							</div>
 						</div>
 					</div>
 					<div id="img-10-0" class="carousel-item carousel-item-2 h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
-								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-10.jpeg" class="img-fluid" loading="lazy" alt="...">
+								<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-10.webp" class="img-fluid" loading="lazy" alt="...">
 							</div>
 						</div>
 					</div>

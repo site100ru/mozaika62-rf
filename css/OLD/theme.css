@@ -224,7 +224,7 @@ h2 {
 
 
 .home-video-section {
-    background: url(../img/main-home-bg.jpg);
+    background: url(../img/main-home-bg.webp);
 	background-size: cover;
 	background-position: center;
 	position: absolute; 
@@ -291,7 +291,7 @@ h2 {
 	min-height: 640px;
 	width: 100%;
 	position: fixed;
-	background: url(../img/contact.jpg) no-repeat;
+	background: url(../img/contact.webp) no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
 	z-index: -1;
@@ -630,12 +630,12 @@ h6,
 
 /*** CONTACTS SECTION 4 ***/
 .contacts-section-4 {
-	background: url(../img/footer-bg.jpg) center;
+	background: url(../img/footer-bg.webp) center;
 	background-size: cover; }
 
 	@media (max-width: 575.98px) {
 		.contacts-section-4 {
-			background: url(../img/footer-bg.jpg) 35% 50%;
+			background: url(../img/footer-bg.webp) 35% 50%;
 			background-size: cover;
 		}
 	}

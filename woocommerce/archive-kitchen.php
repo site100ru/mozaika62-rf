@@ -426,7 +426,7 @@ get_template_part('template-parts/action/action', '', [
 
 
 <!-- Gradient order section -->
-<section class="gradient-order-section bg-light" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.jpg);">
+<section class="gradient-order-section bg-light" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.webp);">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-5 text-md-end">

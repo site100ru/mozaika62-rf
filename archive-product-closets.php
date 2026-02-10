@@ -359,7 +359,7 @@
 					<div class="col-md-6 mb-5">
 						<a href="single-portfolio-product-page.html">
 							<div class="approximation project-container-2 rounded">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (1).jpg" class="img-fluid" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-1.webp" class="img-fluid" alt="">
 								<div class="card-wrapper project-container-2-footer">
 									<div class="row card-portfolio">
 										<div class="col-6">
@@ -376,7 +376,7 @@
 					<div class="col-md-6 mb-5">
 						<a href="single-portfolio-product-page.html">
 							<div class="approximation project-container-2 rounded">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (2).jpg" class="img-fluid" alt="" decoding="async" />	
+								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-2.webp" class="img-fluid" alt="" decoding="async" />	
 								<div class="card-wrapper project-container-2-footer">
 									<div class="row card-portfolio">
 										<div class="col-6">
@@ -393,7 +393,7 @@
 					<div class="col-md-6 mb-5">
 						<a href="single-portfolio-product-page.html">
 							<div class="approximation project-container-2 rounded">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (3).jpg" class="img-fluid" alt="" decoding="async" />	
+								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-3.webp" class="img-fluid" alt="" decoding="async" />	
 								<div class="card-wrapper project-container-2-footer">
 									<div class="row card-portfolio">
 										<div class="col-6">
@@ -410,7 +410,7 @@
 					<div class="col-md-6 mb-5">	
 						<a href="single-portfolio-product-page.html">
 							<div class="approximation project-container-2 rounded">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (4).jpg" class="img-fluid" alt="" decoding="async" />	
+								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-4.webp" class="img-fluid" alt="" decoding="async" />	
 								<div class="card-wrapper project-container-2-footer">
 									<div class="row card-portfolio">
 										<div class="col-6">
@@ -427,7 +427,7 @@
 					<div class="col-md-6 mb-5">
 						<a href="single-portfolio-product-page.html">
 							<div class="approximation project-container-2 rounded">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (5).jpg" class="img-fluid" alt="" decoding="async" fetchpriority="high" />
+								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-5.webp" class="img-fluid" alt="" decoding="async" fetchpriority="high" />
 								<div class="card-wrapper project-container-2-footer">
 									<div class="row card-portfolio">
 										<div class="col-6">
@@ -444,7 +444,7 @@
 					<div class="col-md-6 mb-5">
 						<a href="single-portfolio-product-page.html">
 							<div class="approximation project-container-2 rounded">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (6).jpg" class="img-fluid" alt="" decoding="async" />
+								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-6.webp" class="img-fluid" alt="" decoding="async" />
 								<div class="card-wrapper project-container-2-footer">
 									<div class="row card-portfolio">
 										<div class="col-6">
@@ -461,7 +461,7 @@
 					<div class="col-md-6 mb-5">
 						<a href="single-portfolio-product-page.html">
 							<div class="approximation project-container-2 rounded">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (7).jpg" class="img-fluid" alt="" decoding="async" />	
+								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-7.webp" class="img-fluid" alt="" decoding="async" />	
 								<div class="card-wrapper project-container-2-footer">
 									<div class="row card-portfolio">
 										<div class="col-6">
@@ -478,7 +478,7 @@
 					<div class="col-md-6 mb-5">
 						<a href="single-portfolio-product-page.html">
 							<div class="approximation project-container-2 rounded">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (8).jpg" class="img-fluid" alt="" decoding="async" />
+								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-8.webp" class="img-fluid" alt="" decoding="async" />
 								<div class="card-wrapper project-container-2-footer">
 									<div class="row card-portfolio">
 										<div class="col-6">
@@ -495,7 +495,7 @@
 					<div class="col-md-6 mb-5">
 						<a href="single-portfolio-product-page.html">
 							<div class="approximation project-container-2 rounded">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (9).jpg" class="img-fluid" alt="" decoding="async" />	
+								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-9.webp" class="img-fluid" alt="" decoding="async" />	
 								<div class="card-wrapper project-container-2-footer">
 									<div class="row card-portfolio">
 										<div class="col-6">
@@ -512,7 +512,7 @@
 					<div class="col-md-6 mb-5">
 						<a href="single-portfolio-product-page.html">
 							<div class="approximation project-container-2 rounded">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card (10).jpg" class="img-fluid" alt="" decoding="async" />
+								<img src="<?php echo get_template_directory_uri(); ?>/img/portfolio-card-10.webp" class="img-fluid" alt="" decoding="async" />
 								<div class="card-wrapper project-container-2-footer">
 									<div class="row card-portfolio">
 										<div class="col-6">
@@ -549,7 +549,7 @@
         ?>
 		
 		<!-- Gradient order section -->
-		<section class="gradient-order-section bg-light" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.jpg);">
+		<section class="gradient-order-section bg-light" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.webp);">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-5 text-md-end">

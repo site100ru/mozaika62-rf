@@ -306,7 +306,7 @@ header {
 }
 
 #header-slide-1 {
-	background: url(../img/main-home-bg.jpg) center;
+	background: url(../img/main-home-bg.webp) center;
 	background-size: cover;
 }
 
@@ -349,7 +349,7 @@ header {
 
 #header-catalogy {
 	min-height: 500px;
-	background: url(../img/header-catalog-background.jpg) center;
+	background: url(../img/header-catalog-background.webp) center;
 	background-size: cover;
 }
 
@@ -564,7 +564,7 @@ header {
 	min-height: 640px;
 	width: 100%;
 	position: fixed;
-	background: url(../img/header-catalog-background.jpg) no-repeat;
+	background: url(../img/header-catalog-background.webp) no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
 	z-index: -1;
@@ -585,7 +585,7 @@ header {
 }
 
 .home-cucina .parallax-home-section {
-	background: url(../img/home-background-cucina.jpg);
+	background: url(../img/home-background-cucina.webp);
 }
 
 /* end home section CUCINA*/
@@ -1391,7 +1391,7 @@ header .row.align-items-center.text-start {
 
 /*** CONTACTS SECTION 3 ***
 .contacts-section-3 {
-	background: url(../img/footer-bg.jpg) center;
+	background: url(../img/footer-bg.webp) center;
 	background-size: cover;
 	position: relative;
 }

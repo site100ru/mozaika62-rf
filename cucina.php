@@ -274,7 +274,7 @@
 		<div class="row justify-content-center" style="max-height: 480px;">
 			<div class="col-md-8">
 				<div style="position: relative">
-					<video  id="video-player"  class="rounded"  style="width: 100%; max-height: 480px; overflow: hidden;"  playsinline="playsinline"  loop="loop" poster="<?php echo get_template_directory_uri(); ?>/img/cucina-video-poster.jpg">
+					<video  id="video-player"  class="rounded"  style="width: 100%; max-height: 480px; overflow: hidden;"  playsinline="playsinline"  loop="loop" poster="<?php echo get_template_directory_uri(); ?>/img/cucina-video-poster.webp">
 						<!-- muted="muted" autoplay="autoplay" -->
 						<!-- <source src="header-bg.ogv" type='video/ogg; codecs="theora, vorbis"'> -->
 						<source  src="<?php echo get_template_directory_uri(); ?>/video/video-cucina.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
@@ -328,7 +328,7 @@
 						<div class="carousel-item active">
 							<a onClick="aboutSectionGallery1On('aboutSectionGallery1','imgAboutSectionGallery1-1');">
 								<div class="single-product-img approximation">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina1.jpg" class="d-block w-100" loading="lazy" alt="...">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina1.webp" class="d-block w-100" loading="lazy" alt="...">
 									<div class="magnifier"></div>
 								</div>
 							</a>
@@ -336,7 +336,7 @@
 						<div class="carousel-item">
 							<a onClick="aboutSectionGallery1On('aboutSectionGallery1','imgAboutSectionGallery1-2');">
 								<div class="single-product-img approximation">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina2.jpg" class="d-block w-100" loading="lazy" alt="...">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina2.webp" class="d-block w-100" loading="lazy" alt="...">
 									<div class="magnifier"></div>
 								</div>
 							</a>
@@ -344,7 +344,7 @@
 						<!-- <div class="carousel-item">
 							<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-3');">
 								<div class="single-product-img approximation">
-									<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-3.jpeg" class="d-block w-100" loading="lazy" alt="...">
+									<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-3.webp" class="d-block w-100" loading="lazy" alt="...">
 									<div class="magnifier"></div>
 								</div>
 							</a>
@@ -382,7 +382,7 @@
 						<div class="carousel-item active">
 							<a onClick="aboutSectionGallery2On('aboutSectionGallery2','imgAboutSectionGallery2-1');">
 								<div class="single-product-img approximation">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina2.jpg" class="d-block w-100" loading="lazy" alt="...">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina2.webp" class="d-block w-100" loading="lazy" alt="...">
 									<div class="magnifier"></div>
 								</div>
 							</a>
@@ -390,7 +390,7 @@
 						<div class="carousel-item">
 							<a onClick="aboutSectionGallery2On('aboutSectionGallery2','imgAboutSectionGallery2-2');">
 								<div class="single-product-img approximation">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina1.jpg" class="d-block w-100" loading="lazy" alt="...">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina1.webp" class="d-block w-100" loading="lazy" alt="...">
 									<div class="magnifier"></div>
 								</div>
 							</a>
@@ -398,7 +398,7 @@
 						<!-- <div class="carousel-item">
 							<a onClick="aboutSectionGalleryOn('aboutSectionGallery','imgAboutSectionGallery-3');">
 								<div class="single-product-img approximation">
-									<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-3.jpeg" class="d-block w-100" loading="lazy" alt="...">
+									<img data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-3.webp" class="d-block w-100" loading="lazy" alt="...">
 									<div class="magnifier"></div>
 								</div>
 							</a>
@@ -449,21 +449,21 @@
 			<div id="imgAboutSectionGallery1-1" class="carousel-item h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img  src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina1.jpg"  class="img-fluid lazyload"  loading="lazy" style="max-width: 75vw; max-height: 75vh"  alt="..."/>
+						<img  src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina1.webp"  class="img-fluid lazyload"  loading="lazy" style="max-width: 75vw; max-height: 75vh"  alt="..."/>
 					</div>
 				</div>
 			</div>
 			<div id="imgAboutSectionGallery1-2" class="carousel-item h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img  src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina2.jpg"  class="img-fluid lazyload"  loading="lazy"  style="max-width: 75vw; max-height: 75vh"  alt="..."/>
+						<img  src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina2.webp"  class="img-fluid lazyload"  loading="lazy"  style="max-width: 75vw; max-height: 75vh"  alt="..."/>
 					</div>
 				</div>
 			</div>
 			<!-- <div id="imgAboutSectionGallery-3" class="carousel-item h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img  data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-3.jpeg" class="img-fluid lazyload" loading="lazy"  style="max-width: 75vw; max-height: 75vh"  alt="..."/>
+						<img  data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-3.webp" class="img-fluid lazyload" loading="lazy"  style="max-width: 75vw; max-height: 75vh"  alt="..."/>
 					</div>
 				</div>
 			</div> -->
@@ -493,21 +493,21 @@
 			<div id="imgAboutSectionGallery2-1" class="carousel-item h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img  src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina2.jpg"  class="img-fluid lazyload"  loading="lazy" style="max-width: 75vw; max-height: 75vh"  alt="..."/>
+						<img  src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina2.webp"  class="img-fluid lazyload"  loading="lazy" style="max-width: 75vw; max-height: 75vh"  alt="..."/>
 					</div>
 				</div>
 			</div>
 			<div id="imgAboutSectionGallery2-2" class="carousel-item h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img  src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina1.jpg"  class="img-fluid lazyload"  loading="lazy"  style="max-width: 75vw; max-height: 75vh"  alt="..."/>
+						<img  src="<?php echo get_template_directory_uri(); ?>/img/card-image-cucina1.webp"  class="img-fluid lazyload"  loading="lazy"  style="max-width: 75vw; max-height: 75vh"  alt="..."/>
 					</div>
 				</div>
 			</div>
 			<!-- <div id="imgAboutSectionGallery-3" class="carousel-item h-100">
 				<div class="row align-items-center h-100">
 					<div class="col text-center">
-						<img  data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-3.jpeg" class="img-fluid lazyload" loading="lazy"  style="max-width: 75vw; max-height: 75vh"  alt="..."/>
+						<img  data-src="<?php echo get_template_directory_uri(); ?>/img/about-section-slide-3.webp" class="img-fluid lazyload" loading="lazy"  style="max-width: 75vw; max-height: 75vh"  alt="..."/>
 					</div>
 				</div>
 			</div> -->
