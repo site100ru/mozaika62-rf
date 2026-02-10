@@ -676,6 +676,16 @@ a.navbar-brand {
 			padding-bottom: 60px;
 		}
 	}
+
+.min-home-section-height {
+    min-height: 200px;
+}
+
+@media (max-width: 991.98px) {
+    .home-section-height {
+        min-height: 440px;
+    }
+}
 /** End main home section **/
 
 .home-cutting {
@@ -793,11 +803,30 @@ a.navbar-brand {
 	/*display: block;*/ 
 }
 
+/* Parallax home section closets */
+.jobs-home-section {
+	min-height: 400px;
+	width: 100%;
+	position: fixed;
+	background: url(../img/bg-jobs.jpg) no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	z-index: -1;
+}
+
 /* md (less than 768px) */
 @media (max-width: 767.98px) {
     .parallax-home-section-closets {
         background-position: 25% 50%;
     }
+
+    /* Parallax home section closets */
+    .jobs-home-section {
+        background: url(../img/bg-jobs-mobile.jpg) no-repeat;
+        background-position: 50% 50%;
+	    background-size: cover;
+    }
+
 }
 
 /* Parallax home section */

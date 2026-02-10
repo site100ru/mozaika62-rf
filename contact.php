@@ -10,10 +10,10 @@
 ?>
 
 
-<div class="site-wrap" style="height: 640px; z-index: auto;">
+<div class="site-wrap" style="height: 400px; z-index: auto;">
 	<!-- Header -->
 	<div class="site-navbar-wrap">
-		<div class="parallax-home-section" style="min-height: 640px;"></div>
+		<div class="jobs-home-section" style="min-height: 400px;"></div>
 		<!-- <div class="overlay"></div> -->
 		<div id="sp-home" class="scroll-points"></div>
         <header class="d-none d-lg-block">
@@ -248,7 +248,7 @@
 			<!-- /Header nav bottom -->
 		</header><!-- site-navbar -->
 		<div class="container">
-			<div class="row align-items-center home-section-height">
+			<div class="row align-items-center home-section-height min-home-section-height">
 				<div class="col-xl-10 col-xxl-9">
 					<h1 class="home-title text-light">Контакты</h1>
 				</div>	
