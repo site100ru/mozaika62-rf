@@ -1955,10 +1955,8 @@
 
 		<!-- Bootstrap JS -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.bundle.min.js"></script>
-		
-		<!-- jQuery -->
-		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.5.1.min.js"></script>
-		
+        <!-- Scripts for Quiz and for add loader -->
+        <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
 		<!-- Theme JS -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/theme.js"></script>
 		
