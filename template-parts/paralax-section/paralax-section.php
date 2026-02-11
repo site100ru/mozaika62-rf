@@ -16,7 +16,7 @@
                     <div class="mb-0 mb-lg-3 me-3 me-lg-0 flex-shrink-0">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/ico/icon1.svg" alt="Увидите все на современных образцах" class="img-fluid">
                     </div>
-                    <p class="mb-0 text-start text-lg-center">Увидите все на современных образцах выполнения мебели</p>
+                    <p class="mb-0 text-start text-lg-center">Увидите много разнообразных вариантов мебели.</p>
                 </div>
             </div>
 
@@ -25,7 +25,7 @@
                     <div class="mb-0 mb-lg-3 me-3 me-lg-0 flex-shrink-0">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/ico/icon2.svg" alt="Узнаете преимущества и недостатки" class="img-fluid">
                     </div>
-                    <p class="mb-0 text-start text-lg-center">Узнаете преимущества и недостатки всех материалов</p>
+                    <p class="mb-0 text-start text-lg-center">Узнаете преимущества и недостатки всех материалов.</p>
                 </div>
             </div>
 
@@ -34,7 +34,7 @@
                     <div class="mb-0 mb-lg-3 me-3 me-lg-0 flex-shrink-0">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/ico/icon3.svg" alt="Узнаете реальную стоимость" class="img-fluid">
                     </div>
-                    <p class="mb-0 text-start text-lg-center">Узнаете реальную стоимость проэма изготовления</p>
+                    <p class="mb-0 text-start text-lg-center">Узнаете реальную стоимость и время изготовления.</p>
                 </div>
             </div>
 
@@ -43,7 +43,7 @@
                     <div class="mb-0 mb-lg-3 me-3 me-lg-0 flex-shrink-0">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/ico/icon4.svg" alt="Получите ответы" class="img-fluid">
                     </div>
-                    <p class="mb-0 text-start text-lg-center">Получите ответы на все свои вопросы</p>
+                    <p class="mb-0 text-start text-lg-center">Получите ответы на все свои вопросы.</p>
                 </div>
             </div>
         </div>
