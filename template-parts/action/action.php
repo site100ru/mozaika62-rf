@@ -33,14 +33,14 @@ $actions_data = [
         'modal_data' => 'discount-10',
         'description' => 'Скидка 10% На кухни с фасадами SMART'
     ],
-    // [
-    //     'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-1.webp',
-    //     'alt_text' => 'Бесплатная доставка',
-    //     'order' => 3,
-    //     'category' => 'kitchen, closets',
-    //     'modal_data' => 'discount-25',
-    //     'description' => 'Заказывайте со скидкой -25% до 31 января'
-    // ],
+    [
+        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-1.webp',
+        'alt_text' => 'Бесплатная доставка',
+        'order' => 3,
+        'category' => 'kitchen, closets',
+        'modal_data' => 'discount-20',
+        'description' => 'Заказывайте со скидкой -20% до 28 февраля'
+    ],
     [
         'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-2.webp',
         'alt_text' => 'Пластиковая столешница 26 мм В ПОДАРОК',
@@ -64,15 +64,15 @@ $actions_data = [
         'category' => 'kitchen, home',
         'modal_data' => 'discount-12',
         'description' => 'Пока другие отдыхают, заказывайте со скидкой от 5 до 12%'
-    ],
-    [
-        'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-5.webp',
-        'alt_text' => 'При заказе кухни от 150 000 мойка из искуственного камня В ПОДАРОК',
-        'order' => 7,
-        'category' => 'kitchen, closets, home',
-        'modal_data' => 'gift-artificial-stone',
-        'description' => 'При заказе кухни от 150 000 мойка из искуственного камня В ПОДАРОК'
     ]
+    // [
+    //     'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-5.webp',
+    //     'alt_text' => 'При заказе кухни от 150 000 мойка из искуственного камня В ПОДАРОК',
+    //     'order' => 7,
+    //     'category' => 'kitchen, closets, home',
+    //     'modal_data' => 'gift-artificial-stone',
+    //     'description' => 'При заказе кухни от 150 000 мойка из искуственного камня В ПОДАРОК'
+    // ]
 ];
 
 // Получение атрибутов с значениями по умолчанию
