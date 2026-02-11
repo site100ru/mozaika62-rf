@@ -1910,9 +1910,8 @@
 		<!-- Dounloads Bootstrap Bundle with Popper -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.bundle.min.js"></script>
 		
-		<!-- jQuery -->
-		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.5.1.min.js"></script>
-
+        <!-- Scripts for Quiz and for add loader -->
+        <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
 		<!-- Main scripts -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/theme.js"></script>
 		

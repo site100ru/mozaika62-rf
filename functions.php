@@ -120,7 +120,14 @@
 		] );
 	} );
 	
+    wp_enqueue_script('jquery');
 	
+    function remove_wp_footer_credit() {
+        remove_action('wp_footer', 'wp_admin_footer'); 
+        remove_action('wp_footer', 'twentyseventeen_footer');
+    }
+    add_action('init', 'remove_wp_footer_credit');
+
 	
 	/* WooCommerce support */
 	add_action( 'after_setup_theme', 'furniture_catalog_add_woocommerce_support' );
@@ -518,3 +525,4 @@ function custom_robots_txt($output)
     return $output;
 }
 /*** END ДЕЛАЕМ ФАЙЛ ROBOTS.TXT ***/
+

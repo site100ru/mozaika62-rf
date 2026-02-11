@@ -256,6 +256,10 @@
 	width: 100%;
 }
 
+.bg-light .quiz-question-container {
+    background: #FFFFFF;
+}
+
 .quiz-question-container {
 	background: #f5f5f5;
 	padding: 40px 0 40px 40px;

@@ -882,12 +882,12 @@ h6,
 
 /*** CONTACTS SECTION 4 ***/
 .contacts-section-4 {
-	background: url(../img/footer-bg.jpg) center;
+	background: url(../img/footer-bg.webp) center;
 	background-size: cover; }
 
 	@media (max-width: 575.98px) {
 		.contacts-section-4 {
-			background: url(../img/footer-bg.jpg) 35% 50%;
+			background: url(../img/footer-bg.webp) 35% 50%;
 			background-size: cover;
 		}
 	}

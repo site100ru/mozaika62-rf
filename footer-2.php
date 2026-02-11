@@ -378,7 +378,7 @@
 </section>
 <!-- /CONTACTS SECTION 4 -->
 
-
+<?php get_footer(); ?>
 
 <!-- Показываем сообщение об успешной отправки -->
 <div style="display: <?php echo $_SESSION['display'] ?>;" onclick="modalClose();">
@@ -390,6 +390,33 @@
 </div>
 
 
+<!-- callbackModalConsul Modal -->
+<div class="modal fade" id="callbackModalConsul" tabindex="-1" aria-labelledby="callbackModalConsulLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-consul.php"
+			class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="callbackModalConsulLabel">Записаться на консультацию</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6 mb-3 mb-md-0">
+						<input type="text" name="name" class="form-control" placeholder="Ваше имя">
+					</div>
+					<div class="col-md-6">
+						<input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон*" required>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<input type="hidden" id="g-recaptcha-response-callback" name="g-recaptcha-response">
+				<button type="submit" class="btn btn-lg btn-corporate-color-1 mx-auto">Жду звонка</button>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- /callbackModalConsul Modal -->
 
 <!-- Callback Modal -->
 <div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
@@ -642,8 +669,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.bundle.min.js"></script>
 
 <!-- Scripts for Quiz and for add loader -->
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.5.1.min.js"></script>
-
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
 <!-- Font Awesome -->
 <!-- <script src="https://kit.fontawesome.com/064ae6a0a2.js"></script> -->
 
