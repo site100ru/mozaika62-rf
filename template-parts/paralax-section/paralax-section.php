@@ -79,4 +79,11 @@
         z-index: -1;
         transition: background-position 2s ease;
     }
+
+    @media (max-width: 768px) {
+        .parallax-background {
+            background-size: auto;
+            top: 0;
+        }
+    }
 </style>
