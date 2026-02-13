@@ -68,7 +68,7 @@
 
     .parallax-background {
         position: absolute;
-        top: -100px;
+        top: -50px;
         left: 0;
         width: 100%;
         height: 100%;
@@ -80,10 +80,11 @@
         transition: background-position 2s ease;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
         .parallax-background {
             background-size: auto;
-            top: 0;
+            background-position: center;
+            top: 50px;
         }
     }
 </style>

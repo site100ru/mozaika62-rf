@@ -12,6 +12,21 @@ $(window).scroll(function (e) {
 
 /* End parallax home section */
 
+jQuery(function ($) {
+    $(window).on('scroll', function () {
+        const scrollTop = $(window).scrollTop();
+        const sectionTop = $('.parallax-background').offset().top;
+        const sectionHeight = $('.parallax-background').outerHeight();
+
+        if (scrollTop + window.innerHeight > sectionTop &&
+            scrollTop < sectionTop + sectionHeight) {
+
+            const offset = (scrollTop - sectionTop) * 0.35;
+            $('.parallax-background').css('transform', `translateY(${offset}px)`);
+        }
+    });
+});
+
 /* Функция "Выезжало */
 function vyezjalo() {
     onscroll = function () {
