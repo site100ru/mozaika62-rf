@@ -1,27 +1,13 @@
-jQuery(function ($) {
-    /* Parallax home section */
-    $(window).scroll(function (e) {
-        var scrolled = $(window).scrollTop();
-        $('.parallax-home-section').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
-        $('.parallax-home-section-closets').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
-        $('.index-parallax-home-section').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
-
-    });
-});
-
-jQuery(function ($) {
-    $(window).on('scroll', function () {
-        const scrollTop = $(window).scrollTop();
-        const sectionTop = $('.parallax-background').offset().top;
-        const sectionHeight = $('.parallax-background').outerHeight();
-
-        if (scrollTop + window.innerHeight > sectionTop &&
-            scrollTop < sectionTop + sectionHeight) {
-
-            const offset = (scrollTop - sectionTop) * 0.25;
-            $('.parallax-background').css('transform', `translateY(${offset}px)`);
-        }
-    });
+/* Parallax home section */
+$(window).scroll(function (e) {
+    var scrolled = $(window).scrollTop();
+    $('.parallax-home-section').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
+    $('.parallax-home-section-closets').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
+    $('.index-parallax-home-section').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
+    $('.jobs-home-section').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
+    $('.closets-home-section').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
+    $('.parallax-home-section-portfolio').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
+    $('.home-cucina-parallax-home-section').css('top', (-(scrolled * .35)) + 'px'); // 35 - скорость прокрутки
 });
 
 /* End parallax home section */
