@@ -1946,7 +1946,7 @@
 			}
 		</script>
 
-        <?php include get_template_directory() . '/inc/snowflake/snowflake.php'; ?>
+        <!-- <?php include get_template_directory() . '/inc/snowflake/snowflake.php'; ?> -->
 
 	</body>
 </html>
