@@ -20,4 +20,6 @@ jobs:
             # git clone https://github.com/site100ru/mozaika62-rf.git site100mozaika
 
             cd ~/mozaika/public_html/wp-content/themes/site100mozaika
-            git pull
+            git fetch --all
+            git reset --hard origin/main
+            # git pull
