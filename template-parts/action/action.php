@@ -23,7 +23,7 @@ $actions_data = [
         'order' => 1,
         'category' => 'kitchen, home, cucina',
         'modal_data' => 'discount-5',
-        'description' => 'Скидка 5% На все кухни CUCINA до 28 февряля'
+        'description' => 'Скидка 5% На все кухни CUCINA до 31 марта'
     ],
     [
         'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-7.webp',
@@ -39,7 +39,7 @@ $actions_data = [
         'order' => 3,
         'category' => 'kitchen, closets',
         'modal_data' => 'discount-20',
-        'description' => 'Заказывайте со скидкой -20% до 28 февраля'
+        'description' => 'Заказывайте со скидкой -20% до 31 марта'
     ],
     [
         'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-2.webp',
