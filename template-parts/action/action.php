@@ -57,14 +57,14 @@ $actions_data = [
         'modal_data' => 'repeat-order',
         'description' => 'На повторный заказ дополнительная скидка 10%'
     ],
-    [
+    /*[
         'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-4.webp',
         'alt_text' => 'Комплект со скидкой',
         'order' => 6,
         'category' => 'kitchen, home',
         'modal_data' => 'discount-12',
         'description' => 'Пока другие отдыхают, заказывайте со скидкой от 5 до 12%'
-    ]
+    ]*/
     // [
     //     'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-5.webp',
     //     'alt_text' => 'При заказе кухни от 150 000 мойка из искуственного камня В ПОДАРОК',
@@ -73,7 +73,7 @@ $actions_data = [
     //     'modal_data' => 'gift-artificial-stone',
     //     'description' => 'При заказе кухни от 150 000 мойка из искуственного камня В ПОДАРОК'
     // ]
-];
+]; 
 
 // Получение атрибутов с значениями по умолчанию
 $show_button = isset($args['show_button'])
