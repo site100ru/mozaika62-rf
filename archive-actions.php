@@ -254,8 +254,7 @@
 <!-- /Home section -->
 
 
-
-<!-- Portfolio -->
+<!-- Archive actions -->
 <?php
 get_template_part('template-parts/action/action', '', [
     'show_button' => 'false',
@@ -267,8 +266,7 @@ get_template_part('template-parts/action/action', '', [
     'additional_classes' => 'justify-content-lg-center'
 ]);
 ?>
-<!-- /Portfolio -->
-		
-		
-		
+<!-- /Archive actions -->
+
+
 <?php include 'footer-1.php'; ?>
