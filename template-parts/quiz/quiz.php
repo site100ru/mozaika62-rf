@@ -1536,7 +1536,7 @@
 
                                     <div class="job">
                                         <h5 class="quiz-section-h3 quiz-section-h3-title">
-                                            Татьяна
+                                            Юлия
                                         </h5>
                                         <span class="quiz-section-h3-subtitle">Управляющая магазином</span>
                                     </div>
