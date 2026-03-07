@@ -412,6 +412,7 @@
 <!-- /ARCHIVE PRODUCT SECTION -->
 
 
+<!-- ARCHIVE ACTIONS -->
 <?php
 get_template_part('template-parts/action/action', '', [
     'show_button' => 'true',
@@ -420,9 +421,10 @@ get_template_part('template-parts/action/action', '', [
     'bg_color' => 'bg-light',
     'section_title' => 'Наши акции',
     'card_type' => 'modal',
-    'filter_category' => 'home'
+    'filter_category' => 'kitchen'
 ]);
 ?>
+<!-- /ARCHIVE ACTIONS -->
 
 
 <!-- Gradient order section -->
@@ -465,7 +467,6 @@ get_template_part('template-parts/action/action', '', [
 	</div>
 </section>
 <!-- End gradient order section -->
-
 
 
 <!-- ABOUT SECTION -->
@@ -736,7 +737,6 @@ get_template_part('template-parts/action/action', '', [
 <!-- /ABOUT SECTION GALLERY SCRIPT -->
 
 
-
 <!-- Advantage section -->
 <section class="advantage bg-white py-5">
 	<div class="container">
@@ -798,9 +798,11 @@ get_template_part('template-parts/action/action', '', [
 </section>
 <!-- /Advantage section -->
 
+
 <?php get_template_part('template-parts/reviews-section/reviews-section', null, array(
     'bg_color' => 'bg-light', 
 )); ?>
+
 
 <!-- Process -->
 <section class="advantages bg-white py-5">

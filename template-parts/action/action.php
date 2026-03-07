@@ -35,11 +35,11 @@ $actions_data = [
     ],
     [
         'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-1.webp',
-        'alt_text' => 'Бесплатная доставка',
+        'alt_text' => 'При единовременной покупке кухни и шкафа скидка на общий заказ 20%',
         'order' => 3,
-        'category' => 'kitchen, closets',
+        'category' => 'kitchen, closets, cucina',
         'modal_data' => 'discount-20',
-        'description' => 'Заказывайте со скидкой -20% до 31 марта'
+        'description' => 'При единовременной покупке кухни и шкафа скидка на общий заказ 20%'
     ],
     [
         'image_path' => get_template_directory_uri() . '/img/actions/new/new-action-2.webp',
