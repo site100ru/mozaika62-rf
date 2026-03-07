@@ -547,6 +547,9 @@
 	}
 </script>
 
+
+
+<!-- Actions section -->
 <?php
 get_template_part('template-parts/action/action', '', [
     'show_button' => 'true',
@@ -555,9 +558,11 @@ get_template_part('template-parts/action/action', '', [
     'bg_color' => 'bg-light',
     'section_title' => 'Наши акции',
     'card_type' => 'modal',
-    'filter_category' => 'home'
+    'filter_category' => 'kitchen'
 ]);
 ?>
+<!-- /Actions section -->
+
 
 <!-- Gradient order section -->
 <section class="gradient-order-section bg-white" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.jpg);">

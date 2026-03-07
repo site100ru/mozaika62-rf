@@ -714,7 +714,9 @@
 		</section>
 		<!-- /Portfolio -->
 
-        <?php
+        
+		<!-- Actions section -->
+		<?php
         get_template_part('template-parts/action/action', '', [
             'show_button' => 'false',
             'show_breadcrumbs' => 'false', 
@@ -725,6 +727,8 @@
             'filter_category' => 'closets'
         ]);
         ?>
+		<!-- /Actions section -->
+
 		
 		<!-- Gradient order section -->
 		<section class="gradient-order-section bg-white" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gradient-order-section-bg.jpg);">
