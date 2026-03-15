@@ -54,7 +54,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	
 		<div class="card-wrapper project-container-2-footer">
 			<div class="row" style="padding: 10px;">
-				<div class="col-6">
+				<div class="col-12">
 					<h3 1 style="color: #fff;">
 						<?php do_action( 'woocommerce_shop_loop_item_title' ); ?>
 					</h3>		
