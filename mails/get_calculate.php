@@ -36,7 +36,8 @@
 
 				$headers = "MIME-Version: 1.0\r\n";
 				
-				$headers .= "From: info@xn--62-6kca7ahoms.xn--p1ai\r\n";
+                $fromName = 'Мозаика62.рф';
+                $headers .= "From: =?UTF-8?B?" . base64_encode($fromName) . "?= <info@xn--62-6kca7ahoms.xn--p1ai>\r\n";
 
 				$headers .="Content-Type: multipart/mixed; boundary=\"$boundary\"\n"; 
 
@@ -133,7 +134,8 @@
 			/* Отправляем почтовое сообщение  */
 			if ( empty( $picture ) ) {
 				$headers = "MIME-Version: 1.0\r\n";
-				$headers .= "From: info@xn--62-6kca7ahoms.xn--p1ai\r\n";
+                $fromName = 'Мозаика62.рф';
+                $headers .= "From: =?UTF-8?B?" . base64_encode($fromName) . "?= <info@xn--62-6kca7ahoms.xn--p1ai>\r\n";
 				$headers .= "Content-type: text/html; charset=utf-8\r\n";
 				$msg = "
 					<strong>Имя:</strong> ".$name."<br><br>

@@ -46,7 +46,9 @@ $answer6_wardrobe = isset($_POST['form-question-6-wardrobe']) ? $_POST['form-que
 
 // Заголовки письма
 $headers = "MIME-Version: 1.0\r\n";
-$headers .= "From: info@xn--62-6kca7ahoms.xn--p1ai\r\n";
+$from     = 'info@xn--62-6kca7ahoms.xn--p1ai';
+$fromName = 'Мозаика62.рф';
+$headers .= "From: =?UTF-8?B?" . base64_encode($fromName) . "?= <$from>\r\n";
 $headers .= "Content-type: text/html; charset=utf-8\r\n";
 
 // Формируем тело письма

@@ -26,11 +26,12 @@
             // $to      = 'sidorov-vv3@mail.ru, vasilyev-r@mail.ru, vasilyev-r@yandex.ru';
             $to      = 'sidorov-vv3@mail.ru';
             $from    = 'info@xn--62-6kca7ahoms.xn--p1ai';
+            $fromName = 'Мозаика62.рф';
             $subject = 'Запрос на обратный звонок с сайта мозаика62.рф';
 
             $headers  = "MIME-Version: 1.0\r\n";
             $headers .= "Content-Type: text/html; charset=utf-8\r\n";
-            $headers .= "From: $from\r\n";
+            $headers .= "From: =?UTF-8?B?" . base64_encode($fromName) . "?= <$from>\r\n";
 
             $message = "
                 Потенциальный клиент с именем <strong>$name</strong><br>
