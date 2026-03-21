@@ -28,6 +28,8 @@
             // $to 	 = 'sidorov-vv3@mail.ru, vasilyev-r@mail.ru, vasilyev-r@yandex.ru';
             $to 	 = 'sidorov-vv3@mail.ru';
 			$from 	 = 'info@xn--62-6kca7ahoms.xn--p1ai';
+            $fromName = 'Мозаика62.рф';
+
 			$subject = 'Заявка на расчет стоимости с сайта мозаика62.рф';
 			 
 			
@@ -42,8 +44,8 @@
 
 				$headers    = "MIME-Version: 1.0;$EOL";   
 				$headers   .= "Content-Type: multipart/mixed; boundary=\"$boundary\"$EOL";  
-				$headers   .= "From: $from\r\n"; 
-				
+				$headers   .= "From: =?UTF-8?B?" . base64_encode($fromName) . "?= <$from>\r\n";
+
 				$message    = "
 					<strong>Имя:</strong> ".$name."<br><br>
 					<strong>Телефон:</strong> ".$tel."<br><br>
@@ -96,7 +98,7 @@
 				// Если загруженных файлов нет, то отправляем этим способом
 				
 				$headers  = "MIME-Version: 1.0\r\n";
-				$headers .= "From: $from\r\n";
+                $headers   .= "From: =?UTF-8?B?" . base64_encode($fromName) . "?= <$from>\r\n";
 				$headers .= "Content-type: text/html; charset=utf-8\r\n";
 				
 				$message  = "

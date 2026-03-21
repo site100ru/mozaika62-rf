@@ -145,9 +145,11 @@ if ($_POST && $phone) {
     if ($has_file && file_exists($file_tmp)) {
         $boundary = md5(time());
         
-        $headers = "From: info@xn--62-6kca7ahoms.xn--p1ai\r\n";
-        $headers .= "Reply-To: info@xn--62-6kca7ahoms.xn--p1ai\r\n";
-        $headers .= "MIME-Version: 1.0\r\n";
+        $from     = 'info@xn--62-6kca7ahoms.xn--p1ai';
+        $fromName = 'Мозаика62.рф';
+        $headers  = "MIME-Version: 1.0\r\n";
+        $headers .= "From: =?UTF-8?B?" . base64_encode($fromName) . "?= <$from>\r\n";
+        $headers .= "Reply-To: $from\r\n";
         $headers .= "Content-Type: multipart/mixed; boundary=\"{$boundary}\"\r\n";
         
         $message = "--{$boundary}\r\n";
@@ -168,10 +170,13 @@ if ($_POST && $phone) {
     } 
     // Обычное письмо без файла
     else {
-        $headers = "From: info@xn--62-6kca7ahoms.xn--p1ai\r\n";
-        $headers .= "Reply-To: info@xn--62-6kca7ahoms.xn--p1ai\r\n";
+        $from     = 'info@xn--62-6kca7ahoms.xn--p1ai';
+        $fromName = 'Мозаика62.рф';
+        $headers  = "MIME-Version: 1.0\r\n";
+        $headers .= "From: =?UTF-8?B?" . base64_encode($fromName) . "?= <$from>\r\n";
+        $headers .= "Reply-To: $from\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n";
-        
+
         $mail_sent = mail($to, $subject, $email_body, $headers);
     }
     

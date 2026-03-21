@@ -41,7 +41,9 @@ $answer6_kitchen = isset($_POST['form-question-6-kitchen']) ? $_POST['form-quest
 
 // Заголовки письма
 $headers = "MIME-Version: 1.0\r\n";
-$headers .= "From: info@xn--62-6kca7ahoms.xn--p1ai\r\n";
+$from     = 'info@xn--62-6kca7ahoms.xn--p1ai';
+$fromName = 'Мозаика62.рф';
+$headers .= "From: =?UTF-8?B?" . base64_encode($fromName) . "?= <$from>\r\n";
 $headers .= "Content-type: text/html; charset=utf-8\r\n";
 
 // Формируем тело письма
