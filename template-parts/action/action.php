@@ -293,7 +293,7 @@ function get_column_classes($total, $index)
                     <input type="hidden" name="action_type" class="actionTypeInput" value="">
                 </div>
                 <div class="modal-footer">
-                    <input type="hidden" id="g-recaptcha-response-order" name="g-recaptcha-response">
+                    <input type="hidden" id="g-recaptcha-response-order-2" name="g-recaptcha-response">
                     <button type="submit" class="btn btn-corporate-color-1 mx-auto">Жду звонка</button>
                 </div>
             </form>

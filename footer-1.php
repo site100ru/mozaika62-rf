@@ -382,7 +382,7 @@
 				</div>
 			</div>
 			<div class="modal-footer">
-				<input type="hidden" id="g-recaptcha-response-callback" name="g-recaptcha-response">
+				<input type="hidden" id="g-recaptcha-response-callback-consul" name="g-recaptcha-response">
 				<button type="submit" class="btn btn-lg btn-corporate-color-1 mx-auto">Жду звонка</button>
 			</div>
 		</form>
@@ -723,6 +723,10 @@
 				document.getElementById('g-recaptcha-response-callback').value = token;
 			}
 
+            if (document.getElementById('g-recaptcha-response-callback-consul')) {
+                document.getElementById('g-recaptcha-response-callback-consul').value = token;
+            }
+
 			if (document.getElementById('g-recaptcha-response-calculatePriceWithDownload')) {
 				document.getElementById('g-recaptcha-response-calculatePriceWithDownload').value = token;
 			}
@@ -733,6 +737,10 @@
 			if ( document.getElementById('g-recaptcha-response-order') ) {
 				document.getElementById('g-recaptcha-response-order').value=token;
 			}
+
+            if ( document.getElementById('g-recaptcha-response-order-2') ) {
+                document.getElementById('g-recaptcha-response-order-2').value=token;
+            }
 		});
 	});
 </script>
