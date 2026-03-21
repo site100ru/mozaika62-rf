@@ -1721,6 +1721,7 @@
 						</div>
 					</div>
 					<div class="modal-footer">
+                        <input type="hidden" id="g-recaptcha-response-callback" name="g-recaptcha-response">
 						<button type="submit" class="btn btn-corporate-color-1 mx-auto">Жду звонка</button>
 					</div>
 				</form>
@@ -1761,6 +1762,7 @@
 								<input type="text" name="tel" class="form-control form-control-corporate-color-1 telMask" placeholder="Ваш телефон*" required>
 							</div>
 							<div class="col-md-6">
+                                <input type="hidden" id="g-recaptcha-response-calculatePriceWithDownload" name="g-recaptcha-response">
 								<button type="submit" class="btn btn-corporate-color-1">Отправить</button>
 							</div>
 						</div>
@@ -1795,6 +1797,7 @@
 							</div>
 							
 							<div class="col-md-6">
+                                <input type="hidden" id="g-recaptcha-response-calculatePriceWithoutDownload" name="g-recaptcha-response">
 								<button type="submit" class="btn btn-corporate-color-1">Отправить</button>
 							</div>
 						</div>
@@ -1949,6 +1952,38 @@
 				document.body.appendChild(script);
 			}
 		</script>
+
+        <!-- reCaptcha v3 New from Google -->
+        <script src='https://www.google.com/recaptcha/api.js?render=6LdV1IcUAAAAADRQAhpGL8dVj5_t0nZDPh9m_0tn'></script>
+        <script>
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LdV1IcUAAAAADRQAhpGL8dVj5_t0nZDPh9m_0tn', { action: 'action_name' }).then(function (token) {
+
+                    if (document.getElementById('g-recaptcha-response-callback')) {
+                        document.getElementById('g-recaptcha-response-callback').value = token;
+                    }
+
+                    if (document.getElementById('g-recaptcha-response-callback-consul')) {
+                        document.getElementById('g-recaptcha-response-callback-consul').value = token;
+                    }
+
+                    if (document.getElementById('g-recaptcha-response-calculatePriceWithDownload')) {
+                        document.getElementById('g-recaptcha-response-calculatePriceWithDownload').value = token;
+                    }
+                    if (document.getElementById('g-recaptcha-response-calculatePriceWithoutDownload')) {
+                        document.getElementById('g-recaptcha-response-calculatePriceWithoutDownload').value = token;
+                    }
+                    // Order
+                    if ( document.getElementById('g-recaptcha-response-order') ) {
+                        document.getElementById('g-recaptcha-response-order').value=token;
+                    }
+
+                    if ( document.getElementById('g-recaptcha-response-order-2') ) {
+                        document.getElementById('g-recaptcha-response-order-2').value=token;
+                    }
+                });
+            });
+        </script>
 
         <!-- <?php include get_template_directory() . '/inc/snowflake/snowflake.php'; ?> -->
 
