@@ -22,8 +22,9 @@
 			$tel = $_POST['tel'] ?? $_POST['phone'];
 
             
-            $to      = 'mozaika62@bk.ru, vasilyev-r@mail.ru, vasilyev-r@yandex.ru';
+            // $to      = 'mozaika62@bk.ru, vasilyev-r@mail.ru, vasilyev-r@yandex.ru';
             // $to      = 'sidorov-vv3@mail.ru, vasilyev-r@mail.ru, vasilyev-r@yandex.ru';
+            $to      = 'sidorov-vv3@mail.ru';
             $from    = 'info@xn--62-6kca7ahoms.xn--p1ai';
             $subject = 'Запись на консультацию с сайта мозаика62.рф';
 
