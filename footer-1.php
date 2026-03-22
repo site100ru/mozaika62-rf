@@ -472,7 +472,12 @@
 			<div class="modal-body">
 				<div class="row pb-2">
 					<div class="col-12">
-						<p><small>Опишите кухню своими словами, укажите форму, размеры, материалы и другую информацию</small></p>
+						<p>
+                            <small>
+                                Опишите кухню или шкаф своими словами, укажите форму, размеры, материалы и другую информацию. </br>
+                                Вы можете прикрепить проект, картинку из интернета или схематично нарисованный рисунок.
+                            </small>
+                        </p>
 					</div>
 					<div class="col-12 mb-3">
 						<textarea type="text" rows="3" name="mes" class="form-control form-control-corporate-color-1"
